@@ -1,0 +1,270 @@
+
+<!--
+
+body, div, span, p, form, .qs, h1, h2, h3, ul, ol, li, a, td ,th, select, input, textarea
+{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+tt, pre 
+{
+	font-family: "Courier New", Courier, mono, monospace;
+}
+
+.indexdef 
+{	
+	font-family: "Times New Roman", serif; font-style: italic;
+}
+
+body, div, p, form, ul, ol, li, th, td, select, input, textarea
+{
+	font-size: 13px;
+	color: #000000;
+}
+body a:link, a:visited, a:active { 
+/*	text-decoration: underline; */
+	color: #000099; 
+}
+body a:visited {
+	color: #800000;
+}
+
+body a:hover { 
+	color: #0000FF;
+}
+
+h2
+{
+	font-size: 16px;
+	color: #993300;
+}
+
+h3
+{
+	font-size: 14px;
+	color: #000000;
+}
+
+.qs
+{
+	font-size: 10px;
+	color: #000000;
+}
+
+.blurb
+{
+	font-size: 11px;
+}
+
+.bibholdings
+{
+	border: 4px double silver;
+}
+
+hr
+{	
+	color: silver;
+}
+
+.bibItemsHeader{
+	background-color: #000099; 
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+}
+
+.bibItemsEntry {
+	background-color: #FFFFFF;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+.bibSearchTool { font-size: x-small; }
+.navigationRow a:link ( text-decoration: none; color=blue; )
+
+TABLE.briefCitTable { 
+	border: 1px solid #CCC; 
+}
+
+TABLE.bibEntry {
+	border: 1px solid #990033;
+/*	border: 1px solid #CCC; */
+}
+TR.briefCitRow {  color: #000000; font-weight: normal; }
+TABLE.briefCitRow{ border: #CCC; }
+TD.briefCitTitle { }
+TD.briefCitStatus { font-weight: bold; }
+TD.briefCitCall { padding-left: .2em; font-style: italic; }
+TD.briefCitEntryNum { padding-right: 2px; }
+TD.briefCitEntry {
+	background-color: #F5F5F5;
+}
+TD.briefCitCheckbox { padding-right: 2px; }
+TD.briefCitRow { border-top:0px solid #595959; }
+TD.briefCitDetail { 
+	background-color: #F5F5F5; 	
+}
+TD.briefCitCover { background-color: #F5F5F5; }
+.briefCitItems {
+	background-color: #C0C0C0; 
+}
+
+TABLE.browseScreen { BORDER-TOP: 1px solid; BORDER-TOP-COLOR: #000000; } 
+TABLE.browseWidgit { background: #FFFFFF; }
+TD.browseWidgit { color: #000000; background: #FFFFFF; text-align: center; }
+TABLE.browseSaveJump { font-size: medium; } 
+TD.browseSaveJump { color: #000000; background: #FFFFFF; text-align: left; }
+TABLE.browseList { }
+
+TD.browseHeaderNum {  background-color: #FFFFFF; color: #000000; font-weight: bold}
+TD.browseHeaderMark {  background-color: #FFFFFF; color: #000000; font-weight: bold}
+TD.browseHeaderData {
+	background-color: #000099;  
+	color: #FFFFFF; 		
+	font-size: 11px;		
+ 	font-weight: bold; 		
+	vertical-align: center	
+}
+
+TD.browseHeaderMedia {  background-color: #FFFFFF; color: #000000; font-weight: bold}
+TD.browseHeaderYear {  background-color: #FFFFFF; color: #000000; font-weight: bold; text-align: center}
+TD.browseHeaderEntries {  background-color: #FFFFFF; color: #000000; font-weight: bold}
+TD.browseHeaderRelevance {  background-color: #FFFFFF; color: #000000; font-weight: bold}
+
+TR.browseSuperEntry {  background-color: #FFFFFF; color: #000000}
+TR.browseSubEntry {  background-color: #FFFFFF; color: #000000}
+TD.browseSubEntryData { }
+TD.browseSubEntryMedia { }
+TD.browseSubEntryYear { }
+TD.browseSubEntryEntries { }
+TD.browseSubEntryRelevance { }
+TR.browseEntry {  background-color: #FFFFFF; color: #000000}
+TD.browseEntryNum { text-align: center; }
+TD.browseEntryMark { font-weight: bold; }
+TD.browseEntryData { background-color: #FFFFFF; color: #000000; font-weight: normal; }
+TD.yourEntryWouldBeHereData { border: 2px solid #555555; background-color: E1E1E1; }
+TD.browseEntryMedia { vertical-align: middle; }
+TD.browseEntryYear {text-align: center; }
+TD.browseEntryEntries { text-align: center; }
+TD.browseEntryRelevance { }
+
+TABLE.browseResourceTable { }
+TD.browseResourceTable { }
+TR.browseResourceTableEntry { }
+TD.browseResourceTableEntry { }
+
+TABLE.bibScreen { }
+TABLE.bibWidgit { }
+TABLE.bibInfo { }
+TR.bibInfoEntry { }
+TD.bibInfoEntry { }
+TD.bibInfoLabel { }
+TD.bibInfoData { }
+TABLE.bibHoldings { }
+TR.bibHoldingsHeader { }
+TR.bibHoldingsData { }
+TABLE.bibResourceTable { }
+TD.bibResourceTable { }
+TR.bibResourceTableEntry { }
+TD.bibResourceTableEntry { }
+
+TABLE.authTerm
+TR.authTerm { }
+TD.unauthTerm { }
+
+TABLE.patDisplayTable { border: 1px solid #000000; }
+TR.patDisplay { border: 1px solid #000000; }
+TD.patDisplayFunc { border: 1px solid #000000; }
+TD.patDisplayInfo { border: 1px solid #000000; }
+TD.patInfo { }
+TD.patImage { }
+
+TABLE.patFuncTable { border: 1px solid #000000; }
+TR.patFunc { border: 1px solid #000000; } 
+TD.patFuncBookDate { } 
+TD.patFuncBtns { } 
+TD.patFuncCallNo { } 
+TD.patFuncCancel { }
+TD.patFuncDate { } 
+TD.patFuncEntry { border: 1px solid #000000; }
+TD.patFuncFinesDetail { }
+TD.patFuncFinesDetailAmt { } 
+TD.patFuncFinesDetailDate { } 
+TD.patFuncFinesDetailDateLabel { } 
+TD.patFuncFinesDetailType { } 
+TD.patFuncFinesEntryDetail { border: 1px solid #000000; } 
+TD.patFuncFinesEntryTitle { } 
+TD.patFuncFinesTitle { border: 1px solid #000000; } 
+TD.patFuncFinesTotal { } 
+TD.patFuncFinesTotalAmt { }
+TD.patFuncFinesTotalLabel { }
+TD.patFuncHeaders { }
+TD.patFuncMark { }
+TD.patFuncModifyPatInfo { }
+
+td.colorchart
+{
+   width:16px;
+   height:12px;
+}
+
+a.getcolorlinks_r:link    { color:#880000;  font:normal 10px arial; text-decoration:none; cursor:default; }
+a.getcolorlinks_r:visited { color:#880000;  font:normal 10px arial; text-decoration:none; cursor:default; }
+a.getcolorlinks_r:active  { color:#880000;  font:normal 10px arial; text-decoration:none; cursor:default; }
+a.getcolorlinks_r:hover   { color:#ff0000;  font:normal 10px arial; text-decoration:none; cursor:default; }
+
+a.getcolorlinks_g:link    { color:#006600;  font:normal 10px arial; text-decoration:none; cursor:default; }
+a.getcolorlinks_g:visited { color:#006600;  font:normal 10px arial; text-decoration:none; cursor:default; }
+a.getcolorlinks_g:active  { color:#006600;  font:normal 10px arial; text-decoration:none; cursor:default; }
+a.getcolorlinks_g:hover   { color:#00dd00;  font:normal 10px arial; text-decoration:none; cursor:default; }
+
+a.getcolorlinks_b:link    { color:#000088;  font:normal 10px arial; text-decoration:none; cursor:default; }
+a.getcolorlinks_b:visited { color:#000088;  font:normal 10px arial; text-decoration:none; cursor:default; }
+a.getcolorlinks_b:active  { color:#000088;  font:normal 10px arial; text-decoration:none; cursor:default; }
+a.getcolorlinks_b:hover   { color:#0000ff;  font:normal 10px arial; text-decoration:none; cursor:default; }
+
+
+span.getcolorlinks_red   { background-color:#ffdddd; font:normal 5px courier new; color:#990000; cursor:default; }
+span.getcolorlinks_green { background-color:#ddffdd; font:normal 5px courier new; color:#009900; cursor:default; }
+span.getcolorlinks_blue  { background-color:#ddddff; font:normal 5px courier new; color:#000099; cursor:default; }
+
+span.getcolorlinks_red_label   { background-color:#ffdddd; font:normal 11px courier new; color:#990000; cursor:default; }
+span.getcolorlinks_green_label { background-color:#ddffdd; font:normal 11px courier new; color:#009900; cursor:default; }
+span.getcolorlinks_blue_label  { background-color:#ddddff; font:normal 11px courier new; color:#000099; cursor:default; }
+
+
+input.colorbox
+{
+   width:62px;
+   font:normal 12px verdana;
+   border:solid 1px #ffffff;
+   color:#999999;
+}
+
+input.bgimagebox
+{
+   width:210px;
+   font:normal 12px verdana;
+}
+
+input.bgimagebtn
+{
+   font:normal 12px verdana;
+}
+
+
+span.backhelp
+{
+   color:#0000ee;
+   cursor:pointer;
+   font-weight:bold;
+}
+
+
+.color_box {
+   border:#666666 1px solid;
+   cursor:default;
+   width:70px;
+}
+
+-->

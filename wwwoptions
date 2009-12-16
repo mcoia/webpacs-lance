@@ -1,0 +1,378 @@
+#***************************************************************************
+#***************************************************************************
+#  PLEASE DO NOT EDIT THE WWWOPTIONS WITHOUT CHECKING WITH FOLKS WHO WORK 
+#  ON THE WEBPACS, OR YOUR CHANGES MAY BE OVERWRITTEN!!!!!!!!!!!!  040617
+#***************************************************************************
+#***************************************************************************
+
+##############################################################################
+#
+# WWWOptions file for: LANCE / MOBNE
+#             Created: 12/01/2000
+#             Revised: 10/13/2008 ahd
+#
+##############################################################################
+#
+# WARNING! Please ensure that you are the *only* user modifying this file.
+# If more than one user simultaneously edits this file...
+# YOUR CHANGES MAY NOT BE SAVED!
+#
+##############################################################################
+#
+# These are the rules for modifying this file:
+#
+# 1) BEFORE you begin, please copy the complete text of this WWWOptions file
+#    and include it as part of your ticket.
+#
+# 2) You MUST indicate in this header file what you changed, when you
+#    changed it, why this change was necessary, who you are, and a tracking
+#    number for your change (i.e. a MCO Remedy ticket number).
+#
+# 3) Do not paste large amounts of text into this file. In particular, avoid
+#    pasting long lines of text (i.e. text which will wrap).
+#
+# 4) Use Carriage Returns when editing long lines. Avoid wrapping lines.
+#
+# 5) AFTER you are done modifying this file, please copy the complete text of
+#    this WWWOptions file and include it as part of your ticket, before you
+#    close the ticket.
+#
+##############################################################################
+#
+# Revision Log: please note your revision in this log, even if it seems minor.
+# 
+# BEGIN ALL LINES WITH A #, which is the comment character.
+# 
+# Date       Your Initials - change description - Remedy Ticket Number
+#
+# 12/01/2000 HJP - Comment Header added to file - MCO-001836
+# 12/07/2000 HJP - Changed EBADDRESS
+# 12/14/2000 MCS - Rearranged file alphabetically - MCO-001885
+# 01/12/2001 HJP - added full, procite and endnote to export options
+# 01/29/2001 HJP - disabled Patron Request
+# 03/05/2001 HJP - enabled Patron Request
+# 06/08/2001 QYM - enable 856|z - MCO-002825
+# 06/11/2001 QYM - reversed order in which 856 u & z display - MCO-002825
+# 07/23/2001 HJP - added location link codes for Truman
+# 08/15/2001 HJP - removed Search Britanica button
+# 08/28/2001 HJP - AKS/AVS revisions
+# 09/27/2001 QYM - AKS changed to level 1   MCO-003576
+# 11/01/2002 JNG - Added location linking line for location tprdi  MCO-006229
+# 02/14/2003 GLH - Added SSL Option
+# 03/25/2003 JSB - Added Browse Web option for a,t, lc searches MCO 006825
+# 06/25/2003 JSB - Changed browse options for t search MCO 007287
+# 08/27/2003 CAG - Changed INNREACH per III MCO-007529
+# 12/1/2003  LEE - Added My Millennium Options MCO-007979
+# 8/2/2005 JSB - Added the media icons MCO-010150
+# 5/16/2008 AHD - Added permanent record links, etc. for HLG. MCO-012064
+# 9/3/08 AHD - Added STYLESHEET=/screens/lance_styles.css
+# 10/13/2008 AHD - Added Reset a PIN options.  MCO-013465
+##############################################################################
+
+#***************************************************************************
+#***************************************************************************
+#  PLEASE DO NOT EDIT THE WWWOPTIONS WITHOUT CHECKING WITH FOLKS WHO WORK 
+#  ON THE WEBPACS, OR YOUR CHANGES MAY BE OVERWRITTEN!!!!!!!!!!!!  040617
+#***************************************************************************
+#***************************************************************************
+
+#SSL
+SSLPORT=80:443:lance.missouri.edu:lance.mobius.umsystem.edu|2082:444:lance.missouri.edu:lance.mobius.umsystem.edu
+#SSLPORT=80:443
+
+# AVS/AKS Options
+AVS_TAG=XYZ
+ASSEARCH=1
+
+# General Display and Logging Options
+BODYPARAM=BGCOLOR=#ffffff LINK=#0000FF VLINK=#0000FF
+BOTLOGO=@screens/botlogo.html
+CLEAR_PRIVATE_INFO=true
+STATGROUP=login
+TIMEOUT=300;URL=/search/
+TOPLOGO=@screens/toplogo.html
+TOPLOGO1=@screens/toplogo_s1.html
+TOPLOGO2=@screens/toplogo_s2.html
+TOPLOGO3=@screens/toplogo_s3.html
+TOPLOGO4=@screens/toplogo_s4.html
+TOPLOGO5=@screens/toplogo_s5.html
+TOPLOGO6=@screens/toplogo_s6.html
+STYLESHEET=/screens/lance_styles.css
+STYLESHEET2=/screens/lance_styles_s2.css
+STYLESHEET4=/screens/lance_styles_s4.css
+STYLESHEET6=/screens/lance_styles_s6.css
+
+# Testing brief citation form 050111 lee
+# TABLEPARAM_BROWSE=WIDTH=100%|BORDER=0
+# TABLEPARAM_BRIEFCIT=N|
+# TABLEPARAM_BRIEFCIT6=Y|BORDER=0
+
+# Scope Controls
+LOCKSCOPE=no
+# Do NOT use LOCKSCOPE
+RESET_SCOPE=no
+# RESET_SCOPE controls whether a scope is reset when the user
+# clicks 'New Search'
+
+# General Display and Behavior Options
+#Lance decided not to use limit to available 041015
+# AVAILLIM=<EM>Limit Results to available items</EM>|<EM>Search results are limited to available items</EM>
+AVAILLIM2=<b>Limit search to items available for checkout</b>|<b>Search results are limited to available items</b>
+AVAILLIM_STATS=-,r
+BOOK_CAL_AVAIL=black
+BOOK_CAL_BKGRD=white
+BOOK_CAL_CLOSE=red
+BOOK_CAL_UNAVAIL=blue
+BROWSE_a=111/andce|100/aqbcd
+BROWSE_d=611/andcvxyz
+BROWSE_t=130/adfghklmnoprs/|246/abfnp/|970/t/c
+#browse is not working correctly, helpdesk has call to III 11/21/00 rk
+# BROWSE=245/abc/h
+DISPLAY_856=3z
+DISPLAY_SRCH=dmj
+# DROP_DOWN=tasdmjcefgi
+DROP_DOWN=taYsdmjcefgi
+EXTENDED=1
+FORM_FOCUS=true
+FRAMEURL=0
+ERESERVE=[0123456789]
+ERESERVE_IP=lance.missouri.edu
+HOLDINGS_POS=atpe
+INDEX_EXT=cefgio
+ITEM_NOTE=true
+#ITEMOUT_MSG
+KEYWORD_COLOR=Y|all|red
+LINK856TEXT=Link to Web version:
+#LOC_ <may be used for special collections>
+MARC=yes
+# MEDIA=2
+NEWPIN_MSG=Please enter or create your PIN
+NOSEARCH=nubz
+OFFER_HISTORY=true
+PATRON_FIELDS=n/a
+PATRON_MSG=y|Message from the library:
+PSTARTOVER=/search
+#RECORDFRAME <do not use>
+REQUEST=Request this title|denyiflocalavail|ask|yes
+REQUEST_INSTRUCTION=Any special instructions?
+SHOWOREC=no_cdate
+SORT_ITEMS=true
+STARTOVER=/search
+#SUPPRESS_CARD <chose not to use>
+SUPPRESS_OPTION=email,ILL_home
+#SUPPRESS_YEAR
+XSTARTOVER=/search
+
+# Encyclopedia Britannica Options
+# EBADDRESS=http://search.britannica.com/bcom/search/results/1,5843,,00.html?p_query0=%s
+
+# Export Options
+BRIEF_EXPORT=a|t:245|p|e|y:050
+BRIEF_EXPORT_CHKIN=h|n
+EMAILOP=LANCE Exported Records|exporter|
+EXPORT_SELECT_TABLE=Sendto:browser,email,local|Format:brief,full,procite,endnote
+# |Format:brief,full,procite,endnote=
+
+# Passthrough searching to MOBIUS
+INNREACH=<br><img src="/screens/srchmobi.gif" border=0 alt="Search MOBIUS Union Catalog">@mobius.umsystem.edu(X=X*;Y=Y*;a=a;c=c;d=d;e=e;g=g;i=i;j=m;o=o;s=s;t=t)
+Search MOBIUS Union Catalog">@mobius.missouri.edu(X=X*;Y=Y*;a=a;c=c;d=d;
+e=e;g=g;i=i;j=m;o=o;s=s;t=t)
+
+# Patron Record Options
+FRAMEURL_PAT=50
+CANCEL_BOOKINGS=false
+# TABLEPARAM_PATDISP=<main>|<info>|<buttons>
+TABLEPARAM_PATDISP=WIDTH=100% BORDER= 1px solid #000000 BGCOLOR=#FFFFFF|BGCOLOR=#FFFFFF|BGCOLOR=#FFFFFF
+TABLEPARAM_PATFUNC=WIDTH=100% BORDER= 1px solid #000000 BGCOLOR=#FFFFFF|BGCOLOR=#FFFFFF|BGCOLOR=#FFFFFF
+
+# My Millennium Options
+MY_WEBPAC=F|T
+PREF_SEARCHES_P1=10|Y
+PREF_SEARCHES_P2=10|Y
+PREF_SEARCHES_P3=10|Y
+PREF_SEARCHES_P9=10|Y
+PREF_SEARCHES_P21=10|Y
+PREF_SEARCHES_P22=10|Y
+PREF_SEARCHES_P29=10|Y
+PREF_SEARCHES_P42=10|Y
+PREF_SEARCHES_P43=10|Y
+PREF_SEARCHES_P49=10|Y
+PREF_SEARCHES_P61=10|Y
+PREF_SEARCHES_P62=15|Y
+PREF_SEARCHES_P63=15|Y
+PREF_SEARCHES_P64=15|Y
+PREF_SEARCHES_P65=15|Y
+PREF_SEARCHES_P70=10|Y
+PREF_SEARCHES_P71=15|Y
+PREF_SEARCHES_P82=10|Y
+PREF_SEARCHES_P102=10|Y
+PREF_SEARCHES_P103=10|Y
+PREF_SEARCHES_P104=10|Y
+PREF_SEARCHES_P106=10|Y
+PREF_SEARCHES_P107=10|Y
+PREF_SEARCHES_P112=10|Y
+PREFTEXT=Save Search?
+STAFF=9,29,49,71,82,112
+NO_REVERIFY=req,acq,book,media
+ICON_READING_HISTORY_OPTIN=Opt In
+ICON_READING_HISTORY_OPTOUT=Opt Out
+ICON_READING_HISTORY=My Reading History
+ICON_PAT_DELETE_MARKED=Delete Marked
+ICON_PAT_DELETE_ALL=Delete All
+
+# Z39.50 Options
+Z39BROADCAST=Z39.50 Broadcast Search:Please select the Z39.50 servers to which
+# you want to send your search=
+Z39MULTI=500:100
+
+# OPTION BUTTONS
+BUT_ANOTHER=/screens/b_another.gif 
+BUT_BIBEXPORT=/screens/bibexport.gif
+BUT_BOOKING=/screens/bookitem.gif
+BUT_BRIEF=/screens/b_brief.gif
+BUT_CARDFORM_BOX=/screens/boxdisp.gif
+BUT_CARDFORM_LIN=/screens/linedisp.gif
+BUT_CLEAR_MARKED=/screens/b_clrsaves.gif
+BUT_CLOSEWN=/screens/ret2cat.gif
+BUT_EMAIL=/screens/email.gif 
+# BUT_ENCYCPD=/screens/b_encycpd.gif
+BUT_EXPORT_VIEW_SAVES=/screens/b_exportlist.gif
+BUT_EXTENDED=/screens/b_extended.gif
+BUT_FULL_TEXT=/sceens/b_fulltxt.gif
+BUT_ILL_CANCEL=/screens/illcan.gif
+BUT_ILL_FORM=/screens/illform.gif
+BUT_ILL_HOME=/screens/illano.gif 
+BUT_LIMAVAIL=/screens/limavail.gif
+BUT_LIMIT=/screens/b_limit.gif
+BUT_LOGOUT=/screens/logout.gif
+BUT_MARC_DISPLAY=/screens/b_marcdisp.gif
+BUT_MODIFY=/screens/modify.gif
+BUT_NEWSRCH=/screens/b_newsrch.gif
+BUT_NEXTPAGE=/screens/b_nextpage.gif
+BUT_NEXTREC=/screens/b_nextrec.gif
+# BUT_PAT_PIN=/screens/b_patpin.gif
+BUT_PLOGOUT=/screens/ret2pat.gif
+BUT_PREVPAGE=/screens/b_prevpage.gif
+BUT_PREVREC=/screens/b_prevrec.gif
+BUT_PREVSCRN=/screens/prevscrn.gif
+BUT_PUBLIC=/screens/public.gif
+BUT_REGULAR_DISPLAY=/screens/b_regdisp.gif
+BUT_REQUEST=/screens/b_request.gif
+BUT_RET2CAT=/screens/ret2cat.gif
+BUT_RET2CRS=/screens/ret2crs.gif
+BUT_RET2FEAT=/screens/b_ret2feat.gif
+BUT_RET2PREC=/screens/ret2pat.gif
+BUT_RETHOME=/screens/b_rethome.gif
+BUT_RTRNTB=/screens/b_rtrntb.gif
+BUT_SHOWSIM=/screens/showsimilar.gif
+BUT_STAFF=/screens/staff.gif
+BUT_STARTOVER=/screens/startover.gif
+BUT_UNLIMAVAIL=/screens/unlimavail.gif
+BUT_VIEW_SAVES=/screens/b_bookcart.gif
+BUT_WORDSRCH=/screens/b_wordsrch.gif
+BUT_Z39_ANOTHER=/screens/z39ano.gif
+BUT_Z39_REQUEST=/screens/request.gif
+BUT_Z39SEARCH=/screens/z39srch.gif
+
+#MATERIAL TYPE GRAPHICS
+MEDIA=2
+IMAGE_MATTYPEa=/screens/media_book.gif
+IMAGE_MATTYPE2=/screens/media_ebook.gif
+IMAGE_MATTYPEb=/screens/media_archival.gif
+IMAGE_MATTYPEc=/screens/media_music.gif
+IMAGE_MATTYPEd=/screens/media_music.gif
+IMAGE_MATTYPEe=/screens/media_cartographic.gif
+IMAGE_MATTYPEf=/screens/media_cartographic.gif
+IMAGE_MATTYPEg=/screens/media_projectedmedia.gif
+IMAGE_MATTYPEi=/screens/media_nonmusicalsound.gif
+IMAGE_MATTYPEj=/screens/media_musicalsound.gif
+IMAGE_MATTYPEk=/screens/media_2dartwork.gif
+IMAGE_MATTYPEm=/screens/media_computerfile.gif
+IMAGE_MATTYPEo=/screens/media_kits.gif
+IMAGE_MATTYPEp=/screens/media_kits.gif
+IMAGE_MATTYPEr=/screens/media_3dartwork.gif
+IMAGE_MATTYPEt=/screens/media_manuscripts.gif
+
+# Location Link Codes
+LOC_tp7ii=http://library.truman.edu/locations/tp7ii.htm "target=_blank" 
+LOC_tp9ii=http://library.truman.edu/locations/tp9ii.htm "target=_blank" 
+LOC_tpa*=http://library.truman.edu/locations/tpa.htm "target=_blank" 
+LOC_tpcii=http://library.truman.edu/locations/tpcii.htm "target=_blank" 
+LOC_tpdhi=http://library.truman.edu/locations/tpdhi.htm "target=_blank" 
+LOC_tpdii=http://library.truman.edu/locations/tpdii.htm "target=_blank" 
+LOC_tpdmi=http://library.truman.edu/locations/tpdmi.htm "target=_blank" 
+LOC_tpeei=http://library.truman.edu/locations/tpeei.htm "target=_blank" 
+LOC_tpeni=http://library.truman.edu/locations/tpeni.htm "target=_blank" 
+LOC_tpf*=http://library.truman.edu/locations/tpf.htm "target=_blank" 
+LOC_tpgbi=http://library.truman.edu/locations/tpgbi.htm "target=_blank" 
+LOC_tpgii=http://library.truman.edu/locations/tpgii.htm "target=_blank" 
+LOC_tpgni=http://library.truman.edu/locations/tpgni.htm "target=_blank" 
+LOC_tpgoi=http://library.truman.edu/locations/tpgoi.htm "target=_blank" 
+LOC_tpj7i=http://library.truman.edu/locations/tpj7i.htm "target=_blank" 
+LOC_tpjii=http://library.truman.edu/locations/tpjii.htm "target=_blank" 
+LOC_tpjpi=http://library.truman.edu/locations/tpjpi.htm "target=_blank" 
+LOC_tpjri=http://library.truman.edu/locations/tpjri.htm "target=_blank" 
+LOC_tpm7i=http://library.truman.edu/locations/tpm7i.htm "target=_blank" 
+LOC_tpmai=http://library.truman.edu/locations/tpmai.htm "target=_blank" 
+LOC_tpmbi=http://library.truman.edu/locations/tpmbi.htm "target=_blank"
+LOC_tpmci=http://library.truman.edu/locations/tpmci.htm "target=_blank" 
+LOC_tpmdi=http://library.truman.edu/locations/tpmdi.htm "target=_blank" 
+LOC_tpmfi=http://library.truman.edu/locations/tpmfi.htm "target=_blank" 
+LOC_tpmgi=http://library.truman.edu/locations/tpmgi.htm "target=_blank" 
+LOC_tpmki=http://library.truman.edu/locations/tpmki.htm "target=_blank" 
+LOC_tpmli=http://library.truman.edu/locations/tpmli.htm "target=_blank" 
+LOC_tpmmi=http://library.truman.edu/locations/tpmmi.htm "target=_blank" 
+LOC_tpmri=http://library.truman.edu/locations/tpmri.htm "target=_blank" 
+LOC_tpmsi=http://library.truman.edu/locations/tpmsi.htm "target=_blank" 
+LOC_tpmti=http://library.truman.edu/locations/tpmti.htm "target=_blank" 
+LOC_tpmvi=http://library.truman.edu/locations/tpmvi.htm "target=_blank" 
+LOC_tpo*=http://library.truman.edu/locations/tpo.htm "target=_blank" 
+LOC_tppci=http://library.truman.edu/locations/tppci.htm "target=_blank" 
+LOC_tppii=http://library.truman.edu/locations/tppii.htm "target=_blank" 
+LOC_tppni=http://library.truman.edu/locations/tppni.htm "target=_blank" 
+LOC_tpr3i=http://library.truman.edu/locations/tpr3i.htm "target=_blank" 
+LOC_tprdi=http://library.truman.edu/locations/tprdi.htm "target=_blank" 
+LOC_tprii=http://library.truman.edu/locations/tprii.htm "target=_blank" 
+LOC_tps*=http://library.truman.edu/locations/tps.htm "target=_blank" 
+LOC_tpt*=http://library.truman.edu/locations/tpt.htm "target=_blank" 
+LOC_tpvii=http://library.truman.edu/locations/tpvii.htm "target=_blank"
+LOC_tpxii=http://library.truman.edu/locations/tpxii.htm "target=_blank" 
+LOC_tpyii=http://library.truman.edu/locations/tpyii.htm "target=_blank" 
+LOC_tpz*=http://library.truman.edu/locations/tpz.htm "target=_blank" 
+
+# added for Pro
+BROWSE50=false
+WEBPUBDEF=true
+TABLEPARAM_BRIEFCIT=true|border="0" cellpadding="3" width="100%"
+ICON_REL_GROUP_1=<img src="/screens/relevance5.gif" alt="">&nbsp;Most relevant titles&nbsp;
+ICON_REL_GROUP_2=<img src="/screens/relevance4.gif" alt="">&nbsp;Highly relevant titles&nbsp;
+ICON_REL_GROUP_3=<img src="/screens/relevance3.gif" alt="">&nbsp;Very relevant titles&nbsp;
+ICON_REL_GROUP_4=<img src="/screens/relevance2.gif" alt="">&nbsp;Relevant titles&nbsp;
+ICON_REL_GROUP_5=<img src="/screens/relevance1.gif" alt="">&nbsp;Other relevant titles&nbsp;
+#SPELLCHECK
+SPELLCHECK=<span class="spellcheckTool">Did you mean %a?</span> %s
+ICON_SPELLCHECK_MORE=<span class="spellcheckToolMore">more >></span>
+ICON_SPELLCHECK_SEARCH=Search
+ICON_BOOKCART2=<IMG SRC="/screens/bibexport.gif" ALT="Mark/Save Item" BORDER="0">
+ICON_BOOKCART6=<IMG SRC="/screens/bibexport.gif" ALT="Save to List" BORDER="0">
+ICON_BOOKCART_SAVED2=<IMG SRC="/screens/remove_s6.gif" ALT="Remove from List" BORDER="0">
+ICON_BOOKCART_SAVED6=<IMG SRC="/screens/remove_s6.gif" ALT="Remove from List" BORDER="0">
+ICON_SAVEALLPAGE6=<IMG SRC="/screens/saveAll_s6.gif" ALT="Save All to List" BORDER="0">
+ICON_856LINK2=<span class="856linkStyle">View Electronic Resource</span>
+
+BIBIMAGE=http://www.syndetics.com/index.aspx?isbn=%s/SC.GIF&client=trumanstateu&type=rn12|i|http://www.syndetics.com/index.aspx?isbn=%s/LC.GIF&client=trumanstateu&type=rn12
+BIBIMAGE_TEXT6=Click for larger image
+
+# Permanent Record Links
+ICON_RECORDLINK2=<div class="bibRecordLink" id="recordnum" align="left"><font size="-2" COLOR="#333333">&nbsp;Permanent record link: http://lance.missouri.edu:80%s</font></div>
+
+# Reset a PIN Options
+PIN_RESET=true
+PIN_RESET_EMAIL1=Request to reset your library PIN|cmcirc@lance.missouri.edu|circulation@culver.edu
+PIN_RESET_EMAIL2=Request to reset your library PIN|hcirc@lance.missouri.edu|HLGcirc@hlg.edu
+PIN_RESET_EMAIL3=Request to reset your library PIN|kcirc@lance.missouri.edu|circ@kcom.edu
+PIN_RESET_EMAIL4=Request to reset your library PIN|lstccirc@lance.missouri.edu|librarian@linnstate.edu
+PIN_RESET_EMAIL5=Request to reset your library PIN|mbcirc@lance.missouri.edu|library@hp9000.macc.cc.mo.us
+PIN_RESET_EMAIL6=Request to reset your library PIN|tcirct@lance.missouri.edu|circ@truman.edu
+PIN_RESET_EMAIL7=Request to reset your library PIN|tcirct@lance.missouri.edu|circ@truman.edu
+ICON_PIN_RESET=<strong>Forgot your PIN?</strong>

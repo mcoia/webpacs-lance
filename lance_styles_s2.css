@@ -1,0 +1,114 @@
+<!--
+
+body, div, span, p, form, .qs, h1, h2, h3, ul, ol, li, a, td ,th, select, input, textarea
+{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+tt, pre
+{
+	font-family: "Courier New", Courier, mono, monospace;
+}
+
+body, div, p, form, ul, ol, li, th, td, select, input, textarea
+{
+	font-size: 12px;
+	color: #000000;
+}
+
+h2
+{
+	font-size: 16px;
+	color: #993300;
+}
+
+h3
+{
+	font-size: 14px;
+	color: #993300;
+}
+
+.qs
+{
+	font-size: 10px;
+	color: #000000;
+}
+
+.blurb
+{
+	font-size: 11px;
+}
+
+.bibholdings
+{
+	border: 4px double silver;
+}
+
+hr
+{	
+	color: silver;
+}
+
+.navigationRow { text-align: center; margin: -3px; }
+.navigationRow select { text-align: center; }
+.bibSearchtool { text-align: center; }
+.browseSearchtoolMessage { text-align: center; }
+.bibPager { text-align: center; }
+
+TD.briefCitRow { background-color: #FFFFFF; color: #000000; font-weight: bold; width="75%"; border-bottom: 1px groove #0000FF; }
+TD.browseHeaderNum {  background-color: #FFFFFF; color: #000000; font-weight: bold}
+TD.browseHeaderMark {  background-color: #FFFFFF; color: #000000; font-weight: bold}
+TD.browseHeaderData {  background-color: #FFFFFF; color: #000000; font-weight: bold; vertical-align: bottom}
+TD.browseHeaderMedia {  background-color: #FFFFFF; color: #000000; font-weight: bold}
+TD.browseHeaderYear {  background-color: #FFFFFF; color: #000000; font-weight: bold; text-align: center}
+TD.browseHeaderEntries {  background-color: #FFFFFF; color: #000000; font-weight: bold}
+TD.browseHeaderRelevance {  background-color: #FFFFFF; color: #000000; font-weight: bold}
+
+TR.browseSuperEntry {  background-color: #FFFFFF; color: #000000}
+TR.browseSubEntry {  background-color: #FFFFFF; color: #000000}
+TR.browseEntry {  background-color: #FFFFFF; color: #000000}
+
+TD.browseEntryData { background-color: #FFFFFF; color: #000000; font-weight: bold}
+
+##### TD.bibItemsHeader { Location; Call Number; Status} #####
+
+TABLE.authTerm
+TR.authTerm { }
+TD.unauthTerm { }
+
+TABLE.bibResourceTable { }
+TD.bibResourceTable { }
+TR.bibResourceTableEntry { }
+TD.bibResourceTableEntry { }
+
+TABLE.patDisplayTable { border: 1px solid #000000; }
+TR.patDisplay { border: 1px solid #000000; }
+TD.patDisplayFunc { border: 1px solid #000000; }
+TD.patDisplayInfo { border: 1px solid #000000; }
+TD.patInfo { }
+TD.patImage { }
+
+TABLE.patFuncTable { border: 1px solid #000000; }
+TR.patFunc { border: 1px solid #000000; } 
+TD.patFuncBookDate { } 
+TD.patFuncBtns { } 
+TD.patFuncCallNo { } 
+TD.patFuncCancel { }
+TD.patFuncDate { } 
+TD.patFuncEntry { border: 1px solid #000000; }
+TD.patFuncFinesDetail { }
+TD.patFuncFinesDetailAmt { } 
+TD.patFuncFinesDetailDate { } 
+TD.patFuncFinesDetailDateLabel { } 
+TD.patFuncFinesDetailType { } 
+TD.patFuncFinesEntryDetail { border: 1px solid #000000; } 
+TD.patFuncFinesEntryTitle { } 
+TD.patFuncFinesTitle { border: 1px solid #000000; } 
+TD.patFuncFinesTotal { } 
+TD.patFuncFinesTotalAmt { }
+TD.patFuncFinesTotalLabel { }
+TD.patFuncHeaders { }
+TD.patFuncMark { }
+TD.patFuncModifyPatInfo { }
+
+-->
