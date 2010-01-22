@@ -376,3 +376,6 @@ PIN_RESET_EMAIL5=Request to reset your library PIN|mbcirc@lance.missouri.edu|lib
 PIN_RESET_EMAIL6=Request to reset your library PIN|tcirct@lance.missouri.edu|circ@truman.edu
 PIN_RESET_EMAIL7=Request to reset your library PIN|tcirct@lance.missouri.edu|circ@truman.edu
 ICON_PIN_RESET=<strong>Forgot your PIN?</strong>
+
+#Featured List
+FEATURED_LIST=08
