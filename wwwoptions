@@ -378,4 +378,4 @@ PIN_RESET_EMAIL7=Request to reset your library PIN|tcirct@lance.missouri.edu|cir
 ICON_PIN_RESET=<strong>Forgot your PIN?</strong>
 
 #Featured List
-FEATURED_LIST=80,81,82
+FEATURED_LIST=80,81,82|Featured Lists|Name|
