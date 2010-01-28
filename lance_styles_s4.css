@@ -120,7 +120,7 @@ TD.browseHeaderData {
 
 TD.browseHeaderMedia {  background-color: #FFFFFF; color: #000000; font-weight: bold}
 TD.browseHeaderYear {  background-color: #FFFFFF; color: #000000; font-weight: bold; text-align: center}
-TD.browseHeaderEntries {  background-color: #FFFFFF; color: #000000; font-weight: bold}
+TD.browseHeaderEntries {  background-color: #003bd1; color: #ffffff; font-size: 11px; font-weight: bold}
 TD.browseHeaderRelevance {  background-color: #FFFFFF; color: #000000; font-weight: bold}
 
 TR.browseSuperEntry {  background-color: #FFFFFF; color: #000000}
