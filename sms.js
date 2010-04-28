@@ -35,9 +35,11 @@ try {
 	out += "<option value=cingular>Cingular/AT&amp;T</option>";
 	out += "<option value=cricket>Cricket</option>";
 	out += "<option value=nextel>Nextel</option>";
+	out += "<option value=northwest>Northwest Cellular</option>";
 	out += "<option value=qwest>Qwest</option>";
 	out += "<option value=sprint>Sprint</option>";
 	out += "<option value=tmobile>T-Mobile</option>";
+	out += "<option value=uscellular>US Cellular</option>";
 	out += "<option value=verizon>Verizon</option>";
 	out += "<option value=virgin>Virgin</option>";
  out += "</select></p>";
@@ -64,7 +66,7 @@ try {
  }	
 	// close the list and add note
    out += "</ol></p>";
-   out += "<p><strong>NOTE:</strong> Carrier charges may apply if you cell phone service plan does not include free text messaging.</p>";
+   out += "<p><strong>NOTE:</strong> Carrier charges may apply if your cell phone service plan does not include free text messaging.</p>";
    // add buttons at bottom.  note the return false which stops the forms from actually doing anything
    out += "<p><a href='#here' id='sendmessage' onClick='sendSMS();return false;'><img src='/screens/smssend.gif' border=0></a> <a href='#here' id='clearmessage' onClick='clearsms();return false;'><img src='/screens/smsclear.gif' border=0></a></p>";
 
