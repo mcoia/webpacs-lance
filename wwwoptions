@@ -174,9 +174,9 @@ EXPORT_SELECT_TABLE=Sendto:browser,email,local|Format:brief,full,procite,endnote
 # |Format:brief,full,procite,endnote=
 
 # Passthrough searching to MOBIUS
-INNREACH=<br><img src="/screens/srchmobi.gif" border=0 alt="Search MOBIUS Union Catalog">@mobius.umsystem.edu(X=X*;Y=Y*;a=a;c=c;d=d;e=e;g=g;i=i;j=m;o=o;s=s;t=t)
+INNREACH=<br><img src="/screens/srchmobi.gif" border=0 alt="Search MOBIUS Union Catalog">@mobius.umsystem.edu(X=X*;Y=Y*;a=a;c=c;d=d;e=e;g=g;i=i;j=m;m=h;o=o;s=s;t=t)
 Search MOBIUS Union Catalog">@mobius.missouri.edu(X=X*;Y=Y*;a=a;c=c;d=d;
-e=e;g=g;i=i;j=m;o=o;s=s;t=t)
+e=e;g=g;i=i;j=m;m=h;o=o;s=s;t=t)
 
 # Patron Record Options
 FRAMEURL_PAT=50
