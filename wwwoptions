@@ -386,3 +386,6 @@ TABLEPARAM_BIB_ITEMS=id='bib_items'  width="100%" border="3" cellspacing="1"
 
 #Reserves Options
 RSRV_ITEMTYPE=t
+
+#My Lists
+MY_LISTS=t
