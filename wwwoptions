@@ -383,6 +383,7 @@ FEATURED_LIST=80,81,82|Featured Lists|Name|
 #Record Display Options
 TABLEPARAM_BIB_DETAIL=id='bib_detail' width="100%" border="0" cellspacing="1"
 TABLEPARAM_BIB_ITEMS=id='bib_items'  width="100%" border="3" cellspacing="1"
+ITEMS_MSG_BRIEF=Click to see additional copies/volumes of this title.
 
 #Reserves Options
 RSRV_ITEMTYPE=t
