@@ -178,7 +178,8 @@ TD.patDisplayFunc { border: 1px solid #000000; }
 TD.patDisplayInfo { border: 1px solid #000000; }
 TD.patInfo { }
 TD.patImage { }
-
+
+.patFunc{border-top:0;}
 TABLE.patFuncTable { border: 1px solid #000000; }
 TR.patFunc { border: 1px solid #000000; } 
 TD.patFuncBookDate { } 
