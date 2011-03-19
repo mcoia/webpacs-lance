@@ -217,8 +217,8 @@ NO_REVERIFY=req,acq,book,media
 ICON_READING_HISTORY_OPTIN=Opt In
 ICON_READING_HISTORY_OPTOUT=Opt Out
 ICON_READING_HISTORY=My Reading History
-ICON_PAT_DELETE_MARKED=Delete Marked
-ICON_PAT_DELETE_ALL=Delete All
+ICON_PAT_DELETE_MARKED=<img src="/screens/b_deletemarked.gif" alt="Delete Marked" border="0" />
+ICON_PAT_DELETE_ALL=<img src="/screens/b_deleteall.gif" alt="Delete All" border="0" />
 
 # Z39.50 Options
 Z39BROADCAST=Z39.50 Broadcast Search:Please select the Z39.50 servers to which
@@ -390,4 +390,26 @@ RSRV_ITEMTYPE=t
 
 #My Lists
 MY_LISTS=t
+ICON_MYLISTS=My Lists
+ICON_MYLISTS_EXPORT=<img src="/screens/b_exportmylist.gif" alt="Export My List" border="0" />
+ICON_MYLISTS_MOVE=<img src="/screens/b_movemarked.gif" alt="Move Marked" border="0" />
+ICON_MYLISTS_REQUEST=<img src="/screens/b_request.gif" alt="Request" border="0" />
+ICON_MYLISTS_REMOVE_DUPLICATES=<img src="/screens/b_duplicates.gif" alt="Remove Duplicates" border="0" />
+ICON_MYLISTS_RENAME=<img src="/screens/b_changename.gif" alt="Change Name" border="0" />
+ICON_MYLISTS_SAVE=<img src="/screens/b_savelist.gif" alt="Save to My Lists" border="0" />
+ICON_MYLISTS_SAVE_TO_LIST=<img src="/screens/b_savelist.gif" alt="Save to My Lists" border="0" />
+ICON_MYLISTS_BRIEF=<img src="/screens/b_savelist.gif" alt="Save to My Lists" border="0" />
+ICON_BACK_TO_MYLISTS=<img src="/screens/b_backmylists.gif" alt="Back to My Lists" border="0" />
+ICON_MYLISTS_RECORD=<img src="/screens/b_savelist.gif" alt="Save to My Lists" border="0" />
+
+#Search Results
+ICON_SAVEMARKED=<img src="/screens/b_savemarked.gif" alt="Save Marked" border="0" />
+ICON_SAVEALLPAGE=<img src="/screens/b_saveall.gif" alt="Save All On Page" border="0" />
+
+BUT_SUBMIT=/screens/b_submit.gif
+ICON_SUBMIT=<img src="/screens/b_submit.gif" alt="Submit" border="0" />
+ICON_BUT_PAT_SUBMIT=<img src="/screens/b_submit.gif" alt="Submit" border="0" />
+ICON_BUT_PAT_SUBMIT=/screens/b_submit.gif
+ICON_BUT_SUBMIT=<img src="/screens/b_submit.gif" alt="Submit" border="0" />
+
 
