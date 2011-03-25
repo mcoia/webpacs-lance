@@ -353,10 +353,10 @@ ICON_REL_GROUP_5=<img src="/screens/relevance1.gif" alt="">&nbsp;Other relevant 
 SPELLCHECK=<span class="spellcheckTool">Did you mean %a?</span> %s
 ICON_SPELLCHECK_MORE=<span class="spellcheckToolMore">more >></span>
 ICON_SPELLCHECK_SEARCH=Search
-ICON_BOOKCART2=<IMG SRC="/screens/bibexport.gif" ALT="Mark/Save Item" BORDER="0">
-ICON_BOOKCART6=<IMG SRC="/screens/bibexport.gif" ALT="Save to List" BORDER="0">
-ICON_BOOKCART_SAVED2=<IMG SRC="/screens/remove_s6.gif" ALT="Remove from List" BORDER="0">
-ICON_BOOKCART_SAVED6=<IMG SRC="/screens/remove_s6.gif" ALT="Remove from List" BORDER="0">
+ICON_BOOKCART=<IMG SRC="/screens/bibexport.gif" ALT="Mark/Save Item" BORDER="0">
+#ICON_BOOKCART6=<IMG SRC="/screens/bibexport.gif" ALT="Save to List" BORDER="0">
+ICON_BOOKCART_SAVED=<IMG SRC="/screens/remove_s6.gif" ALT="Remove from List" BORDER="0">
+#ICON_BOOKCART_SAVED6=<IMG SRC="/screens/remove_s6.gif" ALT="Remove from List" BORDER="0">
 ICON_SAVEALLPAGE6=<IMG SRC="/screens/saveAll_s6.gif" ALT="Save All to List" BORDER="0">
 ICON_856LINK2=<span class="856linkStyle">View Electronic Resource</span>
 
@@ -398,6 +398,8 @@ ICON_MYLISTS_REMOVE_DUPLICATES=<img src="/screens/b_duplicates.gif" alt="Remove 
 ICON_MYLISTS_RENAME=<img src="/screens/b_changename.gif" alt="Change Name" border="0" />
 ICON_MYLISTS_SAVE=<img src="/screens/b_savelist.gif" alt="Save to My Lists" border="0" />
 ICON_MYLISTS_SAVE_TO_LIST=<img src="/screens/b_savelist.gif" alt="Save to My Lists" border="0" />
+ICON_MYLISTS_SAVE_TO_LIST2=<span></span>
+ICON_MYLISTS_SAVE_TO_LIST6=<span></span>
 ICON_MYLISTS_BRIEF=<img src="/screens/b_savelist.gif" alt="Save to My Lists" border="0" />
 ICON_BACK_TO_MYLISTS=<img src="/screens/b_backmylists.gif" alt="Back to My Lists" border="0" />
 ICON_MYLISTS_RECORD=<img src="/screens/b_savelist.gif" alt="Save to My Lists" border="0" />
