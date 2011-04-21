@@ -154,6 +154,7 @@ PATRON_MSG=y|Message from the library:
 PSTARTOVER=/search
 #RECORDFRAME <do not use>
 REQUEST=Request this title|denyiflocalavail|ask|yes
+REQUEST_MULTI=Request all|denyiflocalavail|ask|yes
 REQUEST_INSTRUCTION=Any special instructions?
 SHOWOREC=no_cdate
 SORT_ITEMS=true
@@ -268,7 +269,7 @@ BUT_SHOWSIM=/screens/showsimilar.gif
 BUT_STAFF=/screens/staff.gif
 BUT_STARTOVER=/screens/startover.gif
 BUT_UNLIMAVAIL=/screens/unlimavail.gif
-BUT_VIEW_SAVES=/screens/b_bookcart.gif
+ICON_BUT_VIEW_SAVES=<img src="/screens/b_viewsaved.gif" alt="View Saved Records" border="0" />
 BUT_WORDSRCH=/screens/b_wordsrch.gif
 BUT_Z39_ANOTHER=/screens/z39ano.gif
 BUT_Z39_REQUEST=/screens/request.gif
@@ -353,10 +354,10 @@ ICON_REL_GROUP_5=<img src="/screens/relevance1.gif" alt="">&nbsp;Other relevant 
 SPELLCHECK=<span class="spellcheckTool">Did you mean %a?</span> %s
 ICON_SPELLCHECK_MORE=<span class="spellcheckToolMore">more >></span>
 ICON_SPELLCHECK_SEARCH=Search
-ICON_BOOKCART=<IMG SRC="/screens/bibexport.gif" ALT="Mark/Save Item" BORDER="0">
-#ICON_BOOKCART6=<IMG SRC="/screens/bibexport.gif" ALT="Save to List" BORDER="0">
-ICON_BOOKCART_SAVED=<IMG SRC="/screens/remove_s6.gif" ALT="Remove from List" BORDER="0">
-#ICON_BOOKCART_SAVED6=<IMG SRC="/screens/remove_s6.gif" ALT="Remove from List" BORDER="0">
+ICON_BOOKCART2=<IMG SRC="/screens/bibexport.gif" ALT="Mark/Save Item" BORDER="0">
+ICON_BOOKCART6=<IMG SRC="/screens/bibexport.gif" ALT="Save to List" BORDER="0">
+ICON_BOOKCART_SAVED2=<IMG SRC="/screens/remove_s6.gif" ALT="Remove from List" BORDER="0">
+ICON_BOOKCART_SAVED6=<IMG SRC="/screens/remove_s6.gif" ALT="Remove from List" BORDER="0">
 ICON_SAVEALLPAGE6=<IMG SRC="/screens/saveAll_s6.gif" ALT="Save All to List" BORDER="0">
 ICON_856LINK2=<span class="856linkStyle">View Electronic Resource</span>
 
@@ -396,7 +397,7 @@ ICON_MYLISTS_MOVE=<img src="/screens/b_movemarked.gif" alt="Move Marked" border=
 ICON_MYLISTS_REQUEST=<img src="/screens/b_request.gif" alt="Request" border="0" />
 ICON_MYLISTS_REMOVE_DUPLICATES=<img src="/screens/b_duplicates.gif" alt="Remove Duplicates" border="0" />
 ICON_MYLISTS_RENAME=<img src="/screens/b_changename.gif" alt="Change Name" border="0" />
-ICON_MYLISTS_SAVE=<img src="/screens/b_savelist.gif" alt="Save to My Lists" border="0" />
+#ICON_MYLISTS_SAVE=<img src="/screens/b_savelist.gif" alt="Save to My Lists" border="0" />
 ICON_MYLISTS_SAVE_TO_LIST=<img src="/screens/b_savelist.gif" alt="Save to My Lists" border="0" />
 ICON_MYLISTS_SAVE_TO_LIST2=<span></span>
 ICON_MYLISTS_SAVE_TO_LIST6=<span></span>
