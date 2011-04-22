@@ -131,4 +131,6 @@ TD.patFuncModifyPatInfo { }
 
 #sms {font-size:70%}
 
-#smsfeatures {margin:1em; text-align: center;}
+#smsfeatures {margin:1em; text-align: center;}
+
+.mylistsSelect {display:none;}
