@@ -269,7 +269,7 @@ BUT_SHOWSIM=/screens/showsimilar.gif
 BUT_STAFF=/screens/staff.gif
 BUT_STARTOVER=/screens/startover.gif
 BUT_UNLIMAVAIL=/screens/unlimavail.gif
-BUT_VIEW_SAVES=/screens/b_bookcart.gif
+ICON_BUT_VIEW_SAVES=<img src="/screens/b_viewsaved.gif" alt="View Saved Records" border="0" />
 BUT_WORDSRCH=/screens/b_wordsrch.gif
 BUT_Z39_ANOTHER=/screens/z39ano.gif
 BUT_Z39_REQUEST=/screens/request.gif
@@ -397,7 +397,7 @@ ICON_MYLISTS_MOVE=<img src="/screens/b_movemarked.gif" alt="Move Marked" border=
 ICON_MYLISTS_REQUEST=<img src="/screens/b_request.gif" alt="Request" border="0" />
 ICON_MYLISTS_REMOVE_DUPLICATES=<img src="/screens/b_duplicates.gif" alt="Remove Duplicates" border="0" />
 ICON_MYLISTS_RENAME=<img src="/screens/b_changename.gif" alt="Change Name" border="0" />
-ICON_MYLISTS_SAVE=<img src="/screens/b_savelist.gif" alt="Save to My Lists" border="0" />
+#ICON_MYLISTS_SAVE=<img src="/screens/b_savelist.gif" alt="Save to My Lists" border="0" />
 ICON_MYLISTS_SAVE_TO_LIST=<img src="/screens/b_savelist.gif" alt="Save to My Lists" border="0" />
 ICON_MYLISTS_SAVE_TO_LIST2=<span></span>
 ICON_MYLISTS_SAVE_TO_LIST6=<span></span>
