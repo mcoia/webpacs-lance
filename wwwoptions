@@ -397,7 +397,7 @@ ICON_MYLISTS_MOVE=<img src="/screens/b_movemarked.gif" alt="Move Marked" border=
 ICON_MYLISTS_REQUEST=<img src="/screens/b_request.gif" alt="Request" border="0" />
 ICON_MYLISTS_REMOVE_DUPLICATES=<img src="/screens/b_duplicates.gif" alt="Remove Duplicates" border="0" />
 ICON_MYLISTS_RENAME=<img src="/screens/b_changename.gif" alt="Change Name" border="0" />
-#ICON_MYLISTS_SAVE=<img src="/screens/b_savelist.gif" alt="Save to My Lists" border="0" />
+ICON_MYLISTS_SAVE=<img src="/screens/b_savelist.gif" alt="Save to My Lists" border="0" />
 ICON_MYLISTS_SAVE_TO_LIST=<img src="/screens/b_savelist.gif" alt="Save to My Lists" border="0" />
 ICON_MYLISTS_SAVE_TO_LIST2=<span></span>
 ICON_MYLISTS_SAVE_TO_LIST6=<span></span>
