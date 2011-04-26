@@ -240,6 +240,7 @@ BUT_CLOSEWN=/screens/ret2cat.gif
 BUT_EMAIL=/screens/email.gif 
 # BUT_ENCYCPD=/screens/b_encycpd.gif
 BUT_EXPORT_VIEW_SAVES=/screens/b_exportlist.gif
+ICON_BUT_EXPORT_MULTI=<img src="/screens/b_exportrecords.gif" alt="Export Records" border="0" />
 BUT_EXTENDED=/screens/b_extended.gif
 BUT_FULL_TEXT=/sceens/b_fulltxt.gif
 BUT_ILL_CANCEL=/screens/illcan.gif
@@ -261,6 +262,7 @@ BUT_PREVSCRN=/screens/prevscrn.gif
 BUT_PUBLIC=/screens/public.gif
 BUT_REGULAR_DISPLAY=/screens/b_regdisp.gif
 BUT_REQUEST=/screens/b_request.gif
+ICON_BUT_REQUEST_MULTI=<img src="/screens/b_requestrecords.gif" alt="Request Records" border="0" />
 BUT_RET2CAT=/screens/ret2cat.gif
 BUT_RET2CRS=/screens/ret2crs.gif
 BUT_RET2FEAT=/screens/b_ret2feat.gif
