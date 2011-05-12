@@ -238,7 +238,7 @@ BUT_CLOSEWN=/screens/ret2cat.gif
 BUT_EMAIL=/screens/email.gif 
 # BUT_ENCYCPD=/screens/b_encycpd.gif
 BUT_EXPORT_VIEW_SAVES=/screens/b_exportlist.gif
-ICON_BUT_EXPORT_MULTI=<img src="/screens/b_exportrecords.gif" alt="Export Records" border="0" />
+ICON_BUT_EXPORT_MULTI=<img src="/screens/b_emailprint.gif" alt="Export Records" border="0" />
 BUT_EXTENDED=/screens/b_extended.gif
 BUT_FULL_TEXT=/sceens/b_fulltxt.gif
 BUT_ILL_CANCEL=/screens/illcan.gif
@@ -358,8 +358,7 @@ ICON_SPELLCHECK_MORE=<span class="spellcheckToolMore">more >></span>
 ICON_SPELLCHECK_SEARCH=Search
 ICON_BOOKCART2=<IMG SRC="/screens/bibexport.gif" ALT="Mark/Save Item" BORDER="0">
 ICON_BOOKCART6=<IMG SRC="/screens/bibexport.gif" ALT="Save to List" BORDER="0">
-ICON_BOOKCART_SAVED2=<IMG SRC="/screens/remove_s6.gif" ALT="Remove from List" BORDER="0">
-ICON_BOOKCART_SAVED6=<IMG SRC="/screens/remove_s6.gif" ALT="Remove from List" BORDER="0">
+ICON_BOOKCART_SAVED=<img src="/screens/b_removesaved.gif" alt="Remove Saved" border="0" />
 ICON_SAVEALLPAGE6=<IMG SRC="/screens/saveAll_s6.gif" ALT="Save All to List" BORDER="0">
 ICON_856LINK2=<span class="856linkStyle">View Electronic Resource</span>
 
