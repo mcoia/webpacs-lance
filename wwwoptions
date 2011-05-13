@@ -410,10 +410,7 @@ ICON_MYLISTS_RECORD=<img src="/screens/b_savelist.gif" alt="Save to My Lists" bo
 ICON_SAVEMARKED=<img src="/screens/b_savemarked.gif" alt="Save Marked" border="0" />
 ICON_SAVEALLPAGE=<img src="/screens/b_saveall.gif" alt="Save All On Page" border="0" />
 
-BUT_SUBMIT=/screens/b_submit.gif
-ICON_SUBMIT=<img src="/screens/b_submit.gif" alt="Submit" border="0" />
-ICON_BUT_PAT_SUBMIT=<img src="/screens/b_submit.gif" alt="Submit" border="0" />
-ICON_BUT_PAT_SUBMIT=/screens/b_submit.gif
 ICON_BUT_SUBMIT=<img src="/screens/b_submit.gif" alt="Submit" border="0" />
+ICON_BUT_PAT_SUBMIT=<img src="/screens/b_submit.gif" alt="Submit" border="0" />
 
 
