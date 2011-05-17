@@ -132,8 +132,6 @@ DISPLAY_856=3z
 DISPLAY_SRCH=dmj
 # DROP_DOWN=tasdmjcefgi
 DROP_DOWN=taYsdmjcefgi
-ICON_BUT_EXPORT_MULTI=<img src="/screens/b_exportsaved.gif" alt="Export Saved Records" border="0" />
-ICON_BUT_REQUEST_MULTI=<img src="/screens/b_requestmarked.gif" alt="Request Marked Records" border="0" />
 EXTENDED=1
 FORM_FOCUS=true
 FRAMEURL=0
