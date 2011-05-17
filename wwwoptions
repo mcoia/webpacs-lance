@@ -238,6 +238,7 @@ BUT_CLOSEWN=/screens/ret2cat.gif
 BUT_EMAIL=/screens/email.gif 
 # BUT_ENCYCPD=/screens/b_encycpd.gif
 BUT_EXPORT_VIEW_SAVES=/screens/b_exportlist.gif
+ICON_BUT_EXPORT_MULTI=<img src="/screens/b_emailprint.gif" alt="Export Records" border="0" />
 BUT_EXTENDED=/screens/b_extended.gif
 BUT_FULL_TEXT=/sceens/b_fulltxt.gif
 BUT_ILL_CANCEL=/screens/illcan.gif
@@ -259,6 +260,7 @@ BUT_PREVSCRN=/screens/prevscrn.gif
 BUT_PUBLIC=/screens/public.gif
 BUT_REGULAR_DISPLAY=/screens/b_regdisp.gif
 BUT_REQUEST=/screens/b_request.gif
+ICON_BUT_REQUEST_MULTI=<img src="/screens/b_requestrecords.gif" alt="Request Records" border="0" />
 BUT_RET2CAT=/screens/ret2cat.gif
 BUT_RET2CRS=/screens/ret2crs.gif
 BUT_RET2FEAT=/screens/b_ret2feat.gif
@@ -356,8 +358,7 @@ ICON_SPELLCHECK_MORE=<span class="spellcheckToolMore">more >></span>
 ICON_SPELLCHECK_SEARCH=Search
 ICON_BOOKCART2=<IMG SRC="/screens/bibexport.gif" ALT="Mark/Save Item" BORDER="0">
 ICON_BOOKCART6=<IMG SRC="/screens/bibexport.gif" ALT="Save to List" BORDER="0">
-ICON_BOOKCART_SAVED2=<IMG SRC="/screens/remove_s6.gif" ALT="Remove from List" BORDER="0">
-ICON_BOOKCART_SAVED6=<IMG SRC="/screens/remove_s6.gif" ALT="Remove from List" BORDER="0">
+ICON_BOOKCART_SAVED=<img src="/screens/b_removesaved.gif" alt="Remove Saved" border="0" />
 ICON_SAVEALLPAGE6=<IMG SRC="/screens/saveAll_s6.gif" ALT="Save All to List" BORDER="0">
 ICON_856LINK2=<span class="856linkStyle">View Electronic Resource</span>
 
@@ -397,7 +398,7 @@ ICON_MYLISTS_MOVE=<img src="/screens/b_movemarked.gif" alt="Move Marked" border=
 ICON_MYLISTS_REQUEST=<img src="/screens/b_request.gif" alt="Request" border="0" />
 ICON_MYLISTS_REMOVE_DUPLICATES=<img src="/screens/b_duplicates.gif" alt="Remove Duplicates" border="0" />
 ICON_MYLISTS_RENAME=<img src="/screens/b_changename.gif" alt="Change Name" border="0" />
-#ICON_MYLISTS_SAVE=<img src="/screens/b_savelist.gif" alt="Save to My Lists" border="0" />
+ICON_MYLISTS_SAVE=<img src="/screens/b_savelist.gif" alt="Save to My Lists" border="0" />
 ICON_MYLISTS_SAVE_TO_LIST=<img src="/screens/b_savelist.gif" alt="Save to My Lists" border="0" />
 ICON_MYLISTS_SAVE_TO_LIST2=<span></span>
 ICON_MYLISTS_SAVE_TO_LIST6=<span></span>
@@ -409,10 +410,7 @@ ICON_MYLISTS_RECORD=<img src="/screens/b_savelist.gif" alt="Save to My Lists" bo
 ICON_SAVEMARKED=<img src="/screens/b_savemarked.gif" alt="Save Marked" border="0" />
 ICON_SAVEALLPAGE=<img src="/screens/b_saveall.gif" alt="Save All On Page" border="0" />
 
-BUT_SUBMIT=/screens/b_submit.gif
-ICON_SUBMIT=<img src="/screens/b_submit.gif" alt="Submit" border="0" />
-ICON_BUT_PAT_SUBMIT=<img src="/screens/b_submit.gif" alt="Submit" border="0" />
-ICON_BUT_PAT_SUBMIT=/screens/b_submit.gif
 ICON_BUT_SUBMIT=<img src="/screens/b_submit.gif" alt="Submit" border="0" />
+ICON_BUT_PAT_SUBMIT=<img src="/screens/b_submit.gif" alt="Submit" border="0" />
 
 
