@@ -36,8 +36,16 @@ b|T|||||
 b|r|30[0-9]|-6|Description||b|
 b|r|310|-6|Frequency||b|
 b|r|321|-6|Frequency||b|
+b|r|336|-b268|Descript.||b|
+b|r|337|-b268|Descript.||b|
+b|r|338|-b268|Descript.||b|
 b|r|350|-6|||b|
 b|r|362|-6|Pub History||b|
+b|r|380|-0268|Descript.||b|
+b|r|381|-uv0268|Descript.||b|
+b|r|382|-0268|Descript.||b|
+b|r|383|-68|Descript.||b|
+b|r|384|-68|Descript.||b|
 b|r||-6|Descript.||b|
 b|s|4901|-6|||b|
 b|s||-6|Series||b|
