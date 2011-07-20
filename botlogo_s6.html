@@ -1,0 +1,134 @@
+<!-- begin botlogo.html file -->
+<!-- Rel 2009B Example Set -->
+<!-- Updated: 05 July 2011 -->
+</div><!-- pageContent  -->
+<div style="clear:both"></div>
+<div id="botlogo">
+<p><strong>LANCE</strong> includes the collections of the following Missouri libraries:</p>
+<p><a href="/search~S1/">Culver-Stockton College</a> &middot;
+   <a href="/search~S2/">Hannibal-LaGrange University</a>
+     </p><p>
+   <a href="/search~S3/">Kirksville College of Osteopathic Medicine</a> &middot;
+   <a href="/search~S4/">Linn State Technical College</a><br>
+     </p><p>
+   <a href="/search~S5/">Moberly Area Community College</a> &middot;
+   <a href="/search~S6/">Truman State University</a></p>
+</div>
+</div><!-- fullPage -->
+</div><!-- min-height -->
+<script type="text/javascript"> 
+<!--
+// Assign a className to style the user's terms in the header;
+var tableList = document.getElementsByTagName("table");
+browseScreenList =  new Array();
+for (var table = 0; table < tableList.length; table++) {
+    // Get the class
+	classAttrib = tableList[table].getAttribute("class");
+	// Hack for IE
+	if(classAttrib == null) { classAttrib = tableList[table].getAttribute("className") }
+	// Store the table if it holds the label for the OCLC #
+	if(classAttrib == "browseScreen")  {
+		var chgTitle = 1;
+	}
+    }
+var rrClass = "rrUserQuery";
+ 
+// If you also want to put the user's terms in the browser title bar, change these 3 variables;
+var lib_or_cat_name = "Arthur Catalog - "; // This is your library name or catalog name, and should match whatever currently appears in your browser's title bar;
+var title_suff = " search results for " // This text will appear in the title bar after the user's terms;
+ 
+// No need to edit beyond here;
+if (!document.getElementsByName('searcharg')[0]) {}
+else {
+	var rrForm = document.getElementsByName('searcharg')[0];
+	var termArr = [];
+	termArr[0] = "rrTerm1";
+	termArr[1] = "rrTerm2";
+	termArr[2] = "rrTerm3";
+	termArr[3] = "rrTerm4";
+	termArr[4] = "rrTerm5";
+	for (var i=0; i<3; i++) {
+		var termID = document.getElementById(termArr[i]);
+		if (!termID) {}
+		else {
+			termID.innerHTML = rrForm.value;
+			termID.className = rrClass;
+		}
+	}
+	for (var i=3; i<termArr.length; i++) {
+		var termID = document.getElementById(termArr[i]);
+		if (!termID) {}
+		else {
+			newval = rrForm.value.replace(/^\s+|\s+$/g,"");
+			newval = newval.replace(/\s/g," AND ");
+			termID.innerHTML = newval;
+			termID.className = rrClass;
+		}
+	}
+if (chgTitle == 1) { document.title = lib_or_cat_name + title_suff + "'" + rrForm.value + "'"; }
+}
+//-->
+</script> 
+<!-- end botlogo.html file -->
+
+-->
+
+<!--Begin botlogo file-->
+
+<br />
+
+<CENTER>
+<table width="570" border="0" cellspacing="0" cellpadding="2">
+    <tr valign="top" bgcolor="#032585"> 
+      <td><font color="#FFFFFF" face="Arial, Helvetica, sans-serif"><b>Other Options </b></font></td>
+    </tr>
+</table>
+ 
+<table border="0" width="628">
+  <tr>
+    <td width="22"></td>
+    <td width="431">
+ 
+<p><a href=/patroninfo><b><font size="2" face="Verdana">VIEW YOUR LIBRARY
+ACCOUNT</font></b></a><i>&nbsp; renew items, view your holds, view other items related
+to your account...</i>
+ 
+<p><b><font face="Verdana" size="2"><A HREF="/screens/faq.html">FAQ</a></font></b> - <i>How
+do I.</i>..
+    </td>
+    <td width="155"></td>
+  </tr>
+</table>
+          </td>
+        <tr>
+          <td width="100%"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<table border="0" cellpadding="6" cellspacing="0">
+    <tr valign="top"> 
+      <td>&nbsp;</td>
+    </tr>
+    <tr valign="top"> 
+      <td align="center"><font color="#023585" face="Verdana" size="-1"><b>Arthur &middot; </b>a MOBIUS Library Catalog</font></td>
+    </tr>
+    <tr valign="top"> 
+            
+<td align="center"> <font face="Verdana" size="-2"> 
+        <a href="http://mobius.umsystem.edu/search/">MOBIUS</a> &middot; <a href="http://lance.mobius.umsystem.edu/search~">Arthur 
+        Catalog</a><br />
+        <a href="http://arthur.missouri.edu/search~S2">Columbia College</a> 
+        &middot; <a href="http://arthur.missouri.edu/search~S1">Lincoln University</a><br />
+        <a href="http://arthur.missouri.edu/search~S6">Missouri State Library</a> 
+		&middot; <a href="http://arthur.missouri.edu/search~S7">MoDOT Library</a><br /> 
+         <a href="http://arthur.missouri.edu/search~S3">Stephens College</a>
+		&middot; <a href="http://arthur.missouri.edu/search~S4">Westminster College</a><br />
+		<a href="http://arthur.missouri.edu/search~S5">William Woods University</a></font></td>     </tr>
+</table>
+
+</CENTER>   
+
+<!--End botlogo file-->
