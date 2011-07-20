@@ -87,6 +87,7 @@ ASSEARCH=1
 # General Display and Logging Options
 BODYPARAM=BGCOLOR=#ffffff LINK=#0000FF VLINK=#0000FF
 BOTLOGO=@screens/botlogo.html
+BOTLOGO6=@screens/botlogo_s6.html
 CLEAR_PRIVATE_INFO=true
 STATGROUP=login
 TIMEOUT=300;URL=/search/
