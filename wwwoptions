@@ -89,6 +89,7 @@ BODYPARAM=BGCOLOR=#ffffff LINK=#0000FF VLINK=#0000FF
 BOTLOGO=@screens/botlogo.html
 BOTLOGO6=@screens/botlogo_s6.html
 CLEAR_PRIVATE_INFO=true
+INSERTTAG_HTML=<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html lang="en">
 STATGROUP=login
 TIMEOUT=300;URL=/search/
 TOPLOGO=@screens/toplogo.html
