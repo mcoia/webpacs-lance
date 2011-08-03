@@ -73,7 +73,11 @@ startTimeout(600000, "/");
 <!--{DOCDATE}-->
 </div>
 <div class="formEntryArea">
-<!--{scope}-->
+<table><tr>
+<td><label for="searchscope">Location:</label></td>
+<td>
+ <!--{scope}-->
+</td></tr></table>
 </div>
 <div class="formEntryArea" id="form3PartAdvLimitSort">
 <!--{sort}-->
@@ -90,8 +94,8 @@ startTimeout(600000, "/");
 <input type="hidden" name="endLimit" >
 </div> <!-- formLeft -->
 
-<div class="formRight">
-<table class="tipsTable">
+<div class="formLeft">
+<table class="tipsTable" border="1">
 <caption>Search Tips</caption>
         <tr> 
             <th colspan=2 bgcolor=#cccccc> Search Tips </th>
@@ -137,7 +141,7 @@ startTimeout(600000, "/");
         </tr>
 
 </table>
-</div> <!-- formRight -->
+</div> <!-- formLeft -->
 <div class="clear"></div>
 </div> <!-- form3PartBelow -->
 
