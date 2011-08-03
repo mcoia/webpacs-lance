@@ -303,7 +303,7 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 .briefcitBookcartMark {  }
 
-.briefcitCell { background:#FFFFFF; border-bottom:1px solid #ECECEC; font-size:.9187em; }
+.briefcitCell { background:#FFFFFF; border-top:1px solid #000000; font-size:.9187em; }
 
 .briefcitClear { clear:both; }
 
@@ -321,7 +321,7 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 .briefcitResourceLeft { margin-bottom:20px; }
 
-.briefcitItems  { border-top:1px solid #ECECEC; clear:both; margin:8px 0 8px 0; padding-left:10px; width:90%; }
+.briefcitItems  { border-top:1px solid #000000; clear:both; margin:8px 0 8px 0; padding-left:10px; width:90%; }
 
 .briefcitItems em { font-size:.9em; }
 
@@ -329,7 +329,7 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 .briefcitItems th { border:0; color:#767C70; font-size:.75em; padding:0; text-align:left; }
 
-.briefcitItems td { border-top:1px solid #ECECEC; }
+.briefcitItems td { border-top:1px solid #000000; }
 
 .briefcitItemsHeader { float:left; margin-right:15px; }
 
