@@ -3,6 +3,10 @@
 <!-- Rel 2009B Example Set -->
 <!-- Updated: 05 July 2011 -->
 <head>
+<link rel="stylesheet" type="text/css" href="/scripts/ProStyles.css" />
+<link rel="stylesheet" type="text/css" href="/screens/lance_styles_s6.css" />
+<script language="JavaScript" type="text/javascript" src="/scripts/elcontent.js"></script>
+<script language="JavaScript" type="text/javascript" src="/scripts/common.js"></script>
 <title>LANCE Catalog – Truman State University</title>
 <meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
 <link rel="stylesheet" type="text/css" href="/screens/styles_print_s6.css" media="print">
@@ -32,61 +36,72 @@ obj.submit();
 </head>
 <body>
 <!--{toplogo}-->
-<div class="miscButtons">
+  <div class="miscButtons">
 <!--{logout}-->
-</div>
+  </div>
 
-<div class="pageContentInner mainSearch">
+  <div class="pageContentInner mainSearch">
 
-<h1 class="accessibleAddInfo">Search</h1>
+    <h1 class="accessibleAddInfo">Search</h1>
 
-<div id="accessibleForm" class="form1Part">
-<div class="browseSearchtool">
-<form action="/search/" method="get" name="search" id="search" onSubmit="return iiiSearchValidate();">
+    <div id="accessibleForm" class="form1Part">
+      <div class="browseSearchtool">
+        <form action="/search/" method="get" name="search" id="search" onSubmit="return iiiSearchValidate();">
 
 
-<input type="hidden" id="iiiFormHandle_1">
+          <input type="hidden" id="iiiFormHandle_1">
 
-<!-- Optional legend:
-<fieldset>
-<legend>Type the search term you want to find.</legend>-->
-<div class="formEntryArea">
-<div class="inlineBlock">
-<label for="searchtype" class="accessibleAddInfo">Search type</label>
-<select name="searchtype" id="searchtype">
-<option value="X" selected="selected">Keyword</option>
-<option value="t">Title</option>
-<option value="s">Journal Title</option>
-<option value="a">Author</option>
-<option value="d">Subject</option>
-<option value="y">Resource Name</option>
-</select>
+          <!-- Optional legend:
+          <fieldset>
+          <legend>Type the search term you want to find.</legend>-->
+
+          <div class="formEntryArea">
+
+            <div class="inlineBlock">
+
+              <label for="searchtype" class="accessibleAddInfo">Search type</label>
+              <select name="searchtype" id="searchtype">
+              <option value="X" selected="selected">Keyword</option>
+              <option value="t">Title</option>
+              <option value="s">Journal Title</option>
+              <option value="a">Author</option>
+              <option value="d">Subject</option>
+              <option value="y">Resource Name</option>
+              </select>
+
 <!--{nosort}-->
-<label for="searcharg" class="accessibleAddInfo">Search term</label>
-<input maxlength="75" name="searcharg" size="20" >
-</div>
-<div class="inlineBlock">
-<label for="scope" class="accessibleAddInfo">Location</label>
+
+              <label for="searcharg" class="accessibleAddInfo">Search term</label>
+              <input maxlength="75" name="searcharg" size="20" >
+
+            </div> <!-- inlineBlock -->
+
+            <div class="inlineBlock">
+              <label for="scope" class="accessibleAddInfo">Location</label>
 <!--{scope}-->
-<span class="formButtonArea">
 
-  <!--{submit}-->
+              <span class="formButtonArea">
+<!--{submit}-->
+                <input type="hidden" id="iiiFormHandle_1"/>
+                <a href="#" onclick="iiiDoSubmit_1();"><div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Submit</span></span></div></div></a>
 
-<input type="hidden" id="iiiFormHandle_1"/>
-<a href="#" onclick="iiiDoSubmit_1();"><div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Submit</span></span></div></div></a>
+                <input type="submit" class="submitHidden"/>
+              </span> <!-- formButtonArea -->
 
-<input type="submit" class="submitHidden">
+            </div> <!-- inlineBlock -->
 
-</span>
-</div>
-</div><!-- formEntryArea -->
-<!--</fieldset> optional-->
-</form>
-</div><!-- browseSearchtool -->
-</div><!-- form1Part -->
+          </div><!-- formEntryArea -->
+
+          <!--</fieldset> optional-->
+        </form>
+
+      </div><!-- browseSearchtool -->
+
+    </div><!-- form1Part -->
+
+  </div><!--pageContentInner -->
+
 <!--{botlogo}-->
-</div><!--pageContentInner -->
-
 
 <script type="text/javascript"><!--//--><![CDATA[//><!--
 try { document.forms[0].searcharg.focus(); }
