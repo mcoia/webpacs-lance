@@ -1007,7 +1007,7 @@ div.rssChannelEntries { border:none; background:#FFFFFF; }
 /*Relative position allows this bg color to show in older IE.*/
 .searchNav { background:#6600FF; margin:0; position:relative; }
 
-.searchNav a {color: #ffffff; font-weight:bold; text-decoration:none;}
+.searchNav a:link a:visited {color: #ffffff; font-weight:bold; text-decoration:none;}
 
 .searchNav .navLeft {float: left;}
 
