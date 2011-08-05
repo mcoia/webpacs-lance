@@ -67,6 +67,8 @@
 # 5/16/2008 AHD - Added permanent record links, etc. for HLG. MCO-012064
 # 9/3/08 AHD - Added STYLESHEET=/screens/lance_styles.css
 # 10/13/2008 AHD - Added Reset a PIN options.  MCO-013465
+# 8/3/2011 SMW - Added TABLEPARAM_BIB_ITEMS6
+# 8/4/2011 SMW - Added FREEZE_HOLDS option for Truman library staff ptype
 ##############################################################################
 
 #***************************************************************************
@@ -184,6 +186,7 @@ e=e;g=g;i=i;j=m;m=h;o=o;s=s;t=t)
 # Patron Record Options
 FRAMEURL_PAT=50
 CANCEL_BOOKINGS=false
+FREEZE_HOLDS112=t
 # TABLEPARAM_PATDISP=<main>|<info>|<buttons>
 TABLEPARAM_PATDISP=WIDTH=100% BORDER= 1px solid #000000 BGCOLOR=#FFFFFF|BGCOLOR=#FFFFFF|BGCOLOR=#FFFFFF
 TABLEPARAM_PATFUNC=WIDTH=100% BORDER= 1px solid #000000 BGCOLOR=#FFFFFF|BGCOLOR=#FFFFFF|BGCOLOR=#FFFFFF
