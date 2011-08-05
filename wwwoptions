@@ -285,22 +285,39 @@ BUT_Z39SEARCH=/screens/z39srch.gif
 
 #MATERIAL TYPE GRAPHICS
 MEDIA=2
-IMAGE_MATTYPEa=/screens/media_book.gif
-IMAGE_MATTYPE2=/screens/media_ebook.gif
-IMAGE_MATTYPEb=/screens/media_archival.gif
-IMAGE_MATTYPEc=/screens/media_music.gif
-IMAGE_MATTYPEd=/screens/media_music.gif
-IMAGE_MATTYPEe=/screens/media_cartographic.gif
-IMAGE_MATTYPEf=/screens/media_cartographic.gif
-IMAGE_MATTYPEg=/screens/media_projectedmedia.gif
-IMAGE_MATTYPEi=/screens/media_nonmusicalsound.gif
+#IMAGE_MATTYPEa=/screens/media_book.gif
+#IMAGE_MATTYPE2=/screens/media_ebook.gif
+#IMAGE_MATTYPEb=/screens/media_archival.gif
+#IMAGE_MATTYPEc=/screens/media_music.gif
+#IMAGE_MATTYPEd=/screens/media_music.gif
+#IMAGE_MATTYPEe=/screens/media_cartographic.gif
+#IMAGE_MATTYPEf=/screens/media_cartographic.gif
+#IMAGE_MATTYPEg=/screens/media_projectedmedia.gif
+#IMAGE_MATTYPEi=/screens/media_nonmusicalsound.gif
+#IMAGE_MATTYPEj=/screens/media_musicalsound.gif
+#IMAGE_MATTYPEk=/screens/media_2dartwork.gif
+#IMAGE_MATTYPEm=/screens/media_computerfile.gif
+#IMAGE_MATTYPEo=/screens/media_kits.gif
+#IMAGE_MATTYPEp=/screens/media_kits.gif
+#IMAGE_MATTYPEr=/screens/media_3dartwork.gif
+#IMAGE_MATTYPEt=/screens/media_manuscripts.gif
+IMAGE_MATTYPEa=/screens/media_book (2).gif
+IMAGE_MATTYPE2=/screens/media_ebook (2).gif
+IMAGE_MATTYPEb=/screens/media_archive.gif
+IMAGE_MATTYPEc=/screens/media_printedmusic.gif
+IMAGE_MATTYPEd=/screens/media_musicmanuscript.gif
+IMAGE_MATTYPEe=/screens/media_map.gif
+IMAGE_MATTYPEf=/screens/media_map.gif
+IMAGE_MATTYPEg=/screens/media_projectedmedia (2).gif
+IMAGE_MATTYPEi=/screens/media_cdbook.gif
 IMAGE_MATTYPEj=/screens/media_musicalsound.gif
-IMAGE_MATTYPEk=/screens/media_2dartwork.gif
-IMAGE_MATTYPEm=/screens/media_computerfile.gif
-IMAGE_MATTYPEo=/screens/media_kits.gif
-IMAGE_MATTYPEp=/screens/media_kits.gif
-IMAGE_MATTYPEr=/screens/media_3dartwork.gif
-IMAGE_MATTYPEt=/screens/media_manuscripts.gif
+IMAGE_MATTYPEk=/screens/media_2dgraphic.gif
+IMAGE_MATTYPEm=/screens/media_computerfile (2).gif
+IMAGE_MATTYPEo=/screens/media_kit.gif
+IMAGE_MATTYPEp=/screens/media_kit.gif
+IMAGE_MATTYPEr=/screens/media_3dartwork (2).gif
+IMAGE_MATTYPEt=/screens/media_manuscript.gif
+
 
 # Location Link Codes
 LOC_tp7ii=http://library.truman.edu/locations/tp7ii.htm "target=_blank" 
