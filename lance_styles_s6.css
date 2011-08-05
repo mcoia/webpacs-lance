@@ -212,6 +212,8 @@ table.bibItems { clear:both; }
 
 .bibItems .bibItemsEntry td, .bibItems .bibItemsHeader th { padding:1px 8px; }
 
+.bibItemsHeader { color: #000;font-size:90%; font-weight: bold; text-align: left; border-bottom:1px solid #000000;}
+
 .bibRecordLink { padding:8px 0 8px 6px; }
 
 .bibResourceSidebar { background:#FFFFFF url('tile_vgradient.jpg') repeat-x top left; display:inline; float:right; width:192px; }
@@ -321,7 +323,7 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 .briefcitResourceLeft { margin-bottom:20px; }
 
-.briefcitItems  { clear:both; margin:8px 0 8px 0; padding-left:0px; width:100%; }
+.briefcitItems  { border:0; clear:both; margin:8px 0 8px 0; padding-left:0px; width:100%; }
 
 .briefcitItems em { font-size:.9em; }
 
@@ -329,7 +331,7 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 .briefcitItems th { border:0; color:#767C70; font-size:.75em; padding:0; text-align:left; }
 
-.briefcitItems td { border-top:1px solid #000000; }
+.briefcitItems td { border:0; }
 
 .briefcitItemsHeader { float:left; margin-right:15px; }
 
