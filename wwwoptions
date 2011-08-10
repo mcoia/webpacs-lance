@@ -266,7 +266,10 @@ BUT_PREVSCRN=/screens/prevscrn.gif
 BUT_PUBLIC=/screens/public.gif
 BUT_REGULAR_DISPLAY=/screens/b_regdisp.gif
 BUT_REQUEST=/screens/b_request.gif
+ICON_BUT_REQUEST_ALL=<img src="/screens/b_requestall.gif" alt="Request All" border="0" />
 ICON_BUT_REQUEST_MULTI=<img src="/screens/b_requestrecords.gif" alt="Request Records" border="0" />
+ICON_BUT_REQUEST_RESET=<img src="/screens/b_resetform.gif" alt="Reset Form" border="0" />
+ICON_BUT_REQUEST_SELECTED=<img src="/screens/b_requestselected.gif" alt="Request Selected" border="0" />
 BUT_RET2CAT=/screens/ret2cat.gif
 BUT_RET2CRS=/screens/ret2crs.gif
 BUT_RET2FEAT=/screens/b_ret2feat.gif
