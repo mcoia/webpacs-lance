@@ -1,0 +1,93 @@
+<!-- begin botlogo.html file -->
+<!-- Rel 2009B Example Set -->
+<!-- Updated: 04 August 2011 -->
+<!-- Note toplogo leaves open pageContent, fullPage, and minHeight div tags.  These must be closed in this file. -->
+
+    </div><!-- pageContent  -->
+
+    <div style="clear:both"></div>
+
+    <div id="botlogo">
+      <p><strong>LANCE</strong> includes the collections of the following Missouri libraries:</p>
+      <p><a href="/search~S1/">Culver-Stockton College</a> &middot;
+         <a href="/search~S2/">Hannibal-LaGrange University</a></p>
+      <p><a href="/search~S3/">Kirksville College of Osteopathic Medicine</a> &middot;
+         <a href="/search~S4/">Linn State Technical College</a><br></p>
+      <p><a href="/search~S5/">Moberly Area Community College</a> &middot;
+         <a href="/search~S6/">Truman State University</a></p>
+    </div><!-- botlogo -->
+
+  </div><!-- fullPage -->
+</div><!-- minHeight -->
+
+<script type='text/javascript'>
+// Function for Google Book Search viewability API script for briefcit
+function insertGBSlink(gbsData) {
+	offsiteImg = '<img src="/screens/icon_offsite_blue.gif" alt="offsite" title="offsite" style="border: 0pt none ; vertical-align: middle;"> ';
+	gbsPreviewImage = '<img src="/screens/gbs_preview_button1.gif" alt="Preview" title="Preview" style="border: 0pt none ; vertical-align: middle;"> ';
+	// Iterate through the "gbs" <div> elements
+	for(bib in gbsNumbers) {
+		// Look for matching GBS data
+		var bookInfo = gbsData[gbsNumbers[bib]];
+		// If found, process it
+		if(bookInfo){
+			// Set text and link values depending on viewablity
+			if(bookInfo.preview == "full") { 
+				textGBS = "";  
+				linkGBS = bookInfo.preview_url;
+				linkImage = gbsPreviewImage;
+			}
+			if(bookInfo.preview == "partial") { 
+				textGBS = "(Limited preview)"; 
+				linkGBS = bookInfo.preview_url;
+				linkImage = gbsPreviewImage;
+			}
+			if(bookInfo.preview == "noview") { 
+				textGBS = "Information at Google Book Search"; 
+				linkGBS = bookInfo.info_url;
+				linkImage = offsiteImg;
+			}
+			// HTML for offsite image
+			offsiteImg = '<img src="/screens/icon_offsite_blue.gif" alt="offsite" title="offsite" style="border: 0pt none ; vertical-align: middle;"> ';
+			// Rewrite the HTML inside the "gbs" <div> elements
+			gbsList[bib].innerHTML = '<a href="' + linkGBS + '" target="_blank" style="text-decoration: none;">' + linkImage + textGBS + '</a>';
+			// Turn on the display of the GBS link
+			gbsList[bib].style.display = '';
+		}
+	}
+}
+
+// Main jQuery event handler
+$(document).ready(function(){
+	// Execute only if the briefcit page is being processed
+	$("td.briefCitRow:first").each(function() {
+		// Google Book Search viewability API script
+		// Make an array to store the "gbs" class divs
+		gbsList =  new Array();
+		gbsNumbers = new Array();
+		// Find all the gbs divs
+		$("div.gbs").each(function() {
+			gbsList.push(this);
+			// Remove leading and trailing white space from the numbers
+			bookid = this.innerHTML.replace(/^\s+|\s+$/g,"")
+			// Discard non-numeric strings
+			if (bookid.search(/[^0-9]/) != -1) {
+				bookid = "";
+			}
+			//alert(bookid);
+			// Prefix the number with the label that GBS needs and store it
+			if(bookid.length > 0) {
+				gbsNumbers.push("OCLC:" + bookid);
+			}
+		})
+		var numbersData = gbsNumbers.join(",");
+		var scriptElement = document.createElement("script");
+		scriptElement.setAttribute("id", "jsonScript");
+		scriptElement.setAttribute("src","http://books.google.com/books?bibkeys=" + escape(numbersData) + "&jscmd=viewapi&callback=insertGBSlink");
+		scriptElement.setAttribute("type", "text/javascript");
+		// add script to page to make the request to Google booksearch
+		document.documentElement.appendChild(scriptElement);
+	})
+	
+})
+</script>

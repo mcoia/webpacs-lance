@@ -1,221 +1,105 @@
-<HTML>
-
-
-
-<TITLE>LANCE /LANCE Catalog</TITLE>
-
-<LINK REL="STYLESHEET" TYPE="TEXT/CSS" HREF="http://lance.missouri.edu:2082/screens/lance_styles_s6">
-
-<BODY>
-      
-<script type="text/javascript">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- Updated: 09 June 2010 -->
+<head>
+<title>LANCE Catalog – Truman State University</title>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print_s6.css" media="print">
+<!--<link rel="stylesheet" type="text/css" href="/screens/stylesmain.css" > Un-comment to offer a larger logo on mainmenu.-->
+<script type="text/javascript">/* <![CDATA[ */
+function iiiSearchValidate() {
+	try{
+	  if (document.getElementById('search').searcharg.value==null||document.getElementById('search').searcharg.value=="") {
+		return false;
+		}
+	}
+	catch(err) {
+	}
+  return true;
+}
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-16137543-1']);
-  _gaq.push(['_trackPageview']);
+function iiiDoSubmit_1()
+{
+//getFormHandleForm() is in common.js
+var obj = getFormHandleForm(1);
+if(iiiSearchValidate()){
+obj.submit();
+}
+}
+/* ]]> */
+</script>
+</head>
+<body>
+<!--{toplogo}-->
+  <div class="miscButtons">
+<!--{logout}-->
+  </div>
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+  <div class="pageContentInner mainSearch">
 
-</script>      
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-var pageTracker = _gat._getTracker("UA-4394120-2");
-pageTracker._initData();
-pageTracker._trackPageview();
-</script>
-
-<!--{patron}-->
-<!--{logout}-->
-
-
-&nbsp;<CENTER>
-<table width="618" height="23" border="0" cellpadding="2" cellspacing="0" bordercolor="#FFFFFF" >
-      <tr bordercolor= bgcolor=>
-        <td height="25" bgcolor="#FFFFFF" bordercolor="#800D4F">
-		<p align="center">
-		<img border="0" src="/screens/ts_toplogo.jpg" alt="Truman Logo" width="618" height="113"><tr HEIGHT="2"><TD BGCOLOR="#9C0000"></TD></TR>
-    </table>
-<center><div align="center">
-			&nbsp;<table border="0" id="table1" cellspacing="1" cellpadding="6" width="618">
-				<tr>
-					<td align="center" width="174">
-					<a href="http://mobius.missouri.edu/search/">
-					<img border="0" src="/screens/opacmenu_s6_mobius.jpg" alt="Search MOBIUS" width="146" height="29"></a></td>
-					<td align="center" width="174">
-					<a href="http://lance.mobius.umsystem.edu/patroninfo~S6">
-					<img border="0" src="/screens/opacmenu_s6_account.jpg" alt="My Library Account" width="146" height="29"></a></td>
-					<td align="center" width="174">
-					<a href="http://library.truman.edu/">
-					<img border="0" src="/screens/opacmenu_s6_libraryhome.jpg" alt="Library Home" width="146" height="29"></a></td>
-					<td align="center" width="175">
-					<a href="http://lance.mobius.umsystem.edu/screens/faq.html">
-					<img border="0" src="/screens/opacmenu_s6_help.jpg" alt="LANCE FAQ" width="146" height="29"></a></td>
-				</tr>
-			</table>
-		
-</div>
-<IMG SRC="/screens/trumanname.gif" HEIGHT="53" WIDTH="720" ALT="" BORDER="0" ></center>
-</CENTER>
-
-
-<CENTER>
-<TABLE WIDTH="700" BORDER="0" CELLSPACING="0" CELLPADDING="0">
-
-<center>
-  <form name="SearchForm" target="_parent" action="/search/Y" method="GET">
-    <table border="0" cellspacing="0" cellpadding="2" width="618" bgcolor="#C0C0C0">
-      <tr bgcolor="#660066"> 
-        <td colspan="5" bgcolor="#3A0075"> 
-          <div align="left"><b><font color="#FFFFFF" face="Arial, Helvetica, sans-serif">Quick 
-            Search</font></b></div>
-        </td>
-      </tr>
-      <tr> 
-        
- 		<td>        
-          <div align="right"><font size="-2" face="Arial, Helvetica, sans-serif"><b>Search 
-            by:</b></font></div>
-        </td>
-        <td> 
-          <select name="searchtype">
-
-
-			<option value="Y" selected>Keyword</option>
-	
-
-			<option value="t" >Title</option>
-	
-
-			<option value="a" >Author</option>
-	
-
-			<option value="s" >Journal Title</option>
-	
-
-			<option value="d" >LC Subject</option>
-	
-
-			<option value="m" >Children's Subject</option>
-	
-
-			<option value="c" >LC Call Number</option>
-	
-
-			<option value="e" >Dewey Call Number</option>
-	
-
-			<option value="f" >Local Call Number</option>
-	
-
-			<option value="g" >SuDoc Number</option>
-	
-
-			<option value="i" >Standard Number</option>
-	
-
-			<option value="o" >OCLC Number</option>
-	
-
-          </select>
-        </td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr> 
-        <td> 
-          <div align="right"><font size="-2" face="Arial, Helvetica, sans-serif"><b> 
-            Search for: </b></font></div>
-        </td>
-        <td colspan="3"> 
-          <input type="TEXT" name="searcharg" maxlength="75" size="45">
-        </td>
-        <td align="right"> 
-		<INPUT TYPE="Hidden" name="searchscope" VALUE="6">
-          <input name="cmdSubmit" type="Submit" value="Search">
-          <input type="Hidden" name="SORT" VALUE="D">
-        </td>
-      </tr>
-    </table>
-  </form>
-</center>
-
-<script language="JavaScript">
-<!-- hide JavaScript
-document.SearchForm.searcharg.focus();
-document.SearchForm.searcharg.select();
-//-->
-</script>
-
-
-
-
-<!-- Guided Searches -->
-<CENTER>
-<table width="618" border="0" cellspacing="0" cellpadding="2" vspace="10">
-    <tr valign="top" bgcolor="#660066"> 
-      <td colspan="3" bgcolor="#3A0075"><font color="#FFFFFF" face="Arial, Helvetica, sans-serif"><b>Guided 
-        Searches</b></font></td>
-    </tr>
-<SPAN CLASS="index">
-    <tr valign="top"> 
-      <td width="280">
-		<p><b><a href="/search~S6/Y">KEYWORD</a></b><i>&nbsp; </i></p>
-		<p><b><a href="/search~S6/a">AUTHOR</a></b><i><b>&nbsp;</b> <br><span class="indexdef">or composer, editor, organization...</span></i></p>
-		<p><b><a href="/search~S6/t">TITLE</a></b><i>&nbsp; <br><span class="indexdef">books, movies, CDs...</span></i></p>
-		<p><b><a href="http://library.truman.edu/course_reserves.asp">RESERVES</a></b><i><b>&nbsp; 
-		</b> <br><span class="indexdef">course name, instructor</span></i></p>
-      </td>
-      <td width="53">&nbsp;</td>
-      <td width="303">
-		<p align="left"><a href="http://zw2sn2ud9v.search.serialssolutions.com/"><b>JOURNAL, MAGAZINE & NEWSPAPER</b></a><b><i>&nbsp;</i></b></p>
-		<p align="left"><a href="/search~S6/d"><b>SUBJECT (Library of Congress)</b></a><b><i>&nbsp; </i>
-		</b></p>
-		<p align="left"><a href="/search~S6/m"><b>SUBJECT (Children's)</b></a><b><i>&nbsp; </i>
-		</b></p>
-		<p align="left"><a href="/search~S6/n"><b>NUMBERS</b></a><i><b>&nbsp;<font color="#666666"> <br>
-		</font></b><span class="indexdef">call number, ISBN, or other number...</span></i></p>
-      </td>
-    </tr></span>
-    <tr valign="top">
-      <td width="280">&nbsp;</td>
-      <td width="53">&nbsp;</td>
-      <td width="303">&nbsp;</td>
-    </tr>
-</table>
-</CENTER>
-</DIV>
-</TABLE>
-</CENTER>
-
-<center>
-  <table border="0" cellpadding="6" cellspacing="0">
-    <tr valign="top"> 
-      <td>&nbsp;</td>
-    </tr>
-    <tr valign="top"> 
-      <td align="center"> 
-        <font color="#666666" face="Arial, Helvetica, sans-serif" size="-1"><b>LANCE</b> 
-          <b>&middot;</b> Libraries And Networks Cooperating in Education<br>
-          <b>&middot;</b> a MOBIUS Library Catalog <b>&middot;</b></font></td>
-    </tr>
-    <tr valign="top"> 
-      <td align="center">
-          <font face="Arial, Helvetica, sans-serif" size="-2"><a href="http://mobius.missouri.edu/search/">MOBIUS</a> 
-          &middot; <a href="/search~/">LANCE Catalog</a><br>
-          <a href="/search~S1/">Culver-Stockton College</a> &middot; <a href="/search~S2/">Hannibal-LaGrange 
-          University</a><br>
-          <a href="/search~S3/">Kirksville College of Osteopathic Medicine</a> 
-          &middot; <a href="/search~S4/">Linn State Technical College</a><br>
-          <a href="/search~S5/">Moberly Area Community College</a> &middot; <a href="/search~S6/">Truman 
-          State University</a></font></td>
-    </tr>
-  </table>
-</center>
-</BODY>
-</HTML>
+    <h1 class="accessibleAddInfo">Search</h1>
+
+    <div id="accessibleForm" class="form1Part">
+      <div class="browseSearchtool">
+        <form action="/search/" method="get" name="search" id="search" onSubmit="return iiiSearchValidate();">
+
+
+          <input type="hidden" id="iiiFormHandle_1">
+
+          <!-- Optional legend:
+          <fieldset>
+          <legend>Type the search term you want to find.</legend>-->
+
+          <div class="formEntryArea">
+
+            <div class="inlineBlock">
+
+              <label for="searchtype" class="accessibleAddInfo">Search type</label>
+              <select name="searchtype" id="searchtype">
+              <option value="X" selected="selected">Keyword</option>
+              <option value="t">Title</option>
+              <option value="s">Journal Title</option>
+              <option value="a">Author</option>
+              <option value="d">Subject</option>
+              <option value="y">Resource Name</option>
+              </select>
+
+<!--{nosort}-->
+
+              <label for="searcharg" class="accessibleAddInfo">Search term</label>
+              <input maxlength="75" name="searcharg" size="20" >
+
+            </div> <!-- inlineBlock -->
+
+            <div class="inlineBlock">
+              <span class="formButtonArea">
+<!--{submit}-->
+                <input type="hidden" id="iiiFormHandle_1"/>
+                <a href="#" onclick="iiiDoSubmit_1();"><div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Submit</span></span></div></div></a>
+
+                <input type="submit" class="submitHidden"/>
+              </span> <!-- formButtonArea -->
+
+            </div> <!-- inlineBlock -->
+
+          </div><!-- formEntryArea -->
+
+          <!--</fieldset> optional-->
+        </form>
+
+      </div><!-- browseSearchtool -->
+
+    </div><!-- form1Part -->
+
+  </div><!--pageContentInner -->
+
+<!--{botlogo}-->
+
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].searcharg.focus(); }
+catch(err) {}
+//--><!]]></script>
+</body>
+</html>
+
