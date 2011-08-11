@@ -441,6 +441,7 @@ ICON_BUT_PAT_SUBMIT=<img src="/screens/b_submit.gif" alt="Submit" border="0" />
 ICON_BUT_CANCEL6=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancel</span></span></div></div>
 ICON_BUT_CLOSEWINDOW6=<span class="button"><img src="/screens/ico_x.png" alt=""><span class="buttonText">Close Window</span></span>
 ICON_BUT_RET2CAT6=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Return to Catalog</span></span>
+ICON_BUT_RET2CRS6=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Return to Course</span></span>
 ICON_BUT_STARTOVER6=<span class="button"><img src="/screens/ico_startover.png" alt=""><span class="buttonText">Start Over</span></span>
 ICON_CANCEL6=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancel</span></span></div></div>
 ICON_OK6=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">OK</span></span></div></div>
@@ -470,7 +471,7 @@ ICON_BUT_LIMIT6=<span class="button"><img src="/screens/ico_gear.gif" alt=""><sp
 ICON_BUT_UNLIMAVAIL6=<span class="button"><img src="/screens/ico_list.png" alt=""><span class="buttonText">Show All</span></span>
 ICON_856LINK6=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Website
 ICON_962LINK6=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Digital Image
-#ICON_BOOKCART6=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">Save for Print/Email</span></span>
+ICON_BOOKCART6=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">Save Record</span></span>
 ICON_BOOKCART_SAVED6=<span class="button"><img src="/screens/ico_bag_minus.png" alt=""><span class="buttonText">Remove From Saved</span></span>
 ICON_FULLRECORD6=See Full Record
 ICON_LOCATEINRESULTS6=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Locate in results</span></span></div></div>
@@ -548,5 +549,4 @@ ICON_RATE_NO6=<img src="/screens/rate_no.gif" border="0" width="75" height="14" 
 ICON_RATE_PAD6=<img src="/screens/rate_pad.gif" border="0" width="15" height="14" alt="Rated %d stars out of 5 based on %n ratings" title="Rated %d stars out of 5 based on %n ratings">
 ICON_PATREVIEW6=<span class="button"><img src="/screens/ico_review.png" alt=""><span class="buttonText">My Reviews</span></span>
 ICON_PATREVIEW_ADD6=<span class="button"><img src="/screens/ico_review_sm.png" alt=""><span class="buttonText">Add a Review</span></span>
-#INNREACH6=<br><img src="/screens/ico_mobius2.png" border=0 alt="Search MOBIUS Union Catalog">@mobius.umsystem.edu(X=X*;Y=Y*;a=a;c=c;d=d;e=e;g=g;i=i;j=m;m=h;o=o;s=s;t=t)
 INNREACH6=<span class="button"><img src="/screens/ico_mobius2.png" alt=""><span class="buttonText">Search MOBIUS</span></span>@mobius.umsystem.edu(X=X*;Y=Y*;a=a;c=c;d=d;e=e;g=g;i=i;j=m;m=h;o=o;s=s;t=t)
