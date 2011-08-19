@@ -380,9 +380,7 @@ SPELLCHECK=<span class="spellcheckTool">Did you mean %a?</span> %s
 ICON_SPELLCHECK_MORE=<span class="spellcheckToolMore">more >></span>
 ICON_SPELLCHECK_SEARCH=Search
 ICON_BOOKCART2=<IMG SRC="/screens/bibexport.gif" ALT="Mark/Save Item" BORDER="0">
-ICON_BOOKCART6=<IMG SRC="/screens/bibexport.gif" ALT="Save to List" BORDER="0">
 ICON_BOOKCART_SAVED=<img src="/screens/b_removesaved.gif" alt="Remove Saved" border="0" />
-ICON_SAVEALLPAGE6=<IMG SRC="/screens/saveAll_s6.gif" ALT="Save All to List" BORDER="0">
 ICON_856LINK2=<span class="856linkStyle">View Electronic Resource</span>
 
 BIBIMAGE=http://www.syndetics.com/index.aspx?isbn=%s/SC.GIF&client=trumanstateu&type=rn12|i|http://www.syndetics.com/index.aspx?isbn=%s/LC.GIF&client=trumanstateu&type=rn12
@@ -453,7 +451,7 @@ ICON_CLEAR_ALL6=<div onmousedown="this.className='pressedState';" onmouseout="th
 ICON_CLEAR_FORM6=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Clear Form</span></span></div></div>
 ICON_DELETE_SELECTED6=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Delete Selected</span></span></div></div>
 ICON_SELECT_ALL6=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Save All</span></span></div></div>
-ICON_BUT_PUBLIC6=<span class="button"><img src="/screens/ico_patron.png" alt=""><span class="buttonText">Patron View</span></span>
+ICON_BUT_PUBLIC6=<span class="button"><img src="/screens/ico_patron.png" alt=""><span class="buttonText">Public View</span></span>
 ICON_BUT_STAFF6=<span class="button"><img src="/screens/ico_gear.png" alt=""><span class="buttonText">Staff View</span></span>
 ICON_BUT_ANOTHER6=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">Another Search</span></span>
 ICON_BUT_NEWSRCH6=<span class="button"><img src="/screens/ico_startover.png" alt=""><span class="buttonText">Start Over</span></span>
@@ -497,7 +495,7 @@ ICON_MYLISTS_REQUEST6=<span class="button"><img src="/screens/ico_target.png" al
 ICON_MYLISTS_REMOVE_DUPLICATES6=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Remove Duplicates</span></span></div></div>
 ICON_MYLISTS_RENAME6=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Change Name/Description</span></span></div></div>
 ICON_MYLISTS_SAVE6=<span class="button"><img src="/screens/ico_list_add.png" alt=""><span class="buttonText">Add to My Lists</span></span>
-ICON_MYLISTS_SAVE_TO_LIST6=<span class="button"><img src="/screens/ico_list_add.png" alt=""><span class="buttonText">Add Marked to My Lists</span></span>
+#ICON_MYLISTS_SAVE_TO_LIST6=<span class="button"><img src="/screens/ico_list_add.png" alt=""><span class="buttonText">Add Marked to My Lists</span></span>
 ICON_MYLISTS_BRIEF6=<span class="button"><img src="/screens/ico_list_add.png" alt=""><span class="buttonText">Add to My Lists</span></span>
 ICON_BACK_TO_MYLISTS6=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Back to My Lists</span></span></div></div>
 ICON_MYLISTS_RECORD6=<span class="button"><img src="/screens/ico_list_add.png" alt=""><span class="buttonText">Add to My Lists</span></span>
@@ -524,8 +522,8 @@ ICON_BUT_PAT_SORTBYCHKOUT6=<div onmousedown="this.className='pressedState';" onm
 ICON_BUT_PAT_SORTBYDUE6=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Sort by Due Date</span></span></div></div>
 ICON_BUT_PAT_SUBMIT6=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Submit</span></span></div></div>
 ICON_BUT_PSTARTOVER6=<span class="button"><img src="/screens/ico_startover.png" alt=""><span class="buttonText">Start Over</span></span>
-ICON_BUT_RET2PREC6=<span class="button"><img src="/screens/ico_patron.pn" alt=""><span class="buttonText">Return to My Account</span></span>
-ICON_BUT_PLOGOUT=<span class="button"><img src="/screens/ico_patron.pn" alt=""><span class="buttonText">Return to My Account</span></span>
+ICON_BUT_RET2PREC6=<span class="button"><img src="/screens/ico_patron.png" alt=""><span class="buttonText">Return to My Account</span></span>
+ICON_BUT_PLOGOUT=<span class="button"><img src="/screens/ico_patron.png" alt=""><span class="buttonText">Return to My Account</span></span>
 ICON_BUT_UPDATE_HOLDS6=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Update List</span></span></div></div>
 ICON_CLOSEWINDOW6=<span class="button"><img src="/screens/ico_x.png" alt=""><span class="buttonText">Close Window</span></span>
 ICON_PAT_CANCELALL6=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancel All</span></span></div></div>
@@ -536,7 +534,8 @@ ICON_SORTREQDATE6=<div onmousedown="this.className='pressedState';" onmouseout="
 ICON_BUT_LOGOUT6=<span class="button"><img src="/screens/ico_x.png" alt=""><span class="buttonText">Log Out</span></span>
 ICON_BUT_PAT_PSEARCH_REMOVE6=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Delete All Searches</span></span></div></div>
 ICON_BUT_PAT_PSEARCH_UPDATE6=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Update List</span></span></div></div>
-IICON_BUT_PAT_GETPSAVEDRECS6=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">Preferred Searches</span></span>
+ICON_BUT_PAT_GETPSAVEDRECS6=<span class="button"><img src="/screens/ico_gear.png" alt=""><span class="buttonText">Preferred Searches</span></span>
+ICON_BUT_PAT_SEARCH6=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">Search Catalog</span></span>
 ICON_PAT_DELETE_ALL6=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Delete All</span></span></div></div>
 ICON_PAT_DELETE_MARKED6=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Delete Marked</span></span></div></div>
 ICON_READING_HISTORY6=<span class="button"><img src="/screens/ico_clock.png" alt=""><span class="buttonText">Reading History</span></span>
@@ -552,3 +551,4 @@ ICON_RATE_PAD6=<img src="/screens/rate_pad.gif" border="0" width="15" height="14
 ICON_PATREVIEW6=<span class="button"><img src="/screens/ico_review.png" alt=""><span class="buttonText">My Reviews</span></span>
 ICON_PATREVIEW_ADD6=<span class="button"><img src="/screens/ico_review_sm.png" alt=""><span class="buttonText">Add a Review</span></span>
 INNREACH6=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">Search MOBIUS</span></span>@mobius.umsystem.edu(X=X*;Y=Y*;a=a;c=c;d=d;e=e;g=g;i=i;j=m;m=h;o=o;s=s;t=t)
+PATRATE=true

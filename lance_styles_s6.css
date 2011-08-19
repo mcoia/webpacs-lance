@@ -129,7 +129,7 @@ a:hover  { color: #014184; }
 .formEntryArea { }
 .formRequired { color:#990000;font-weight:bold;font-size:1.3em;position:relative;top:5px; }
 .formsTogether { width:780px; }
-.formsTogether .form1Part { width:96%; }
+<!-- .formsTogether .form1Part { width:96%; } -->
 
 .additionalCopies { margin: 20px 6px; }
 
@@ -724,6 +724,8 @@ div .confirmValue { padding-top:3px; }
 
 .mylistsSavePage .pageMainAreaHeader { font-size:1.3333em; font-weight:bold; }
 
+.mylistsSelect { visibility:hidden }
+
 .navHeader {
 border-bottom:1px dashed #5E5D5D;
 color:#5E5D5D;
@@ -816,7 +818,7 @@ width:19%;
 
 .patActionsLinks,.patTop, .patFuncArea { border:1px solid #ECECEC; outline:5px solid #FFF; padding:5px;  }
 
-#patButFines a { background:#FFFFFF url('ico_payment.gif') no-repeat top left; margin-left:5px; padding-left:25px; line-height:1.8em; }
+#patButFines a { background:#FFFFFF url('ico_payment.png') no-repeat top left; margin-left:5px; padding-left:25px; line-height:1.8em; }
 
 #patButHolds a { background:#FFFFFF url('ico_redflag.gif') no-repeat top left; margin-left:5px; padding-left:25px; line-height:1.8em; }
 
@@ -834,7 +836,7 @@ width:19%;
 
 .patHelp { border-top:1px dotted #D3D3D3; margin-top:10px; }
 
-.patFloat { background:#FFFFFF url('tile_pat3.jpg') repeat-x top left; height:700px; }
+.patFloat { background:#FFFFFF; height:700px; }
 
 .patFloat .button img { margin-top:3px; }
 
