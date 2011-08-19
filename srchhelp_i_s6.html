@@ -1,42 +1,82 @@
-<HTML>
-<HEAD>
-	<TITLE>LANCE/ Truman</TITLE>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-</HEAD>
-
-<BODY bgcolor="#ffffff" link="#0000FF" alink="#0000FF" vlink="#0000FF" onLoad="document.forms[0].SEARCH.focus(); document.forms[0].SEARCH.select();">
-
-<!--{toplogo}-->
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+<!-- Lance srchhelp_a_s6.html updated 08 Aug 2011 -->
+
+<head>
+
+<title>Truman Catalog - Standard Number Search</title>
+
+  <script language="JavaScript">
+    <!-- Hide the JS
+    startTimeout(600000, "/");
+    // -->
+  </script>
+
+  <noscript>
+    <meta http-equiv="Refresh" content="600;URL=http://lance.missouri.edu/search~S6/" />
+  </noscript>
+
+
+</head>
+<body>
+<!--{toplogo}-->
 <!--{patron}-->
-<!--{logout}-->
+<!--{logout}-->
+
+<div class="pageContentInner">
+
+  <h1 class="pageHeader">Standard Number Search</h1>
+
+  <div id="accessibleForm" class="form1Part">
+
+    <form method="get">
+
+      <fieldset>
+        <!-- Optional legend:
+        <legend>Type the call number you want to find, then press the Enter key or click Submit.</legend>
+        -->
+
+        <div class="formEntryArea">
+
+          <!-- <span class="formLabel">
+            <label for="SEARCH">Search for:</label>
+          </span> -->
+<!--{search}-->
+        </div>
+
+        <div class="formButtonArea">
+<!--{submit}-->
+        </div>
+
+      </fieldset>
+
+    </form>
+
+    <!-- Begin Search Help Text -->
+    <p>Search here for standard numbers such as ISBN, ISSN, technical report and music numbers. For example:</p>
 
-<!-- Begin Search Help Text -->
-<center><table border="0" width="570"><tr><td>
-<h3 align="center"><b>Standard Number Search</b></h3>
-<form METHOD="GET" ACTION="/search/i">
-  <p ALIGN="CENTER">
-    <input TYPE="TEXT" name="SEARCH" maxlength="64" size="48">
-    <input TYPE="SUBMIT" value="Search" name="SUBMIT"><br>
+    <b>International Standard Serial Number (ISSN)</b>
+    <ul>
+      <li> 0040-781x </li>
+      <li> 0033 3107 </li>
+    </ul>
 
-  </p>
-</form>
-<p>Search here for standard numbers such as ISBN, ISSN, technical report and music numbers.</p>
-<table border="0"><tr><td nowrap valign="top">
-<i>for example:</i> </td><td>
-<pre>    <b>International Standard Serial Number (ISSN)</b>
-      0040-781x
-      0033 3107
-
-    <b>International Standard Book Number (ISBN)</b>
-      0201112116
-      0123467652
-</pre>
-</td></tr>
-</table>
-</td></tr></table></center>
-<!-- End Search Help Text -->
-<p align="center"><A HREF="/search/"><IMG SRC="/screens/b_newsrch.gif" BORDER=0 ALT="[START OVER]"></A></p> 
-<!--{botlogo}-->
-</BODY>
-</HTML>
+    <b>International Standard Book Number (ISBN)</b>
+    <ul>
+      <li> 0201112116 </li>
+      <li> 0123467652 </li>
+    </ul>
+
+  </div><!--form1Part -->
+
+</div><!-- pageContentInner -->
+
+<!--{botlogo}-->
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].SEARCH.focus(); }
+catch(err) {}
+//--><!]]></script>
+</body>
+</html>
