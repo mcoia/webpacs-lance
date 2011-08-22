@@ -1,43 +1,81 @@
-<HTML>
-<HEAD>
-	<TITLE>LANCE/ Truman</TITLE>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-</HEAD>
-
-<BODY bgcolor="#ffffff" link="#0000FF" alink="#0000FF" vlink="#0000FF" onLoad="document.forms[0].SEARCH.focus(); document.forms[0].SEARCH.select();">
-
-<!--{toplogo}-->
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+<!-- Lance srchhelp_a_s6.html updated 08 Aug 2011 -->
+
+<head>
+
+<title>Truman Catalog - Children's Subject Search</title>
+
+  <script language="JavaScript">
+    <!-- Hide the JS
+    startTimeout(600000, "/");
+    // -->
+  </script>
+
+  <noscript>
+    <meta http-equiv="Refresh" content="600;URL=http://lance.missouri.edu/search~S6/" />
+  </noscript>
+
+
+</head>
+<body>
+<!--{toplogo}-->
 <!--{patron}-->
-<!--{logout}-->
+<!--{logout}-->
+
+<div class="pageContentInner">
+
+  <h1 class="pageHeader">Children's Subject Search</h1>
+
+  <div id="accessibleForm" class="form1Part">
+
+    <form method="get">
+
+      <fieldset>
+        <!-- Optional legend:
+        <legend>Type the call number you want to find, then press the Enter key or click Submit.</legend>
+        -->
+
+        <div class="formEntryArea">
+
+          <!-- <span class="formLabel">
+            <label for="SEARCH">Search for:</label>
+          </span> -->
+<!--{search}-->
+        </div>
+
+        <div class="formButtonArea">
+<!--{submit}-->
+        </div>
+
+      </fieldset>
+
+    </form>
+
+    <!-- Begin Search Help Text -->
+    <p>Search here for children's literature subjects. These subject headings 
+    are established by the Library of Congress. </p>
 
-<!-- Begin Search Help Text -->
-<center><table border="0" width="570"><tr><td>
-<h3 align="center">Children's Subject Search</h3>
-<form METHOD="GET" ACTION="/search/m">
-  <p ALIGN="CENTER">
-    <input TYPE="TEXT" name="SEARCH" maxlength="64" size="48">
-    <input TYPE="SUBMIT" value="Search" name="SUBMIT"><br>
-  </p>
-</form>
-<p>Search here for children's literature subjects. These subject headings 
-  are established by the Library of Congress. If you are unsure of the heading 
-  for a subject, try a <a href="/search/Y">KEYWORD</a> search.</p>
+    <ul>
+      <li> picture book </li>
+      <li> Baseball fiction </li>
+      <li> Family Life </li>
+      <li> Pets </li>
+      <li> fairy tales </li>
+    </ul>
+
+    <p> If your search is unsuccessful, try a <a href="/search/Y">KEYWORD</a> search. </p>
 
-<table border="0"><tr><td nowrap valign="top">
-<i>for example:</i> </td><td>
-<pre>    picture book
-    Baseball fiction
-    Family Life
-    Pets
-    fairy tales
-</pre>
-</td></tr></table>
-<p>If your search is unsuccessful, try a <a href="/search/w">KEYWORD</a> search. </p>
-</td></tr></table></center>
-<!-- End Search Help Text -->
-<p align="center"><A HREF="/search/"><IMG SRC="/screens/b_newsrch.gif" BORDER=0 ALT="[START OVER]"></A></p> 
-<!--{botlogo}-->
-
-</BODY>
-</HTML>
+  </div><!--form1Part -->
+
+</div><!-- pageContentInner -->
+
+<!--{botlogo}-->
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].SEARCH.focus(); }
+catch(err) {}
+//--><!]]></script>
+</body>
+</html>
