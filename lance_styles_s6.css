@@ -38,7 +38,6 @@ For 10pt, apply .7353em
 /* Section 1 */
 /*Global tag styles*/
 
-/*body { font-family:"Trebuchet MS",Verdana,Arial,Helvetica,sans-serif; font-size:85%; font-style:normal; font-weight: normal; height:100%; text-align:center; width:100%; margin-top:0px; background:#FFFFFF }*/
 body { font-family:"Trebuchet MS",Verdana,Arial,Helvetica,sans-serif; font-size:85%; font-style:normal; font-weight: normal; height:100%; text-align:center; width:100%; margin-top:0px; background:#FFFFFF }
 
 body.bodybg { background:url(background.gif) 2% 0% repeat-x #4D4D4D; color: #444444; }
@@ -710,8 +709,6 @@ div .confirmValue { padding-top:3px; }
 .mainSearch .form1Part { float:none; margin-top:36px; text-align:center; }
 
 .mainSearch .form1Part, .mainMenuContent { max-width:600px; margin-left:auto; margin-right:auto;  }
-
-/*.minHeight { height:100%; width:97%; margin-left:auto; margin-right:auto; background:#ffffff; padding-bottom:0; padding-top:0; }*/
 .minHeight { height:100%; width:1067px; margin-left:auto; margin-right:auto; background:#ffffff; padding-bottom:0; padding-top:0; }
 
 .msg td { padding-top:3px; }
