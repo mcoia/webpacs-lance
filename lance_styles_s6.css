@@ -160,7 +160,7 @@ a:hover  { color: #014184; }
 
 .bibDisplayContentMain, .resourceDisplayContentMain  { float:left; width:80%; /*margin-left:1.5em; */ display:inline; }
 
-.bibDisplayContentMain table, .bibDisplayUrls table, table.reserveBibs, .resourceDisplayContentMain table, .bibDisplayReviews  { border:0; font-size:.8824em; }
+.bibDisplayContentMain table, .bibDisplayUrls table, table.reserveBibs, .resourceDisplayContentMain table, .bibDisplayReviews  { border:1; font-size:.8824em; }
 
 .bibDisplayContentMain table table, .bibDisplayUrls table table, .resourceDisplayContentMain table table  { font-size:1em; }
 
@@ -841,7 +841,7 @@ width:19%;
 
 .patFloat .buttonText { margin-left:3px; }
 
-.patFuncArea { background:#FFFFFF; float:left; margin-left:20px; width:60%; margin-bottom:18px; }
+.patFuncArea { background:#FFFFFF; float:left; margin-left:20px; width:100%; margin-bottom:18px; }
 
 .patFuncArea a { text-decoration:none; display:table-cell; display:inline-block; margin-right:10px; }
 
@@ -963,7 +963,7 @@ td.progInfoLabel { color:#767C70; font-weight:bold; padding-right:25px; text-ali
 
 table.resourceResource { margin:15px; width:95%; }
 
-table.reserveBibs { margin:25px 0 20px 15%; width:65%; }
+table.reserveBibs { margin:25px 0 20px 0; width:100%; }
 
 .bibDisplayReviews .default { border-bottom:1px solid #ECECEC; }
 
