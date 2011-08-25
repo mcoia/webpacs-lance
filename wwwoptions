@@ -504,8 +504,8 @@ ICON_BACK_TO_MYLISTS6=<div onmousedown="this.className='pressedState';" onmouseo
 ICON_MYLISTS_RECORD6=<span class="button"><img src="/screens/ico_list_add.png" alt=""><span class="buttonText">Add to My Lists</span></span>
 ICON_BUT_BIBEXPORT6=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">Save for Print/Email</span></span>
 ICON_BUT_CLEAR_MARKED6=<span class="button"><img src="/screens/ico_bag_clear.png" alt=""><span class="buttonText">Clear Saved Records</span></span>
-ICON_BUT_EXPORT_MULTI6=<span class="button"><img src="/screens/ico_disc.png" alt=""><span class="buttonText">View Saved Records</span></span>
-ICON_BUT_EXPORT_VIEW_SAVES6=<span class="button"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">Viewt Marked Records</span></span>
+ICON_BUT_EXPORT_MULTI6=<span class="button"><img src="/screens/ico_disc.png" alt=""><span class="buttonText">Print/Email Saved Records</span></span>
+ICON_BUT_EXPORT_VIEW_SAVES6=<span class="button"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">View Marked Records</span></span>
 ICON_BUT_VIEW_SAVES6=<span class="button"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">View Saved Records</span></span>
 ICON_BUT_REQUEST6=<span class="button"><img src="/screens/ico_target.png" alt=""><span class="buttonText">Request</span></span>
 ICON_BUT_REQUEST_ALL6=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Request Available</span></span></div></div>
