@@ -54,6 +54,10 @@ h3
 .blurb
 {
 	font-size: 11px;
+}
+
+.bibDetail, .bibInfoEntry {
+    text-align: left;
 }
 
 .bibholdings
