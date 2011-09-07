@@ -1,40 +1,51 @@
-<HTML>
-<HEAD>
-	<TITLE>LANCE/ Truman</TITLE>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-</HEAD>
-
-<BODY bgcolor="#ffffff" link="#0000FF" alink="#0000FF" vlink="#0000FF" onLoad="document.forms[0].SEARCH.focus(); document.forms[0].SEARCH.select();">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Lance srchhelp_a_s6.html updated 08 Aug 2011 -->
+<head>
+<title>Truman Catalog - Reserve Search by Course</title>
+<script language="JavaScript">
+<!-- Hide the JS
+startTimeout(600000, "/");
+// -->
+</script>
+<noscript>
+<meta http-equiv="Refresh" content="600;URL=http://lance.missouri.edu/search~S6/" />
+</noscript>
+</head>
+<body>
 <!--{toplogo}-->
-
-<br>
-
 <!--{patron}-->
 <!--{logout}-->
-
-<!-- Begin Search Help Text -->
-<center><table border="0" width="570"><tr><td>
-<h3 align="center"><b>Reserve List Search, by Name of Course</b></h3>
-<form ACTION="/search/r" METHOD="GET">
-  <p ALIGN="CENTER">
-    <input TYPE="TEXT" name="SEARCH" maxlength="64" size="48">
-    <input TYPE="SUBMIT" value="Search" name="SUBMIT"><br>
-  </p>
+<div class="pageContentInner">
+<h1 class="pageHeader">Reserve List Search, by Name of Course</h1>
+<div id="accessibleForm" class="form1Part">
+<form method="get">
+<fieldset>
+<!-- Optional legend:
+<legend>Type the call number you want to find, then press the Enter key or click Submit.</legend>
+-->
+<div class="formEntryArea">
+<!-- <span class="formLabel">
+<label for="SEARCH">Search for:</label>
+</span> -->
+<!--{search}-->
+</div>
+<div class="formButtonArea">
+<!--{submit}-->
+</div>
+</fieldset>
 </form>
-<p>Type the Course Name.</p>
-<table border="0"><tr><td nowrap valign="top">
-<i>for example:</i> </td><td>
-<pre>    nurs
-    stat190
-    acct212
-</pre>
-</td></tr></table>
-</td></tr></table></center>
-
-<!-- End Search Help Text -->
-To search Course Reserves by Instructor, click <a href="/search~S6/p"> here</a>.
-<p align="center"><A HREF="/search/"><IMG SRC="/screens/b_newsrch.gif" BORDER=0 ALT="[START OVER]"></A></p> 
+<!-- Begin Search Help Text -->
+<p>Type the Course Name. For example:</p>
+<ul>
+<li> nurs </li>
+<li> stat190 </li>
+<li> acct212 </li>
+</ul>
+</div><!--form1Part -->
+</div><!-- pageContentInner -->
 <!--{botlogo}-->
-</BODY>
-</HTML>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].SEARCH.focus(); }
+catch(err) {}
