@@ -1,68 +1,112 @@
-<!--{toplogo}-->
-<br>
-<FORM METHOD=POST>
-<!--{iferrmsg}-->
-<FONT COLOR=RED SIZE=+2><EM>
-<!--{iferrmsgisPIN}-->
-<!--{newpinmsg}-->
-<!--{else}-->
-<!--{errmsg}-->
-<!--{xif}-->
-</EM></FONT><BR><BR><BR>
-<!--{xif}-->
-<!--{enterinfo}-->
-<TABLE WIDTH=100%>
-<!--{ifneedpatronname}-->
-<TR><TD WIDTH=30%></TD><TD><FONT SIZE=-1>
-<!--{nameexample}-->
-</FONT></TD></TR><TR><TD>
-<!--{nameprompt}-->
-</TD><TD>
-<!--{name}-->
-</TD></TR>
-<!--{xif}-->
-<!--{ifneedpatronverify}-->
-<TR><TD></TD><TD><FONT SIZE=-1>
-<!--{barcodeexample}-->
-</FONT></TD></TR>
-<TR><TD>
-<!--{barcodeprompt}-->
-</TD><TD>
-<!--{barcode}-->
-</TD></TR>
-<!--{ifneedspin}-->
-<!--{iferrmsgisPIN}-->
-<TR><TD COLSPAN=2>
-<!--{newpinmsg}-->
-</TD></TR><TR><TD>
-<!--{pin1prompt}-->
-</TD><TD>
-<!--{pin1}-->
-</TD></TR><TR><TD>
-<!--{pin2prompt}-->
-</TD><TD>
-<!--{pin2}-->
-</TD></TR>
-<!--{else}-->
-<TR><TD></TD><TD><FONT SIZE=-1>
-The PIN can be any alpha-numeric string, 4 to 30 characters in length.  
-<br>Remember this number.  Contact the circulation desk for help.
-</FONT></TD></TR><TR><TD>
-<!--{pinprompt}-->
-</TD><TD>
-<!--{pin}-->
-<!--{pinresetrequest}-->
-</TD></TR>
-<!--{xif}-->
-<!--{xif}-->
-<!--{xif}-->
-</TABLE>
-<P>
-<input name="submit" type="SUBMIT" value="Submit" />
-</FORM>
-<DIV ALIGN=LEFT>
-<!--{startover}-->
-<DIV>
-<!--{botlogo}-->
-</BODY>
-</HTML>
+<!--{toplogo}-->
+<div class="pageContentInner">
+<h1 class="pageHeader">Login</h1>
+<div class="form1Part formLogin" id="accessibleForm">
+<!--{formbegin}-->
+<!--{iferrmsg}-->
+<span class="errormessage">
+<!--{iferrmsgisPIN}-->
+<!--{newpinmsg}-->
+<!--{else}-->
+<!--{errmsg}-->
+<!--{xif}-->
+</span>
+<!--{xif}-->
+
+<fieldset>
+<legend>
+<!--{enterinfo}-->
+</legend>
+
+<!--{ifextpat}-->
+<h2>Students, Staff, and Faculty</h2>
+<div class="formEntryArea">
+<label for="extpatid"><span class="formLabel">
+Username:
+</span></label>
+<!--{extpatid}-->
+<label for="extpatpw"><span class="formLabel">
+Password:
+</span></label>
+<!--{extpatpw}-->
+</div>
+<h2>Visitors</h2>
+<!--{xif}-->
+
+<!--{ifneedpatronname}-->
+<div class="formEntryArea">
+<!--{nameprompt}-->
+<!--{name}-->
+<span class="formLabelExample">
+<!--{nameexample}-->
+</span>
+</div>
+<!--{xif}-->
+
+<!--{ifneedpatronverify}-->
+<div class="formEntryArea">
+<!--{barcodeprompt}-->
+<!--{barcode}-->
+<span class="formLabelExample">
+<!--{barcodeexample}-->
+</span>
+</div>
+
+<!--{ifneedspin}-->
+
+<!--{iferrmsgisPIN}-->
+<p>
+<!--{newpinmsg}-->
+</p>
+<div class="formEntryArea">
+<!-- <label for="pin1"> -->
+<span class="formLabel">
+<!--{pin1prompt}-->
+</span>
+<!--{pin1}-->
+<!-- </label> -->
+</div>
+<div class="formEntryArea">
+<!-- <label for="pin2"> -->
+<span class="formLabel">
+<!--{pin2prompt}-->
+</span>
+<!--{pin2}-->
+<!-- </label> -->
+</div>
+
+<!--{else}-->
+<div class="formEntryArea">
+<!--{pinprompt}-->
+<!--{pin}-->
+<span class="formLabelExample">
+<!--{pininstructions}-->
+</span>
+</div>
+
+<!--{xif}-->
+<!--{xif}-->
+<!--{xif}-->
+
+    <!--{ifalternate_id}-->
+    <!--{user_name}-->
+    <!--{xif}-->
+
+<div class="formButtonArea">
+<!--{ifneedspin}-->
+<!--{pinresetrequest}-->
+<!--{xif}-->
+<!--{submit}-->
+<input type="submit" class="submitHidden">
+</div>
+</fieldset>
+<!--{formend}-->
+
+</div>
+
+</div><!-- pageContentInner -->
+<!--{botlogo}-->
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].elements[1].focus(); }
+catch(err) {}
+//--><!]]></script>

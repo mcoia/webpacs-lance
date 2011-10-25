@@ -1,43 +1,78 @@
-<HTML>
-<HEAD>
-	<TITLE>LANCE/ LANCE Catalog</TITLE>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-</HEAD>
-
-<BODY bgcolor="#ffffff" link="#0000FF" alink="#0000FF" vlink="#0000FF" onLoad="document.forms[0].SEARCH.focus(); document.forms[0].SEARCH.select();">
-
-<!--{toplogo}-->
-
-<br>
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+<!-- Lance srchhelp_a_s6.html updated 08 Aug 2011 -->
+
+<head>
+
+<title>Truman Catalog - Local Call Number Search</title>
+
+  <script language="JavaScript">
+    <!-- Hide the JS
+    startTimeout(600000, "/");
+    // -->
+  </script>
+
+  <noscript>
+    <meta http-equiv="Refresh" content="600;URL=http://lance.missouri.edu/search~S6/" />
+  </noscript>
+
+
+</head>
+<body>
+<!--{toplogo}-->
 <!--{patron}-->
-<!--{logout}-->
-
-<!-- Begin Search Help Text -->
-<center><table border="0" width="570"><tr><td>
-<h3 align="center"><b>Local Call Number Search</b></h3>
-<form METHOD="GET" ACTION="/search/f">
-  <p ALIGN="CENTER"> 
-    <input TYPE="TEXT" NAME="SEARCH" MAXLENGTH="64" SIZE="48">
-    <input TYPE="SUBMIT" VALUE="Search"><br>
-
-  </p>
-</form>
-<p>Search here for locally assigned call numbers used for audiovisual, curriculum and special collection materials.</p>
-<p>Type as much of the Call Number as you know.</p>
-<table border="0"><tr><td nowrap valign="top">
-<i>for example:</i> </td><td>
-<pre>    C035
-    Thesis T 3045
-    Film Book 0001 1987
-    micf 012
-    MV 95 e
-    video no 125
-</pre>
-</td></tr></table>
-</td></tr></table></center>
-<!-- End Search Help Text -->
-<p align="center"><A HREF="/search/"><IMG SRC="/screens/b_newsrch.gif" BORDER=0 ALT="[START OVER]"></A></p> 
-<!--{botlogo}-->
-</BODY>
-</HTML>
+<!--{logout}-->
+
+
+<div class="pageContentInner">
+
+  <h1 class="pageHeader">Local Call Number Search</h1>
+
+  <div id="accessibleForm" class="form1Part">
+
+    <form method="get">
+
+      <fieldset>
+        <!-- Optional legend:
+        <legend>Type the call number you want to find, then press the Enter key or click Submit.</legend>
+        -->
+
+        <div class="formEntryArea">
+
+          <!-- <span class="formLabel">
+            <label for="SEARCH">Search for:</label>
+          </span> -->
+<!--{search}-->
+        </div>
+
+        <div class="formButtonArea">
+<!--{submit}-->
+        </div>
+
+      </fieldset>
+
+    </form>
+
+    <!-- Begin Search Help Text -->
+    <p>Search here for locally assigned call numbers used for audiovisual, curriculum and special collection materials.</p>
+    <p>Type as much of the Call Number as you know. For example:</p>
+    <ul>
+      <li> Art Print 415 </li>
+      <li> Cabinet 1, Shelf 5 </li>
+      <li> Cabinet 19, Drawer </li>
+      <li> Master's Thesis </li>
+    </ul>
+
+  </div><!--form1Part -->
+
+</div><!-- pageContentInner -->
+
+<!--{botlogo}-->
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].SEARCH.focus(); }
+catch(err) {}
+//--><!]]></script>
+</body>
+</html>
