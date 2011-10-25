@@ -1,100 +1,115 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html>
-<head>
-<title>LANCE Library Catalog \LANCE</title>
-<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
-</head>
-<body bgcolor="#FFFFFF" link="#0000FF" alink="#0000FF" vlink="#0000FF">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- This File Last Changed: 18 Aug 2011 -->
+<head>
+<title>LANCE Library Catalog</title>
+<script language="JavaScript">
+<!-- Hide the JS
+startTimeout(600000, "/");
+// -->
+
+</script>
+<noscript>
+<meta http-equiv="Refresh" content="600;URL=/" />
+</noscript>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+</head>
+
+<body>
 <!--{toplogo}-->
 <!--{patron}-->
-<!--{return}-->
-<!--{formbegin}-->
-<!--{searchtypetext}-->
-<!--{searchtypeindex}-->
-<strong>
-<!--{searchterm}-->
-</strong><br>
-<!--{entriesfoundnum}-->
-<!--{entriesfoundtext}-->
-<br>
-<!--{startover}-->
-<!--{prevpage}-->
-<!--{logout}-->
-<br>
-<!--{pleaseselect}-->
-<br>
-<!--{sort}-->
-<table summary="limit">
-<tr>
-<td>
-<!--{YEAR_label}-->
-&#58;
-</td>
-<td>
-<!--{YEAR_select}-->
-</td>
-</tr>
-<tr>
-<td>
-<!--{MATERIAL_label}-->
-&#58;
-</td>
-<td>
-<!--{MATERIAL_select}-->
-<br>
-</td>
-</tr>
-<tr>
-<td>
-<!--{LANGUAGE_label}-->
-&#58;
-</td>
-<td>
-<!--{LANGUAGE_select}-->
-<br>
-</td>
-</tr>
-<tr>
-<td>
-<!--{PUBLISHER_label}-->
-</td>
-<td>
-<!--{PUBLISHER_select}-->
-<br>
-</td>
-</tr>
-<tr>
-<td>
-<!--{WHERE_label}-->
-&#58;
-</td>
-<td>
-<!--{WHERE_select}-->
-<br>
-</td>
-</tr>
-<tr>
-<td>
-<!--{TITLE_label}-->
-&#58; 
-</td>
-<td>
-<!--{TITLE_select}-->
-</td>
-</tr>
-</table>
-<!--{iferr}-->
-<!--{errmsg}-->
-<!--{xif}-->
-<br>
-<!--{submit}-->
-<!--{cancel}-->
-<!--{formend}-->
-<br>
-<!--{botlogo}-->
-</body>
-</html>
-
+<!--{return}-->
+
+<div class="pageContentInner">
+<h1 class="pageHeader">Limit/Sort Search</h1>
+
+<p>
+You searched for the
+<!--{searchtypeindex}-->
+
+<!--{searchterm}-->
+-
+<!--{entriesfoundnum}-->
+ entries found.
+</p>
+
+<!--{iferr}-->
+<div><span class="errormessage">
+<!--{errmsg}-->
+</span></div>
+<!--{xif}-->
+
+<div class="form1Part" id="accessibleForm">
+<!--{formbegin}-->
+
+<fieldset>
+<legend>Please select criteria to limit by:</legend>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="W">Location:</label>
+</span>
+<!--{WHERE_select}-->
+</div>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="M">Material type:</label>
+</span>
+<!--{MATERIAL_select}-->
+</div>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="L">Language:</label>
+</span>
+<!--{LANGUAGE_select}-->
+</div>
+
+<div class="formEntryArea">
+<fieldset class="formFieldsetInner">
+<legend>Year of publication:</legend>
+<div class="formEntryArea">
+<!--<span class="formLabel">
+<label for="Ya">Year of publication:</label>
+</span> -->
+<!--{YEAR_select}-->
+</div>
+</fieldset>
+</div>
+
+<div class="formEntryArea">
+<label for="NAME" class="accessibleAddInfo">Limit type:</label>
+<span class="formLabel"><label for="VALUE">Enter limits:</label></span>
+<!--{TITLE_label}-->
+<!--{TITLE_select}-->
+<!--{PUBLISHER_label}-->
+<!--{PUBLISHER_select}-->
+</div>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="sortdropdown">Sort By:</label>
+</span>
+<!--{sort}-->
+</div>
+
+<div class="formButtonArea">
+<!--{submit}-->
+<!--{cancel}-->
+</div>
+
+</fieldset>
+<!--{formend}-->
+</div> <!-- form1Part -->
+
+
+</div><!-- pageContentInner -->
+<!--{botlogo}-->
+</body>
+</html>
 
 
 

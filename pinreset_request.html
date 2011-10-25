@@ -1,23 +1,58 @@
-<!-- Rel 2007 "Skyline" Example Set -->
-<!-- This File Last Changed: 02 September 2008 -->
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Pin Request</title>
-</head>
+<!--{toplogo}-->
+<div class="pageContentInner">
+<h1 class="pageHeader">PIN Request</h1>
 
-<body>
-<div class="pinReset">
-<h2 class="srchhelpHeader">Pin Request</h2>
-<!--{closewindow}-->
-<!--{patform}-->
+<!--{iferrmsg}-->
+<div class="errormessage">
+<!--{errmsg}-->
+</div>
+<!--{xif}-->
+
+<div class="form1Part">
+<form method="post" id="accessibleForm">
+<fieldset>
+<legend>
+<!--{enterinfo}-->
+</legend>
+
+<!--{ifneedpatronname}-->
+<div class="formEntryArea">
+<label for="name"><span class="formLabel">
+<!--{nameprompt}-->
+</span>
+<!--{name}-->
+<span class="formLabelExample">
+<!--{nameexample}-->
+</span>
+</label>
+</div>
+<!--{xif}-->
+
+<!--{ifneedpatronverify}-->
+<div class="formEntryArea">
+<label for="barcode"><span class="formLabel">
+<!--{barcodeprompt}-->
+</span>
+<!--{barcode}-->
+<span class="formLabelExample">
+<!--{barcodeexample}-->
+</span>
+</label>
+</div>
+<!--{xif}-->
+
 <!--{ifextpat}-->
+<div class="formEntryArea">
 <!--{extpatid}-->
 <!--{extpatpw}-->
-<!--{xif}-->
-<!--{iferrmsg}-->
-<!--{errmsg}-->
-<!--{xif}-->
 </div>
-</body>
-</html>
+<!--{xif}-->
+
+<!--{submit}-->
+
+</fieldset>
+</form>
+</div><!-- form1Part -->
+
+</div><!-- pageContentInner -->
+<!--{botlogo}-->

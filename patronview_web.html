@@ -1,112 +1,146 @@
-<LINK REL="STYLESHEET" TYPE="TEXT/CSS" HREF="http://lance.missouri.edu/screens/lance_styles_s6">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+<!-- Lance srchhelp_a_s6.html updated 04 Aug 2011 -->
+<head>
+<title>Truman Catalog - Author Search</title>
+
+  <script language="JavaScript">
+    <!-- Hide the JS
+    startTimeout(600000, "/");
+    // -->
+  </script>
+
+  <noscript>
+    <meta http-equiv="Refresh" content="600;URL=http://lance.missouri.edu/search~S6/" />
+  </noscript>
+
+<!-- Checking to see if it works -->
+
+</head>
+
+<body>
 
 <!--{toplogo}-->
 
 <!--{patron}-->
-<!--{logout}-->
+<div class="pat">
 
-<FORM METHOD=POST>
-<TABLE ALIGN="left" BORDER="0">
-<TR>
-<TD>
+  <div class="patFloat">
+
+    <div class="patTop">
+
+      <div class="patNameAddress">
 <!--{patroninfo}-->
-<BR>
+      </div>  <!--patNameAddress-->
+
+    </div> <!-- patTop -->
+
+
+    <div class="clear"></div>
+
+    <div class="patActionsLinks">
+
+      <div id="patActionsLinksList">
+
+            <!-- Start Over / Log Out -->
+<div class="patActionItem">
 <!--{startover}-->
-<BR>
-<!--{logout}-->
-</TD>
-</TR>
-</TABLE>
+</div>
 
-<TABLE WIDTH="100%"><TR><TD>
-<TABLE WIDTH="75%" ALIGN="right">
-<TR>
-<TD>
+            <!-- Checkouts -->
 <!--{ifchkouts}-->
+<div class="patActionItem" id="patButChkouts">
 <!--{chkoutsbtn}-->
-</TD>
-</TR>
-<TR>
-<TD>
+</div>
 <!--{xif}-->
+
+            <!-- Holds -->
 <!--{ifholds}-->
+<div class="patActionItem" id="patButHolds">
 <!--{holdsbtn}-->
-</TD>
-</TR>
-<TR>
-<TD>
+</div>
 <!--{xif}-->
-<!--{ifmymil}-->
+
+            <!-- Search the Catalog -->
+<div class="patActionItem">
 <!--{searchbtn}-->
-</TD>
-</TR>
-<TR>
-<TD>
-<!--{xif}-->
+</div>
+
+            <!-- Modify Your PIN -->
 <!--{ifmodifypin}-->
+<div class="patActionItem">
 <!--{modifypinbtn}-->
-</TD>
-</TR>
-<TR>
-<TD>
+</div>
 <!--{xif}-->
+
+            <!-- Preferred Searches -->
 <!--{ifpsearch}-->
+<div class="patActionItem">
 <!--{psearchbtn}-->
-</TD>
-</TR>
-<TR>
-<TD>
+</div>
 <!--{xif}-->
+
+            <!-- Ratings -->
+<!--{ifpatrate}-->
+<div class="patActionItem">
+<!--{patratebtn}-->
+</div>
+<!--{xif}-->
+
+            <!-- Reading History -->
 <!--{ifcirchist}-->
+<div class="patActionItem">
 <!--{circhistbtn}-->
-</TD>
-</TR>
+</div>
+<!--{xif}-->
 
-<TR>
-<TD>
+            <!-- My Lists -->
 <!--{ifmylists}-->
+<div class="patActionItem">
 <!--{mylists}-->
+</div>
 <!--{xif}-->
-</TD>
-</TR>
 
-
-<TR>
-<TD>
-<!--{xif}-->
+            <!-- Bookings -->
 <!--{ifbookings}-->
+<div class="patActionItem" id="patButBookings">
+<div class="button2">
 <!--{bookingsbtn}-->
-</TD>
-</TR>
-<TR>
-<TD>
+</div>
+</div>
 <!--{xif}-->
+
+            <!-- Fines -->
 <!--{iffines}-->
+<div class="patActionItem" id="patButFines">
+<div class="button2">
 <!--{finesbtn}-->
+</div>
+</div>
 <!--{xif}-->
-</TD>
-</TR>
-<TR>
-<TD>
-<!--{xif}-->
+
+            <!-- Messages -->
 <!--{ifmsgs}-->
+<div class="patActionItem">
 <!--{msgsbtn}-->
+</div>
 <!--{xif}-->
-</TD>
-</TR>
-</TABLE>
-</FORM>
-</TD>
-</TR>
-</TABLE>
 
-<BR>
-<BR>
-<BR>
+      </div> <!--patActionsLinksList-->
 
+    </div> <!-- patActionsLinks -->
+
+    <div class="patFuncArea">
 <!--{patfunc}-->
+    </div>
 
-  <P>
+    <div class="clear"></div>
+
+  </div> <!--patFloat-->
+
+</div> <!--pat-->
 <!--{botlogo}-->
-  </BODY>
-</HTML>
+</body>
+</html>

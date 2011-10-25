@@ -1,187 +1,109 @@
-<HTML>
-<head>
-    <title>LANCE Library Catalog - Welcome</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<script type="text/javascript">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- Updated: 09 June 2010 -->
+<head>
+<title>LANCE Catalog - Truman State University</title>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print_s6.css" media="print">
+<!--<link rel="stylesheet" type="text/css" href="/screens/stylesmain.css" > Un-comment to offer a larger logo on mainmenu.-->
+<script type="text/javascript">/* <![CDATA[ */
+function iiiSearchValidate() {
+	try{
+	  if (document.getElementById('search').searcharg.value==null||document.getElementById('search').searcharg.value=="") {
+		return false;
+		}
+	}
+	catch(err) {
+	}
+  return true;
+}
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-16137543-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
+function iiiDoSubmit_1()
+{
+//getFormHandleForm() is in common.js
+var obj = getFormHandleForm(1);
+if(iiiSearchValidate()){
+obj.submit();
+}
+}
+/* ]]> */
 </script>
+</head>
+<body>
+<!--{toplogo}-->
+<!--{patron}-->
 
-</head>
-
-<BODY bgcolor="#ffffff" link="#0000FF" vlink="#0000FF" vlink="#0000FF">
-
-<center>
-    
-  <table width="570" border="0" cellspacing="0" cellpadding="2" vspace="4">
-    <tr valign="top">            
-      <td colspan="3">
-        <a href="http://mobius.umsystem.edu/search/"><font size="2">Search the MOBIUS Union Catalog</font></a></td>
-      <td align="right"> 
-        <a href="/search~/"><font size="2">Search the LANCE Catalog</font></a></td>
-    </tr>
-    <tr valign="top"> 
-      <td colspan="4" height="8"></td>
-    </tr>
-    <tr valign="top">          
-      <td colspan="4" align="center"><IMG SRC="http://lance.missouri.edu/screens/LANCE.gif" HEIGHT="65" WIDTH="321" ALT=" LANCE " BORDER="0" ><br>
-        <font color="#666666" face="Arial, Helvetica, sans-serif" size="2"><b>Libraries 
-        And Networks Cooperating in Education &middot; a MOBIUS Library Catalog</b></font> 
-      </td>
-    </tr>
-    <tr valign="top"> 
-      <td colspan="4" height="4"></td>
-    </tr>
-    <tr valign="top"> 
-      <td align="right"> 
-        <a href="/search~S1/"><IMG SRC="http://lance.missouri.edu/screens/flag.gif" HEIGHT="20" WIDTH="30" ALT=" search " BORDER="0" ></a></td>  
-      <td nowrap>
-        <a href="/search~S1/"><font size="3">Culver-Stockton College</font></a></td>
-      <td align="right"> 
-        <a href="/search~S4/"><IMG SRC="http://lance.missouri.edu/screens/flag.gif" HEIGHT="20" WIDTH="30" ALT=" search " BORDER="0" ></a></td>          
-      <td nowrap><a href="/search~S4/" nowrap="nowrap"><font size="3">Linn State 
-        Technical College</font></a></td>
-     </tr>
-     <tr valign="top"> 
-       <td align="right"> 
-         <a href="/search~S2/"><IMG SRC="http://lance.missouri.edu/screens/flag.gif" HEIGHT="20" WIDTH="30" ALT=" search " BORDER="0" ></a></td>          
-      <td nowrap><a href="/search~S2/" nowrap="nowrap"><font size="3">Hannibal-LaGrange 
-        University</font></a></td>
-      <td align="right"> 
-        <a href="/search~S5/"><IMG SRC="http://lance.missouri.edu/screens/flag.gif" HEIGHT="20" WIDTH="30" ALT=" search " BORDER="0" ></a></td>           
-      <td nowrap><a href="/search~S5/" nowrap="nowrap"><font size="3">Moberly 
-        Area Community College</font></a></td>
-    </tr>
-    <tr valign="top"> 
-      <td align="right"> 
-        <a href="/search~S3/"><IMG SRC="http://lance.missouri.edu/screens/flag.gif" HEIGHT="20" WIDTH="30" ALT=" search " BORDER="0" ></a></td>            
-      <td nowrap> 
-        <a href="/search~S3/"><font size="3">A.T. Still University - Missouri</font></a></td>
-      <td align="right"> 
-        <a href="/search~S6/"><IMG SRC="http://lance.missouri.edu/screens/flag.gif" HEIGHT="20" WIDTH="30" ALT=" search " BORDER="0" ></a></td>            
-      <td nowrap><a href="/search~S6/" nowrap="nowrap"><font size="3">Truman State 
-        University</font></a></td>
-    </tr>
-  </table>
-</center>
-
-<center>
-  <form name="SearchForm" target="_parent" action="/search/Y" method="GET">
-    <table border="0" cellspacing="0" cellpadding="2" width="570" bgcolor="#CCCCCC">
-      <tr bgcolor="#0000CC"> 
-        <td colspan="5"> 
-          <div align="left"><b><font color="#FFFFFF" face="Arial, Helvetica, sans-serif">Quick 
-            Search</font></b></div>
-        </td>
-      </tr>
-      <tr> 
-        <td> 
-          <div align="right"><font size="-2" face="Arial, Helvetica, sans-serif"><b> 
-            Select a library: </b></font></div>
-        </td>
-        <td> 
-          <select name="searchscope">
-
-            <option value="7" selected>
-				LANCE Catalog</option>
+  <div class="miscButtons">
 
-            <option value="3" >
+<!--{logout}-->
+  </div>
 
-				A.T. Still</option>
-            <option value="1" >
-				Culver-Stockton</option>
-
-            <option value="2" >
-				Hannibal-LaGrange</option>
-
-            <option value="4" >
-				Linn State</option>
-
-            <option value="5" >
-				MACC</option>
-
-            <option value="6" >
-				Truman</option>
-
-          </select>
-        </td>
-        <td> 
-          <div align="right"><font size="-2" face="Arial, Helvetica, sans-serif"><b>Search 
-            by:</b></font></div>
-        </td>
-        <td> 
-          <select name="searchtype">
-
-
-			<option value="Y" selected>Keyword</option>
-	
-
-			<option value="t" >Title</option>
-	
-
-			<option value="a" >Author</option>
-	
-
-			<option value="s" >Journal Title</option>
-	
-
-			<option value="d" >LC Subject</option>
-	
-
-			<option value="m" >Children's Subject</option>
-	
-
-			<option value="j" >Medical Subject</option>
-	
-
-			<option value="c" >LC Call Number</option>
-	
-
-			<option value="e" >Dewey Call Number</option>
-	
-
-			<option value="f" >Local Call Number</option>
-	
-
-			<option value="g" >SuDoc Number</option>
-	
-
-			<option value="i" >Standard Number</option>
-	
-
-			<option value="o" >OCLC Number</option>
-	
-
-          </select>
-        </td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr> 
-        <td> 
-          <div align="right"><font size="-2" face="Arial, Helvetica, sans-serif"><b> 
-            Search for: </b></font></div>
-        </td>
-        <td colspan="3"> 
-          <input type="TEXT" name="searcharg" maxlength="75" size="45">
-        </td>
-        <td align="right"> 
-          <input name="cmdSubmit" type="Submit" value="Search">
-          <input type="Hidden" name="SORT" VALUE="D">
-        </td>
-      </tr>
-    </table>
-  </form>
-</center>
-
-
-</BODY>
-</HTML>
+  <div class="pageContentInner mainSearch">
+
+    <h1 class="accessibleAddInfo">Search</h1>
+
+    <div id="accessibleForm" class="form1Part">
+      <div class="browseSearchtool">
+        <form action="/search/" method="get" name="search" id="search" onSubmit="return iiiSearchValidate();">
+
+
+          <input type="hidden" id="iiiFormHandle_1">
+
+          <!-- Optional legend:
+          <fieldset>
+          <legend>Type the search term you want to find.</legend>-->
+
+          <div class="formEntryArea">
+
+            <div class="inlineBlock">
+
+              <label for="searchtype" class="accessibleAddInfo">Search type</label>
+              <select name="searchtype" id="searchtype">
+              <option value="Y" selected="selected">Keyword</option>
+              <option value="t">Title</option>
+              <option value="s">Journal Title</option>
+              <option value="a">Author</option>
+              <option value="d">Subject</option>
+              <option value="c">LC Call No</option>
+              </select>
+
+<!--{nosort}-->
+
+              <label for="searcharg" class="accessibleAddInfo">Search term</label>
+              <input maxlength="75" name="searcharg" size="20" >
+
+            </div> <!-- inlineBlock -->
+
+            <div class="inlineBlock">
+              <span class="formButtonArea">
+ <!--{submit}-->
+                <input type="hidden" id="iiiFormHandle_1"/>
+
+                <a href="#" onclick="iiiDoSubmit_1();"><div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Submit</span></span></div></div></a>
+
+                <input type="submit" class="submitHidden"/>
+              </span> <!-- formButtonArea -->
+
+            </div> <!-- inlineBlock -->
+
+          </div><!-- formEntryArea -->
+
+          <!--</fieldset> optional-->
+        </form>
+
+      </div><!-- browseSearchtool -->
+
+    </div><!-- form1Part -->
+
+  </div><!--pageContentInner -->
+
+<!--{botlogo}-->
+
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].searcharg.focus(); }
+catch(err) {}
+//--><!]]></script>
+</body>
+</html>
+
