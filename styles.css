@@ -38,6 +38,8 @@ For 10pt, apply .7353em
 /* Section 1 */
 /*Global tag styles*/
 
+a img {border:none;}
+
 body { font-family:"Trebuchet MS",Verdana,Arial,Helvetica,sans-serif; font-size:85%; font-style:normal; font-weight: normal; height:100%; text-align:center; width:100%; margin-top:0px; background:#FFFFFF }
 
 body.bodybg { background:url(background.gif) 2% 0% repeat-x #4D4D4D; color: #444444; }
@@ -58,6 +60,8 @@ body > a, body > p, body > h1, body > h2, body > h3, body > h4 { margin-left:3px
 body > * { text-align:left;}
 
 caption { border-bottom:1px solid #D3D3D3; font-weight:bold; text-align:center; }
+
+center a {text-decoration:none;}
 
 div center table { border-color:#D3D3D3; margin-top:10px; margin-bottom:10px; }
 
@@ -128,7 +132,7 @@ a:hover  { color: #014184; }
 .formEntryArea { }
 .formRequired { color:#990000;font-weight:bold;font-size:1.3em;position:relative;top:5px; }
 .formsTogether { width:780px; }
-<!-- .formsTogether .form1Part { width:96%; } -->
+.formsTogether .form1Part { width:96%; }
 
 .additionalCopies { margin: 20px 6px; }
 
@@ -152,7 +156,7 @@ a:hover  { color: #014184; }
 
 #bibDisplayBody a:link,#bibDisplayBody a:visited, #formLinks a:link,#formLinks a:visited, .recordPager a:link, .recordPager a:visited, .actionButtonArea a:link, .actionButtonArea a:visited, .bibPager a:visited, .bibPager a:link { color: #014184; font-family:Arial,"Arial Unicode MS",Helvetica,Verdana,sans-serif; font-weight:bold; padding:6px 5px 3px 0px; text-decoration:none; width:auto; }
 
-#bibDisplayBody a:active,#bibDisplayBody a:hover,#formLinks a:active,#formLinks a:hover, .recordPager a:active, .recordPager a:hover, .actionButtonArea a:active, .actionButtonArea a:hover, .bibPager a:active, .bibPager a:hover { text-decoration:underline; }
+#bibDisplayBody a:active,#bibDisplayBody a:hover,#formLinks a:active,#formLinks a:hover, .recordPager a:active, .recordPager a:hover, .actionButtonArea a:active, .actionButtonArea a:hover, .bibPager a:active, .bibPager a:hover { text-decoration:none; }
 
 #bibDisplayBody .bibVol a:link, #bibDisplayBody .bibVol a:visited { font-family:"Trebuchet MS",Verdana,Arial,Helvetica,sans-serif; }
 
@@ -297,8 +301,6 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 .bookingsVerify a .buttonText  { text-decoration:underline; }
 
-#botlogo {font-family: Verdana,Geneva,Arial,Helvetica,sans-serif; font-size: 85%; text-align: center; margin: 5em auto 4em; padding: 1em 0;}
-
 /* Brief Citation display styles */
 
 .briefcitActions { text-align:left; }
@@ -417,7 +419,7 @@ table.browseResourceTable { border:0; }
 
 .browseSaveJump a:link,.browseSaveJump a:visited  { color: #014184; font-family:Arial,"Arial Unicode MS",Helvetica,Verdana,sans-serif; font-weight:bold; padding:6px 5px 3px 0px; text-decoration:none; width:auto; }
 
-.browseSaveJump a:active,.browseSaveJump a:hover   { text-decoration:underline; }
+.browseSaveJump a:active,.browseSaveJump a:hover   { text-decoration:none; }
 
 .browseSaveJump img { width:auto; }
 
@@ -437,7 +439,7 @@ table.browseResourceTable { border:0; }
 
 .browseSubEntryMedia { padding-bottom:.4em; }
 
-.browseSuperEntry  { background:#FFFFFF url('tile_browsesuperentry.jpg') repeat-x bottom left; border-bottom:1px solid #D3D3D3; margin:0; text-align:center;}
+.browseSuperEntry  { background:#FFFFFF url('tile_browsesuperentry.jpg') repeat-x bottom left; border-bottom:1px solid #D3D3D3; margin:0; text-align:center; }
 
 .browseSuperEntry td {font-weight: bold;}
 
@@ -445,13 +447,15 @@ h1.browseSuperEntryTitle { font-size:1.1em; display:inline; }
 
 .button { white-space:nowrap;  }
 
-.button img { border:0; margin-right:3px; vertical-align:text-bottom; }
+.button img { border:0; margin:7px 3px 0; vertical-align:text-bottom; }
 
 .button2 { font-size:.8824em; white-space:nowrap; }
 
 #buttonNextRecord { border-left:1px solid #D3D3D3; margin-right:3px; padding-left:8px; }
 
 .buttonText { font-size:.8824em; font-weight:bold; font-family:Arial,"Arial Unicode MS",Helvetica,Verdana,sans-serif; }
+
+span.buttonText:hover {text-decoration:underline;}
 
 .buttonText em {color:#d00000; font-size:1.2em;}
 
@@ -548,11 +552,11 @@ div .confirmValue { padding-top:3px; }
 
 .exportBrief pre { margin:0 12px; }
 
-/* div .bibResourceSidebar { display:none; } */
+div .bibResourceSidebar { display:none; }
 
-/* .bibDisplayReviews { display:none; } */
+.bibDisplayReviews { display:none; }
 
-/* .bibDisplayPermLink { display:none; } */
+.bibDisplayPermLink { display:none; }
 
 #bibDisplayBody { background:#FFFFFF; }
 
@@ -708,7 +712,8 @@ div .confirmValue { padding-top:3px; }
 
 .mainSearch .form1Part { float:none; margin-top:36px; text-align:center; }
 
-.mainSearch .form1Part, .mainMenuContent { max-width:600px; margin-left:auto; margin-right:auto;  }
+.mainSearch .form1Part, .mainMenuContent { width:600px; margin-left:auto; margin-right:auto; max-width:100%; } /*Fixed the search box so it wouldn't run into the Search Options column on narrow browsers */
+
 .minHeight { height:100%; width:1067px; margin-left:auto; margin-right:auto; background:#ffffff; padding-bottom:0; padding-top:0; }
 
 .msg td { padding-top:3px; }
@@ -751,8 +756,6 @@ padding:2px;
 
 .navigationRow a:link,.navigationRow a:visited, .miscButtons a:link, .miscButtons a:visited { color: #014184; font-family:Arial,"Arial Unicode MS",Helvetica,Verdana,sans-serif; font-weight:bold; padding:6px 5px 3px 0px; text-decoration:none; width:auto; }
 
-/* .navigationRow a:active,.navigationRow a:hover, .miscButtons a:active,.miscButtonsw a:hover { text-decoration:underline; } */
-
 .navigationRow { margin:0; }
 
 .navigationRow, .navigationRowRecord { clear:both; text-align:center; }
@@ -761,9 +764,7 @@ padding:2px;
 
 .navigationRow noscript h2, .bibSearchHistory noscript h2 { font-size:1em; margin:-3px 10px 0 0; color:#FF0000; }
 
-/* .navigationRow select, .navigationrow option { position:absolute; right:24px; top:48px; } */
-
-.navigationRow select { font-size:.83333em; /*width:200px; */}
+.navigationRow select { font-size:.83333em; width:200px; margin-top: 15px; }
 
 .pageContent { clear:both; }
 
@@ -900,8 +901,6 @@ td.progInfoLabel { color:#767C70; font-weight:bold; padding-right:25px; text-ali
 .rateHelp td { padding: 0 8px 8px 0; }
 
 #bibDisplayBody .rateLabel a:link, #bibDisplayBody .rateLabel a:visited { color:#767C70; padding-right:.7em; text-align:right; vertical-align:top; font-weight:bold; font-style:normal; text-decoration:underline; }
-
-/* .rateLabel { position:absolute; text-align:right; width:8.5%; font-size:85%; } */
 
 .rateLabel { margin-left:8%; font-size:85% }
 
