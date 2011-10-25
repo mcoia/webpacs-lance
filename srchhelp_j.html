@@ -1,77 +1,98 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-  
-<!-- Lance srchhelp_a_s6.html updated 08 Aug 2011 -->
-
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- This File Last Changed: Jan 25 2010 -->
 <head>
+<title>Millennium Web Catalog - Programs</title>
+<script language="JavaScript">
+<!-- Hide the JS
+startTimeout(600000, "/");
+// -->
 
-<title>Truman Catalog - Author Search</title>
-
-  <script language="JavaScript">
-    <!-- Hide the JS
-    startTimeout(600000, "/");
-    // -->
-  </script>
-
-  <noscript>
-    <meta http-equiv="Refresh" content="600;URL=http://lance.missouri.edu/search~S6/" />
-  </noscript>
-
-
+</script>
+<noscript>
+<meta http-equiv="Refresh" content="600;URL=/" />
+</noscript>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
 </head>
-<body>
+
+<!--{progsearchbody}-->
 <!--{toplogo}-->
-<!--{patron}-->
-<!--{logout}-->
-
 <div class="pageContentInner">
+<!--{patron}-->
+<!--{msg}-->
+<h1 class="pageHeader">Our Programs</h1>
+<p>Here you can search our database for classes, lectures, and other activities sponsored or hosted by the library.</p>
+<div id="accessibleForm" class="form2Part">
+<div class="formLeft">
+<!--{progsearchformbegin}-->
+<fieldset>
 
-  <h1 class="pageHeader">Medical Subject Search</h1>
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="SEARCH">Search for:</label>
+</span>
+<!--START progsearch -->
+<!--{progsearch}-->
+<!--END progsearch -->
+</div>
 
-  <div id="accessibleForm" class="form1Part">
+<div class="formEntryArea formScopeSearch">
+<span class="formLabel">
+<label for="searchscope">Location:</label>
+</span>
+<!--{scope}-->
+</div>
 
-    <form method="get">
+<div class="formEntryArea">
+<span class="formLabel">
+<!--{gtype}-->
+<!--hardcode alpha sort for programs only-->
+<input type="hidden" name="SORT" value="AX">
+<!--end hardcoded sort-->
+</span>
+</div>
 
-      <fieldset>
-        <!-- Optional legend:
-        <legend>Type the call number you want to find, then press the Enter key or click Submit.</legend>
-        -->
+<div class="formEntryArea">
+<span class="formLabel">
+Start date:
+</span>
+<!--{sessiondatestart}-->
+</div>
 
-        <div class="formEntryArea">
+<div class="formEntryArea">
+<span class="formLabel">
+End date:
+</span>
+<!--{sessiondateend}-->
+</div>
 
-          <!-- <span class="formLabel">
-            <label for="SEARCH">Search for:</label>
-          </span> -->
-<!--{search}-->
-        </div>
-
-        <div class="formButtonArea">
+<div class="formButtonArea">
 <!--{submit}-->
-        </div>
+</div>
+</fieldset>
+<!--{progsearchformend}-->
+</div>
 
-      </fieldset>
+<div class="formRight">
+<p>Explore your interests and expand your horizons at your library!</p>
+<p>Popular topics include:</p>
+<ul>
+<li>Gardening</li>
+<li>Children's Storytime</li>
+<li>Study Skills</li>
+<li>Writing Workshops</li>
+<li>Digital Photography</li>
+</ul>
+<p id="formLinks">
+<a href="/iii/calendar" class="browseSaveJump"><span class="button"><img src="/screens/ico_calendar.gif" alt=""><span class="buttonText">Events Calendar</span></span></a>
+</p>
+</div><!-- formRight -->
+</div><!-- form2Part -->
 
-    </form>
-
-    <!-- Begin Search Help Text -->
-    <p>These subject headings are established by the National Library of Medicine. If you are unsure of a subject, try a <a href="/search/Y">KEYWORD</a> 
-    search or a <a href="/search/d">Library of Congress Subject</a> search. For example:</p>
-    <ul>
-      <li> lung neoplasms </li>
-      <li> animals, laboratory </li>
-      <li> heart anatomy </li>
-      <li> surgery, operative adverse effects </li>
-    </ul>
-
-  </div><!--form1Part -->
-
-</div><!-- pageContentInner -->
+</div>
 
 <!--{botlogo}-->
-<script type="text/javascript"><!--//--><![CDATA[//><!--
-try { document.forms[0].SEARCH.focus(); }
-catch(err) {}
-//--><!]]></script>
 </body>
 </html>
