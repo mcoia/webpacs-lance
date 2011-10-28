@@ -20,74 +20,30 @@
   </div><!-- fullPage -->
 </div><!-- minHeight -->
 
-<script type='text/javascript'>
-// Function for Google Book Search viewability API script for briefcit
-function insertGBSlink(gbsData) {
-	offsiteImg = '<img src="/screens/icon_offsite_blue.gif" alt="offsite" title="offsite" style="border: 0pt none ; vertical-align: middle;"> ';
-	gbsPreviewImage = '<img src="/screens/gbs_preview_button1.gif" alt="Preview" title="Preview" style="border: 0pt none ; vertical-align: middle;"> ';
-	// Iterate through the "gbs" <div> elements
-	for(bib in gbsNumbers) {
-		// Look for matching GBS data
-		var bookInfo = gbsData[gbsNumbers[bib]];
-		// If found, process it
-		if(bookInfo){
-			// Set text and link values depending on viewablity
-			if(bookInfo.preview == "full") { 
-				textGBS = "";  
-				linkGBS = bookInfo.preview_url;
-				linkImage = gbsPreviewImage;
-			}
-			if(bookInfo.preview == "partial") { 
-				textGBS = "(Limited preview)"; 
-				linkGBS = bookInfo.preview_url;
-				linkImage = gbsPreviewImage;
-			}
-			if(bookInfo.preview == "noview") { 
-				textGBS = "Information at Google Book Search"; 
-				linkGBS = bookInfo.info_url;
-				linkImage = offsiteImg;
-			}
-			// HTML for offsite image
-			offsiteImg = '<img src="/screens/icon_offsite_blue.gif" alt="offsite" title="offsite" style="border: 0pt none ; vertical-align: middle;"> ';
-			// Rewrite the HTML inside the "gbs" <div> elements
-			gbsList[bib].innerHTML = '<a href="' + linkGBS + '" target="_blank" style="text-decoration: none;">' + linkImage + textGBS + '</a>';
-			// Turn on the display of the GBS link
-			gbsList[bib].style.display = '';
+
+<script type="text/javascript">
+
+	// This script uses functions from Annette Baily & Godmar Beck's "gbsclasses.js" file to insert links to previews at Google Books. 
+	// File gbsclasses.js must exist in the /screens/ folder and a <script> reference to it must appear in the toplogo file.
+	// Latest version of gbsclasses.js and documentation available as of 9/26/2011 at: http://www.libx.org/gbs
+	// Links will appear in tags with id="gbs".
+
+	// Search "td" cells for OCLC numbers
+	var cells = document.getElementsByTagName("td");
+	for (var cellNo = 0;cellNo < cells.length; cellNo++ ) {
+
+		// Note: Text "OCLC #" is the label defined in webpub.def
+		if (cells[cellNo].innerHTML.indexOf("OCLC #")>=0) {
+			oclc=cells[cellNo+1].innerHTML;
+
+			// Remove whitespace
+			oclc.replace(/^s+|\s+$/g,"");
+
+			// Create span tag
+			document.getElementById("gbs").innerHTML='<span title="OCLC:*" class="gbs-link-to-preview gbs-if-partial-or-full gbs-remove-on-failure">' + oclc + '<img src="/screens/gbs_preview_button1.gif" border=0></span>';
+
 		}
 	}
-}
 
-// Main jQuery event handler
-$(document).ready(function(){
-	// Execute only if the briefcit page is being processed
-	$("td.briefCitRow:first").each(function() {
-		// Google Book Search viewability API script
-		// Make an array to store the "gbs" class divs
-		gbsList =  new Array();
-		gbsNumbers = new Array();
-		// Find all the gbs divs
-		$("div.gbs").each(function() {
-			gbsList.push(this);
-			// Remove leading and trailing white space from the numbers
-			bookid = this.innerHTML.replace(/^\s+|\s+$/g,"")
-			// Discard non-numeric strings
-			if (bookid.search(/[^0-9]/) != -1) {
-				bookid = "";
-			}
-			//alert(bookid);
-			// Prefix the number with the label that GBS needs and store it
-			if(bookid.length > 0) {
-				gbsNumbers.push("OCLC:" + bookid);
-			}
-		})
-		var numbersData = gbsNumbers.join(",");
-		var scriptElement = document.createElement("script");
-		scriptElement.setAttribute("id", "jsonScript");
-		scriptElement.setAttribute("src","http://books.google.com/books?bibkeys=" + escape(numbersData) + "&jscmd=viewapi&callback=insertGBSlink");
-		scriptElement.setAttribute("type", "text/javascript");
-		// add script to page to make the request to Google booksearch
-		document.documentElement.appendChild(scriptElement);
-	})
-	
-})
+
 </script>
