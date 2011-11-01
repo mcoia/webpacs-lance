@@ -722,11 +722,11 @@ div .bibResourceSidebar { display:none; }
 
 .mainSearch .form1Part, .mainMenuContent { width:600px; margin-left:auto; margin-right:auto; max-width:100%; } /*Fixed the search box so it wouldn't run into the Search Options column on narrow browsers */
 
-.minHeight { height:100%; width:1067px; margin-left:auto; margin-right:auto; background:#ffffff; padding-bottom:0; padding-top:0; }
+.minHeight { height:100%; width:97%; margin-left:auto; margin-right:auto; background:#ffffff; padding-bottom:0; padding-top:0; }
 
 .msg td { padding-top:3px; }
 
-.mobiusLogoSmall { position:absolute; right:0; top:20px; }
+.mobiusLogo { position:absolute; right:10px; }
 
 .mylistsSavePage { height:100%; width:100%; padding-bottom:0; padding-top:0; }
 
@@ -1028,21 +1028,28 @@ div.rssChannelEntries { border:none; background:#FFFFFF; }
 #searcharg { }
 
 /*Relative position allows this bg color to show in older IE.*/
-.searchNav { background:#5C3278; margin:0; position:relative; }
+.linkBanner {
+    background:#3B77B6;
+    margin:0;
+    position:relative;
+    text-align:right;
+    padding:.5em 0;
+    clear:both;
+    float:right;
+    width:100%;
+}
 
-.searchNav a {color: #ffffff; font-weight:bold; text-decoration:none;}
+.linkBanner a {color: #ffffff; font-weight:bold; text-decoration:none;}
 
-.searchNav .navLeft {float: left;}
+.linkBanner .navLeft {float: left;}
 
-.searchNav. .navRight {float: right;}
+.linkBanner .navRight {float: right;}
 
-.searchNav .navLeft ul li {margin-left: 0; margin-right:2em;}
+.linkBanner .navLeft ul li {margin-left: 0; margin-right:2em;}
 
-.searchNav ul {list-style-type:none; margin: 0; padding: 0 1.2em;}
+.linkBanner ul {list-style-type:none; margin: 0; padding: 0 1.2em;}
 
-.searchNav ul li {display: inline; margin-left:2em;}
-
-#searchNavMenu { margin:0; text-align:right; padding:.5em 0;}
+.linkBanner ul li {display: inline; margin-left:2em;}
 
 .searchNavBut { vertical-align:bottom; margin:3px 10px 3px 5px; }
 
@@ -1084,13 +1091,13 @@ div.rssChannelEntries { border:none; background:#FFFFFF; }
 
 .topLogo img { border:0; display:block; margin-left:auto; margin-right:auto }
 
-.topLogoSmall {float:left;}
+.topLogoImage {float:left;}
 
-.topLogoSmall, .mobiusLogoSmall {width:250px;}
+.topLogoImage, .mobiusLogo {width:250px;}
 
-.topLogoSmall img, .mobiusLogoSmall img { border:0; margin:5px;}
+.topLogoImage img, .mobiusLogo img { border:0; margin:20px 10px;}
 
-.topLogoSmall a:link, .topLogoSmall a:visited, .mobiusLogoSmall a:link, .mobiusLogoSmall a:visited { background:#FFFFFF; padding:0; }
+.topLogoImage a:link, .topLogoImage a:visited, .mobiusLogo a:link, .mobiusLogo a:visited { background:#FFFFFF; padding:0; }
 
 .topLinks { float: right; height: auto; margin:0; padding:0; width: 50%; }
 
@@ -1148,8 +1155,6 @@ div.rssChannelEntries { border:none; background:#FFFFFF; }
 #toplogoMoreNav li:hover ul, #toplogoMoreNav li.over ul { visibility:visible; display:block; }
 
 #topMyLibraryHeader { float:left; }
-
-div#searchNavMenu { clear:both; float:right; background:#5C3278; width:100%; }
 
 div#toplogo { clear:both; float:right; background:#5C3278; width:100%; }
 
