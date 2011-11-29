@@ -594,7 +594,7 @@ div .bibResourceSidebar { display:none; }
 
 .form1Part { padding:10px; }
 
-.form2Part, .form1Part, .mylistsSavePage form  { background:#FFFFFF; border:1px solid #D3D3D3; float:left; margin-bottom:15px; }
+.form2Part, .form1Part, .mylistsSavePage form  { background:url("tile_vgradient.jpg") repeat-x scroll left top #FFFFFF; border:1px solid #D3D3D3; float:left; margin-bottom:15px; }
 
 .form2Part fieldset, .form1Part fieldset { padding:0.35em 2em 0.75em 0; }
 
@@ -612,7 +612,7 @@ div .bibResourceSidebar { display:none; }
 
 .form3PartAbove { display:inline-block; padding:10px 10px 0; }
 
-.form3PartBelow { background:#FFFFFF; clear:both; margin-top:1em; }
+.form3PartBelow { background:#FFFFFF url('tile_vgradient.jpg') repeat-x scroll left top; clear:both; margin-top:1em; }
 
 .formLogin label { display:block; padding-top:3px; }
 
