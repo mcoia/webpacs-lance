@@ -1,2 +1,7 @@
-.scopeLogo {margin-top:10px;}
-.topLogoImage img {margin:40px 10px}
+.clusterLogo {
+    top:28px;
+}
+
+.topLogoImage img{
+    margin:8px;
+}
