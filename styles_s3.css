@@ -1,3 +1,7 @@
-.scopeLogo {margin-top:5px;}
+.clusterLogo {
+    top:15px;
+}
 
-#searchscope {display:none;}
+.topLogoImage img{
+    margin:8px;
+}

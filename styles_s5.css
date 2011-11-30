@@ -1,4 +1,11 @@
-.scopeLogo {
-    margin-right:0;
-    margin-top:13px;
+.topLogoImage {
+    width:195px;
+}
+
+.topLogoImage img{
+    margin:8px;
+}
+
+.clusterLogo {
+    top:13px;
 }
