@@ -57,7 +57,7 @@ ICON_SELECT_ALL=<div onmousedown="this.className='pressedState';" onmouseout="th
 INSERTTAG_INHEAD=<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4"><link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print"><script type="text/javascript" src="/screens/bibdisplay.js"></script>
 INSERTTAG_HTML=<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html lang="en">
 RIGHT_CELL_WIDTH=18|25
-SSLPORT=80:443:lance.mobius.umsystem.edu:lance.mobius.umsystem.edu|2082:444:lance.mobius.umsystem.edu:lance.mobius.umsystem.edu
+SSLPORT=80:443:lance.searchmobius.org:lance.searchmobius.org|2082:444:lance.searchmobius.org:lance.searchmobius.org
 CUSTOM_MESSAGES=F
 STARTOVER=/search
 STATGROUP=login
@@ -312,13 +312,13 @@ PATRON_FIELDS=n/a
 PIN_ALPHA_NUM=false
 PIN_NUM_ONLY=false
 PIN_RESET=true
-PIN_RESET_EMAIL1=Request to reset your library PIN|cmcirc@lance.missouri.edu|circulation@culver.edu
-PIN_RESET_EMAIL2=Request to reset your library PIN|hcirc@lance.missouri.edu|HLGcirc@hlg.edu
-PIN_RESET_EMAIL3=Request to reset your library PIN|kcirc@lance.missouri.edu|circ@kcom.edu
-PIN_RESET_EMAIL4=Request to reset your library PIN|lstccirc@lance.missouri.edu|librarian@linnstate.edu
-PIN_RESET_EMAIL5=Request to reset your library PIN|mbcirc@lance.missouri.edu|library@hp9000.macc.cc.mo.us
-PIN_RESET_EMAIL6=Request to reset your library PIN|tcirct@lance.missouri.edu|circ@truman.edu
-PIN_RESET_EMAIL7=Request to reset your library PIN|tcirct@lance.missouri.edu|circ@truman.edu
+PIN_RESET_EMAIL1=Request to reset your library PIN|cmcirc@lance.searchmobius.org|circulation@culver.edu
+PIN_RESET_EMAIL2=Request to reset your library PIN|hcirc@lance.searchmobius.org|HLGcirc@hlg.edu
+PIN_RESET_EMAIL3=Request to reset your library PIN|kcirc@lance.searchmobius.org|circ@kcom.edu
+PIN_RESET_EMAIL4=Request to reset your library PIN|lstccirc@lance.searchmobius.org|librarian@linnstate.edu
+PIN_RESET_EMAIL5=Request to reset your library PIN|mbcirc@lance.searchmobius.org|library@hp9000.macc.cc.mo.us
+PIN_RESET_EMAIL6=Request to reset your library PIN|tcirct@lance.searchmobius.org|circ@truman.edu
+PIN_RESET_EMAIL7=Request to reset your library PIN|tcirct@lance.searchmobius.org|circ@truman.edu
 PSTARTOVER=/search
 SEEPUDATE=true
 TABLEPARAM_PATDISP=border="0"|border="0"|border="0"
@@ -420,7 +420,7 @@ ILL_HOME=/screens/ill.html
 
 # INN-Reach
 IR_PLACEMENT=1
-INNREACH=<span class="button"><img src="/screens/ico_mobius.png" alt=""><span class="buttonText">Search MOBIUS</span></span>@mobius.umsystem.edu(X=X*;Y=Y*;a=a;c=c;d=d;e=e;g=g;i=i;j=m;m=h;o=o;s=s;t=t)
+INNREACH=<span class="button"><img src="/screens/ico_mobius.png" alt=""><span class="buttonText">Search MOBIUS</span></span>@searchmobius.org(X=X*;Y=Y*;a=a;c=c;d=d;e=e;g=g;i=i;j=m;m=h;o=o;s=s;t=t)
 
 # Media Management
 ICON_BUT_RET2CRS=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Return to Course</span></span>
