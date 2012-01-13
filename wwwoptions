@@ -80,7 +80,7 @@
 #***************************************************************************
 
 #SSL
-SSLPORT=80:443:lance.mobius.umsystem.edu:lance.mobius.umsystem.edu|2082:444:lance.mobius.umsystem.edu:lance.mobius.umsystem.edu
+SSLPORT=80:443:lance.searchmobius.org:lance.searchmobius.org|2082:444:lance.searchmobius.org:lance.searchmobius.org
 #SSLPORT=80:443
 
 # AVS/AKS Options
