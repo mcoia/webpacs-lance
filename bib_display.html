@@ -27,6 +27,7 @@
 <div class="bibMedia">
 <!--{media}-->
 </div>
+<div id="googlebooks" name="googlebooks"></div>
 </div>
 
 <div class="bibDisplayContentMain">
@@ -135,3 +136,44 @@
 <div class="clear"></div>
 </div><!-- close bibDisplayBody -->
 <!--{botlogo}-->
+
+<script type='text/javascript'> 
+    var ProcessResults = function(bookInfo) {
+        var buttonImg = "<img src='/screens/googlebutton.gif' alt='Google Preview'>"
+        var textGBS = "";
+        for (ISBN in bookInfo) {
+            var b = bookInfo[ISBN];
+            var googleButton = "<a href='" + b.preview_url + "' target='blank'>" + buttonImg;
+            //form the text of Google Book contents
+            if (b && (b.preview == "full")) {
+                //textGBS = "Full Text";
+                //"Google Book Search";
+                document.getElementById("googlebooks").innerHTML = googleButton
+            }
+            else if (b && (b.preview == "partial")) {
+                //textGBS = "(Limited preview)"
+                //"Preview at Google Book Search";
+                document.getElementById("googlebooks").innerHTML = googleButton
+            }
+            else {
+                //document.getElementById("googlebooks").innerHTML = "None available.";
+            }
+    }
+}
+</script>
+
+<script type='text/javascript'>
+       
+var ISBN = $(".bibInfoLabel:contains('ISBN')").siblings(".bibInfoData").text().replace(/[^0123456789]/g,"")
+
+var cburl = "http://books.google.com/books";
+// Retrieve the info for these bibkeys
+var api_url = cburl + "?jscmd=viewapi&bibkeys=ISBN:" + ISBN;
+var s = document.createElement("script");
+s.setAttribute("type", "text/javascript");
+//alert("searching for: " + ISBN);
+s.setAttribute("src", "http://books.google.com/books?jscmd=viewapi&bibkeys=ISBN:" + ISBN + "&callback=ProcessResults");
+document.documentElement.firstChild.appendChild(s);
+//alert (api_url);
+
+</script>
