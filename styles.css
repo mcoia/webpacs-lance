@@ -562,10 +562,6 @@ div .confirmValue { padding-top:3px; }
 
 div .bibResourceSidebar { display:none; }
 
-.bibDisplayReviews { display:none; }
-
-.bibDisplayPermLink { display:none; }
-
 #bibDisplayBody { background:#FFFFFF; }
 
 .pageContent #bibDisplayBody { background:none; }
@@ -724,6 +720,10 @@ div .bibResourceSidebar { display:none; }
 
 .minHeight { height:100%; width:97%; margin-left:auto; margin-right:auto; background:#ffffff; padding-bottom:0; padding-top:0; }
 
+.miscButtons { margin-bottom: 1em;}
+
+.mobiusLogo, .clusterLogo { position:absolute; right:10px; top:16px;}
+
 .msg td { padding-top:3px; }
 
 .mobiusLogo, .clusterLogo { position:absolute; right:15px; }
@@ -761,8 +761,6 @@ margin-bottom:5px;
 margin-top:5px;
 padding:2px;
 }
-
-.miscButtons {margin-left:-4.5%;}
 
 .navigationRow a:link,.navigationRow a:visited, .miscButtons a:link, .miscButtons a:visited { color: #014184; font-family:Arial,"Arial Unicode MS",Helvetica,Verdana,sans-serif; font-weight:bold; padding:6px 5px 3px 0px; text-decoration:none; width:auto; }
 
@@ -824,7 +822,7 @@ width:19%;
 
 .patActionsLinks  a:link,.patActionsLinks a:visited  { clear:both; color:#014184; font-family:Arial,"Arial Unicode MS",Helvetica,Verdana,sans-serif; font-weight:bold; text-decoration:none; width:auto; }
 
-.patActionsLinks a:active,.patActionsLinks a:hover   { text-decoration:underline; }
+.patActionsLinks .button2 a:active,.patActionsLinks .button2 a:hover   { text-decoration:underline; } /* Prevents buttons on the My Account page from being underlined twice */
 
 .patActionsLinks,.patTop, .patFuncArea { border:1px solid #ECECEC; outline:5px solid #FFF; padding:5px;  }
 
@@ -836,7 +834,7 @@ width:19%;
 
 #patButChkouts a { background:#FFFFFF url('ico_books.gif') no-repeat top left; }
 
-#patButBookings a { background:#FFFFFF url('ico_checkbox.gif') no-repeat top left; margin-left:5px; padding-left:25px; line-height:1.8em; }
+#patButBookings a { background:#FFFFFF url('ico_checkbox.png') no-repeat top left; margin-left:5px; padding-left:25px; line-height:1.8em; }
 
 #patButFines a, #patButHolds a, #patButChkouts a, #patButBookings a { margin-top:3px; margin-left:0px; padding-left:28px; line-height:30px; }
 
@@ -1089,7 +1087,7 @@ div.rssChannelEntries { border:none; background:#FFFFFF; }
 
 .topLinks a { float:right; }
 
-.topLogo { position:relative;}
+.topLogo { position:relative; }
 
 .topLogo img { border:0; display:block; margin-left:auto; margin-right:auto }
 
@@ -1112,6 +1110,11 @@ div.rssChannelEntries { border:none; background:#FFFFFF; }
 #topLinksList li { list-style:none; padding:0; display:inline; }
 
 #topLinksList  { float:right; margin:0px; padding:0px; font-size:.9em; display:inline; }
+
+.topMyLibrary {
+    float:left;
+    clear:both;
+}
 
 #topMyLibraryList { display:inline; line-height:2.4em; margin:0px 10px 0px 0px; padding:0px; }
 
