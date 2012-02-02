@@ -1,41 +1,77 @@
-<HTML>
-<HEAD>
-	<TITLE>LANCE/ LANCE Catalog</TITLE>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-</HEAD>
-
-<BODY bgcolor="#ffffff" link="#0000FF" alink="#0000FF" vlink="#0000FF" onLoad="document.forms[0].SEARCH.focus(); document.forms[0].SEARCH.select();">
-
-<!--{toplogo}-->
-
-<br>
-
-<!--{patron}-->
-<!--{logout}-->
-
-<!-- Begin Search Help Text -->
-<center><table border="0" width="570"><tr><td>
-<h3 align="center"><b>Library of Congress Call Number Search</b></h3>
-<form METHOD="GET" ACTION="/search/c">
-  <p ALIGN="CENTER"> 
-    <input TYPE="TEXT" NAME="SEARCH" MAXLENGTH="64" SIZE="48">
-    <input TYPE="SUBMIT" VALUE="Search">
-  </p>
-</form>
-<p>Type as much of the Call Number as you know.</p>
-<table border="0"><tr><td nowrap valign="top">
-<i>for example:</i> </td><td>
-<pre>    PS 1999H25Z98
-    qc793.3J3 1998
-    RA 1151
-    LB
-</pre>
-</td></tr></table>
-</td></tr></table></center>
-<!-- End Search Help Text -->
-<p align="center"><A HREF="/search/"><IMG SRC="/screens/b_newsrch.gif" BORDER=0 ALT="[START OVER]"></A></p> 
-
-<!--{botlogo}-->
-
-</BODY>
-</HTML>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<title>LANCE Catalog - Author Search</title>
+
+  <script language="JavaScript">
+    <!-- Hide the JS
+    startTimeout(600000, "/");
+    // -->
+  </script>
+
+  <noscript>
+    <meta http-equiv="Refresh" content="600;URL=/" />
+  </noscript>
+
+
+</head>
+<body>
+<!--{toplogo}-->
+<!--{patron}-->
+<!--{logout}-->
+
+<div class="pageContentInner">
+
+  <h1 class="pageHeader">Library of Congress Call Number Search</h1>
+
+  <!-- <div id="accessibleForm" class="form2Part"> -->
+  <div id="accessibleForm" class="form1Part">
+
+    <form method="get">
+
+      <fieldset>
+        <!-- Optional legend:
+        <legend>Type the call number you want to find, then press the Enter key or click Submit.</legend>
+        -->
+
+        <div class="formEntryArea">
+
+          <!-- <span class="formLabel">
+            <label for="SEARCH">Search for:</label>
+          </span> -->
+<!--{search}-->
+        </div>
+
+        <div class="formButtonArea">
+<!--{submit}-->
+        </div>
+
+      </fieldset>
+
+    </form>
+
+    <!-- Begin Search Help Text -->
+    <p>Type as much of the call number as you know. For example:</p>
+    <ul>
+      <li> PS 1999H25Z98 </li>
+      <li> qc793.3J3 1998 </li>
+      <li> RA 1151 </li>
+      <li> LB </li>
+    </ul>
+
+  </div><!--form1Part -->
+
+</div><!-- pageContentInner -->
+
+<!--{botlogo}-->
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].SEARCH.focus(); }
+catch(err) {}
+//--><!]]></script>
+</body>
+</html>
