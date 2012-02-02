@@ -1,174 +1,149 @@
-<HTML>
-<HEAD>
-	<TITLE>LANCE/ LANCE Catalog</TITLE>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-</HEAD>
-
-<BODY bgcolor="#ffffff" link="#0000FF" alink="#0000FF" vlink="#0000FF" onLoad="document.forms[0].SEARCH.focus(); document.forms[0].SEARCH.select();">
-<!--{toplogo}-->
-
-<br>
-<br>
-
-<!--{patron}-->
-<!--{logout}-->
-
-<!-- Begin Search Help Text -->
-<center>
-<h3><b>Keyword Search</b></h3>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- This File Last Changed: 29 Apr 2010 -->
+<head>
+<title>LANCE</title>
+<script language="JavaScript">
+<!-- Hide the JS
+startTimeout(600000, "/");
+// -->
 
-Repeat search in the MOBIUS union catalog:
-<!--{innreach}-->
-
-<!-- begin advanced keyword search form -->
-
-<FORM NAME="frmAdvancedKeyword" ACTION="/search/X" METHOD=GET>
-<TABLE BORDER=0 CELLPADDING=3 CELLSPACING=0 ALIGN="center" BGCOLOR="#CCCCCC">
-
-<TR>
-    <TD ALIGN=center colspan=2> <B><a name=AVS></a>Type the WORD(S) you want, select OPTIONS <br> and click on SEARCH: </B> <br>
-
-<!--{msg}-->
-
-<br>
-
-<!--{search}-->
-
-    </TD>
-</TR>
-
-<TR>
-    <TD align="center" nowrap>
-<!--{lang}-->
-    </TD>
-    <TD align="center">
-<!--{sort}-->
-    </TD>
-</TR>
-
-<TR>
-    <TD ALIGN="center" colspan="2" nowrap>
-<!--{mattype}-->
-    </TD>
-</TR>
-
-<TR>
-    <TD align="center" nowrap>
-Scope: 
-<!--{scope}-->
-    </TD>
-    <TD align="center" nowrap>
-<!--{branch}-->
-    </TD>
-</TR>
-
-<TR>
-    <TD ALIGN="center" colspan="2" nowrap>
-<!--{publish}-->
-    </TD>
-</TR>
-
-<TR>
-    <TD ALIGN="center" colspan="2" nowrap>
-<!--{DOCDATE}-->
-    </TD>
-</TR>
-
-<TR>
-    <TD ALIGN="center" colspan="2" nowrap>
-<!--{availlim}-->
-    </TD>
-</TR>
-
-<TR>
-    <TD ALIGN="center" colspan="2" nowrap>
-        <INPUT TYPE=SUBMIT VALUE="SEARCH">
-    </TD>
-</TR>
-
-</TABLE>
-</FORM>
-
-<!-- end advanced keyword search form -->
-
-    <TABLE CELLPADDING=3 CELLSPACING=2 WIDTH="100%">
-        <TR> 
-            <TH WIDTH=10%>&nbsp;</TH>
-            <TH WIDTH=40%>Type in Words to search: </TH>
-            <TH WIDTH=50%>EXAMPLES:</TH>
-        </TR>
-        <TR> 
-            <TD WIDTH=100><b>ADJACENCY</b></TD>
-            <TD BGCOLOR="#CCCCCC"> The order of words matters. Multiple words 
-                are searched together as one phrase. For different results, use 
-                <i><b>and</b></i> between each word or phrase.</TD>
-            <TD BGCOLOR="#CCCCCC"> water resources<br>
-                colorado<b> and</b> geology<br>
-                electronic serial<b> and</b> physics</TD>
-        <TR> 
-            <TD WIDTH=100><b>TRUNCATION</b></TD>
-            <TD BGCOLOR="#CCCCCC"> Words may be internally or right-hand truncated 
-                using an asterisk *. Use double asterisks ** for more than 6 characters. 
-            </TD>
-            <TD BGCOLOR="#CCCCCC"> wom*n and librar*<br>
-                math**</TD>
-        <TR> 
-            <TD WIDTH=100><b>OPERATORS</b></TD>
-            <TD BGCOLOR="#CCCCCC"> Use <i><b>and</b></i> or <i><b>or</b></i> to 
-                specify multiple words in any field, any order. Use the words <i><b>and 
-                not</b></i> to omit certain keywords. Use parentheses to group words when 
-                using multiple operators. </TD>
-            <TD BGCOLOR="#CCCCCC"> cat <b>or</b> feline <br>
-                (alaska <b>or</b> canada)<b> and</b> (South America<b> and not</b> 
-                Brazil) </TD>
-        <TR> 
-            <TD WIDTH=100><b>PROXIMITY</b></TD>
-            <TD BGCOLOR="#CCCCCC">Use <i><b>near</b></i> to specify words close 
-                to each other, in any order. Use <i><b>within #</b></i> to specify 
-                words within a set range of each other. Symbol # may stand for 
-                any number. </TD>
-            <TD BGCOLOR="#CCCCCC"> California <b>near</b> university<br>
-                colorado<b> within 12 </b>wyoming</TD>
-        <TR> 
-            <TD WIDTH=100><b>FIELDS</b></TD>
-            <TD BGCOLOR="#CCCCCC"> Specify fields to search, using field abbreviation. 
-                Fields available for this database are <b>a:</b> (author),<b> 
-                t:</b> (title),<b> s:</b> (subject), and<b> n:</b> (additional 
-                keywords.) Subjects are NOT cross-referenced. </TD>
-            <TD BGCOLOR="#CCCCCC"><b> a:</b>twain <b>and t:</b>huck<br>
-                (<b>a:</b>frost <b> or a:</b>whitman) <b>and s:</b>poet* <br>
-                <b>t:</b>medicine <b>and (n:</b>research<b> or s:</b>information)</TD>
-        </TR>
-    </TABLE>
-
-    <p>&nbsp;</p>
-
-</center>
-<!-- End Search Help Text -->
-<p align="center"><A HREF="/search/"><IMG SRC="/screens/b_newsrch.gif" BORDER=0 ALT="[START OVER]"></A></p> 
-<center>
-  <table border="0" cellpadding="6" cellspacing="0">
-    <tr valign="top"> 
-      <td>&nbsp;</td>
-    </tr>
-    <tr valign="top"> 
-      <td align="center"> 
-        <font color="#666666" face="Arial, Helvetica, sans-serif" size="-1"><b>LANCE</b> 
-          <b>&middot;</b> Libraries And Networks Cooperating in Education<br>
-          <b>&middot;</b> a MOBIUS Library Catalog <b>&middot;</b></font></td>
-    </tr>
-    <tr valign="top"> 
-      <td align="center">
-          <font face="Arial, Helvetica, sans-serif" size="-2"><a href="http://searchmobius.org/search/">MOBIUS</a> 
-          &middot; <a href="/search~/">LANCE Catalog</a><br>
-          <a href="/search~S1/">Culver-Stockton College</a> &middot; <a href="/search~S2/">Hannibal-LaGrange 
-          University</a><br>
-          <a href="/search~S3/">A.T. Still University - Missouri</a> 
-          &middot; <a href="/search~S4/">Linn State Technical College</a><br>
-          <a href="/search~S5/">Moberly Area Community College</a> &middot; <a href="/search~S6/">Truman 
-          State University</a></font></td>
-    </tr>
-  </table>
-</center>
-</BODY>
-</HTML>
+</script>
+<noscript>
+<meta http-equiv="Refresh" content="600;URL=/" />
+</noscript>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+</head>
+<!--{advancedsearchbody}-->
+<!--{toplogo}-->
+<div class="pageContentInner">
+<h1 class="pageHeader">Advanced Keyword Search</h1>
+<!--{msg}-->
+
+<!--{innreach}-->
+
+<!--{spellcheck}-->
+<div class="miscButtons">
+<!--{innreach}-->
+</div>
+
+<div class="form3Part" id="accessibleForm">
+
+<!--{advancedsearchformbegin}-->
+<div class="form3PartAbove">
+<fieldset>
+<legend>Enter Search Terms</legend>
+<div class="formEntryArea">
+<!--{advancedsearch}-->
+</div>
+<input type="hidden" name="startLimit" >
+<div class="formEntryArea">
+<!--{availlim}-->
+</div>
+<div class="formButtonArea">
+<span>
+<!--{advancedsubmit}-->
+</span>
+<span>
+<!--{clearform}-->
+</span>
+</div>
+</fieldset>
+</div> <!-- form3PartAbove -->
+
+<div class="form3PartBelow">
+
+<div class="formLeft advancedSearch">
+<fieldset>
+<legend>Add Limits (Optional)</legend>
+
+<div class="formEntryArea">
+<table><tr>
+<td><label for="searchscope">Library:</label></td>
+<td> 
+<!--{scope}-->
+</td></tr></table>
+</div>
+
+<div class="formEntryArea">
+<!--{branch}-->
+</div>
+<div class="formEntryArea">
+<!--{mattype}-->
+</div>
+<div class="formEntryArea">
+<!--{lang}-->
+</div>
+<div class="formEntryArea">
+<!--{DOCDATE}-->
+</div>
+<div class="formEntryArea">
+<!--{publish}-->
+</div>
+<div class="formEntryArea" id="form3PartAdvLimitSort">
+<!--{sort}-->
+</div>
+</fieldset>
+<input type="hidden" name="endLimit" >
+</div> <!-- formLeft -->
+
+<div class="formLeft">
+<table class="tipsTable" border="1">
+<caption>Search Tips</caption>
+        <tr> 
+            <th colspan=2 bgcolor=#cccccc> Search Tips </th>
+            <th bgcolor=#cccccc> Examples</th>
+        </tr>
+        <tr> 
+            <td width=100><b>PHRASE</b></td>
+            <td> Use &#8220;quotes&#8221;  to search a phrase.</td>
+            
+            <td> "college students"<br>
+				"united states supreme court" </td>
+        <tr> 
+            <td width=100><b>TRUNCATION</b></td>
+            <td> Use * to substitute for 1-5 characters.  <br>
+            	Use ** to substitute for any number of characters. <br>
+            	Use ? to substitute for a single character.  </td>
+            <td> photograph* <br>
+                math** <br>
+                wom?n </td>
+        <tr> 
+            <td width=100><b>CONNECTORS </b></td>
+            <td> Use <i><b>and</b></i> to search all words. <br>
+            	Use <i><b> or </b></i> to search  ANY word. <br>
+            	Use <i><b> and not </b></i> to exclude words. <br>
+            	Use parentheses to group terms for complex searches. </td>
+            <td> environment and health <br>
+            	treatment or therapy <br>
+            	dolphins and not football <br>
+                (doctor* or physician*) and stress </td>
+        <tr> 
+            <td width=100><b>PROXIMITY</b></td>
+            <td>Use <i><b>within</b></i> and a number to specify
+            	proximity of words, one to another, in any order.  </td>
+            <td> missouri within 2 university</td>
+        <tr> 
+            <td width=100><b>FIELDS</b></td>
+            <td> Use labels to search specific fields: <br>
+             	<b>a:</b> author <br>
+				<b>t:</b> title <br>
+				<b>s:</b> subject </td>
+            <td> a:shakespeare and t:lear <br>
+            	s:hopi and s:religion </td>
+        </tr>
+
+</table>
+</div> <!-- formLeft -->
+<div class="clear"></div>
+</div> <!-- form3PartBelow -->
+
+<!--{advancedsearchformend}-->
+</div> <!-- form3Part -->
+
+</div><!-- pageContentInner -->
+<!--{botlogo}-->
+</body>
+</html>

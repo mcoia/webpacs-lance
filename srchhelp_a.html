@@ -1,44 +1,71 @@
-<HTML>
-<HEAD>
-	<TITLE>LANCE/ LANCE Catalog</TITLE>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-</HEAD>
-
-<BODY bgcolor="#ffffff" link="#0000FF" alink="#0000FF" vlink="#0000FF" onLoad="document.forms[0].SEARCH.focus(); document.forms[0].SEARCH.select();">
-
-<!--{toplogo}-->
-
-<br>
-
-<!--{patron}-->
-<!--{logout}-->
-
-<!-- Begin Search Help Text -->
-<center><table border="0" width="570"><tr><td>
-<h3 align="center"><b>Author Search</b></h3>
-
-<form METHOD="GET" ACTION="/search/a">
-  <p ALIGN="CENTER">
-    <input TYPE="TEXT" NAME="SEARCH" MAXLENGTH="64" SIZE="48">
-    <input TYPE="SUBMIT" VALUE="Search"><br>
-  </p>
-</form>
-<p>Type the <b>last name</b> first.</p>
-<table border="0"><tr><td nowrap valign="top">
-<i>for example:</i> </td><td>
-<pre>    Kingston
-    Morrison, Toni
-    garcia marquez, g
-    twain mark
-    american cancer society
-</pre>
-</td></tr></table>
-<p>If your search is unsuccessful, try a <a href="/search/Y">KEYWORD</a> search. </p>
-</td></tr></table></center>
-<!-- End Search Help Text -->
-<p align="center"><A HREF="/search/"><IMG SRC="/screens/b_newsrch.gif" BORDER=0 ALT="[START OVER]"></A></p> 
-
-<!--{botlogo}-->
-
-</BODY>
-</HTML>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+<head>
+<title>LANCE Catalog - Author Search</title>
+
+  <script language="JavaScript">
+    <!-- Hide the JS
+    startTimeout(600000, "/");
+    // -->
+  </script>
+
+  <noscript>
+    <meta http-equiv="Refresh" content="600;URL=/" />
+  </noscript>
+
+</head>
+
+<body>
+<!--{toplogo}-->
+<!--{patron}-->
+<!--{logout}-->
+	
+<div class="pageContentInner">
+
+  <h1 class="pageHeader">Author Search</h1>
+
+  <form method="get">
+
+    <fieldset>
+
+      <!-- Optional legend:
+      <legend>Type the author you want to find, then press the Enter key or click Submit.</legend>
+      -->
+
+      <div class="formEntryArea">
+        <!-- <span class="formLabel">
+          <label for="SEARCH">Search for:</label>
+        </span> -->
+<!--{search}-->
+      </div> <!-- formEntryArea -->
+
+      <div class="formButtonArea">
+<!--{submit}-->
+      </div> <!-- formButtonArea -->
+
+    </fieldset>
+
+  </form>
+
+  <p>Type the <b>last name</b> first. For example:</p>
+  <ul>
+    <li> Kingston </li>
+    <li> Morrison, Toni </li>
+    <li> garcia marquez, g </li>
+    <li> twain mark </li>
+    <li> american cancer society </li>
+  </ul>
+
+  <br />
+
+  <p>If your search is unsuccessful, try a <a href="/search~S6/Y">KEYWORD</a> search. </p>
+
+</div><!-- pageContentInner -->
+
+<br />
+<!--{botlogo}-->
+</body>
+</html>
+

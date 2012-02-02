@@ -1,44 +1,78 @@
-<HTML>
-<HEAD>
-	<TITLE>LANCE/ LANCE Catalog</TITLE>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-</HEAD>
-
-<BODY bgcolor="#ffffff" link="#0000FF" alink="#0000FF" vlink="#0000FF" onLoad="document.forms[0].SEARCH.focus(); document.forms[0].SEARCH.select();">
-
-<!--{toplogo}-->
-
-<br>
-
-<!--{patron}-->
-<!--{logout}-->
-
-<!-- Begin Search Help Text -->
-<center><table border="0" width="570"><tr><td>
-<h3 align="center"><b>LC Subject Search</b></h3>
-<form METHOD="GET" ACTION="/search/d">
-  <p ALIGN="CENTER"> 
-    <input TYPE="TEXT" NAME="SEARCH" MAXLENGTH="64" SIZE="48">
-    <input TYPE="SUBMIT" VALUE="Search"><br>
-  </p>
-</form>
-<p>Search here for items about people, topics, or events. These subject headings 
-  are established by the Library of Congress. If you are unsure of the heading 
-  for a subject, try a <a href="/search/Y">KEYWORD</a> search.</p>
-<table border="0"><tr><td nowrap valign="top">
-<i>for example:</i> </td><td>
-<pre>    sports for women
-    missouri
-    missouri hist
-    lincoln abraham
-    art, chinese
-    art chinese
-    Sports
-</pre>
-</td></tr></table>
-</td></tr></table></center>
-<!-- End Search Help Text -->
-<p align="center"><A HREF="/search/"><IMG SRC="/screens/b_newsrch.gif" BORDER=0 ALT="[START OVER]"></A></p> 
-<!--{botlogo}-->
-</BODY>
-</HTML>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<title>LANCE Catalog - Library of Congress Subject Search</title>
+
+  <script language="JavaScript">
+    <!-- Hide the JS
+    startTimeout(600000, "/");
+    // -->
+  </script>
+
+  <noscript>
+    <meta http-equiv="Refresh" content="600;URL=/" />
+  </noscript>
+
+
+</head>
+
+<body>
+<!--{toplogo}-->
+<!--{patron}-->
+<!--{logout}-->
+
+<div class="pageContentInner">
+
+  <h1 class="pageHeader">LC Subject Search</h1>
+
+  <div id="accessibleForm" class="form1Part">
+
+    <form method="get">
+
+      <fieldset>
+
+        <div class="formEntryArea">
+
+          <!-- <span class="formLabel">
+            <label for="SEARCH">Search for:</label>
+          </span> -->
+<!--{search}-->
+        </div>
+
+        <div class="formButtonArea">
+<!--{submit}-->
+        </div>
+
+      </fieldset>
+
+    </form>
+    <!-- Begin Search Help Text -->
+    <p>Search here for items about people, topics, or events. These subject headings 
+      are established by the Library of Congress. For example: </p>
+
+    <ul>
+      <li> sports for women </li>
+      <li> missouri </li>
+      <li> missouri hist </li>
+      <li> lincoln abraham </li>
+      <li> art, chinese </li>
+      <li> art chinese </li>
+      <li> Sports </li>
+    </ul>
+
+    <p> If your search is unsuccessful, try a <a href="/search/Y">KEYWORD</a> search.</p>
+
+  </div><!--form1Part -->
+
+</div><!-- pageContentInner -->
+
+<!--{botlogo}-->
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].SEARCH.focus(); }
+catch(err) {}
+//--><!]]></script>
+</body>
+</html>
