@@ -1,217 +1,101 @@
-<HTML>
-<HEAD>
-	<TITLE>LANCE /LANCE Catalog</TITLE>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-</HEAD>
-
-<BODY bgcolor="#ffffff" link="#0000FF" alink="#0000FF" vlink="#0000FF">
-
-<!--{toplogo}-->
-
-<!--{patron}-->
-<!--{logout}-->
-
-<center>
-  <form name="SearchForm" target="_parent" action="/search/Y" method="GET">
-    <table border="0" cellspacing="0" cellpadding="2" width="570" bgcolor="#CCCCCC">
-      <tr bgcolor="#0000CC"> 
-        <td colspan="5"> 
-          <div align="left"><b><font color="#FFFFFF" face="Arial, Helvetica, sans-serif">Quick 
-            Search</font></b></div>
-        </td>
-      </tr>
-      <tr> 
-        <td> 
-
-          <div align="right"><font size="-2" face="Arial, Helvetica, sans-serif"><b> 
-
-            Search by: </b></font></div>
-
-        </td>
-
-        <td>
-            
-          <select name="searchtype">
-
-
-
-
-
-			<option value="Y" selected>Keyword</option>
-
-	
-
-
-
-			<option value="t" >Title</option>
-
-	
-
-
-
-			<option value="a" >Author</option>
-
-	
-
-
-
-			<option value="s" >Journal Title</option>
-
-	
-
-
-
-			<option value="d" >LC Subject</option>
-
-	
-
-
-
-			<option value="m" >Children's Subject</option>
-
-	
-
-
-
-			<option value="j" >Medical Subject</option>
-
-	
-
-
-
-			<option value="c" >LC Call Number</option>
-
-	
-
-
-
-			<option value="e" >Dewey Call Number</option>
-
-	
-
-
-
-			<option value="f" >Local Call Number</option>
-
-	
-
-
-
-			<option value="g" >SuDoc Number</option>
-
-	
-
-
-
-			<option value="i" >Standard Number</option>
-
-	
-
-
-
-			<option value="o" >OCLC Number</option>
-
-	
-
-
-
-          </select>
-
-
-        </td>
-
-        <td> 
-
-          <div align="right"><font size="-2" face="Arial, Helvetica, sans-serif"><b>Select a library:</b></font></div>
-
-        </td>
-
-        <td> 
-
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- Updated: 09 June 2010 -->
+<head>
+<title>LANCE Catalog</title>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+<!--<link rel="stylesheet" type="text/css" href="/screens/stylesmain.css" > Un-comment to offer a larger logo on mainmenu.-->
+<script type="text/javascript">/* <![CDATA[ */
+function iiiSearchValidate() {
+	try{
+	  if (document.getElementById('search').searcharg.value==null||document.getElementById('search').searcharg.value=="") {
+		return false;
+		}
+	}
+	catch(err) {
+	}
+  return true;
+}
+
+function iiiDoSubmit_1()
+{
+//getFormHandleForm() is in common.js
+var obj = getFormHandleForm(1);
+if(iiiSearchValidate()){
+obj.submit();
+}
+}
+/* ]]> */
+</script>
+</head>
+<body>
+<!--{toplogo}-->
+<!--{patron}-->
+
+<div class="pageContentInner mainSearch">
+
+<h1 class="accessibleAddInfo">Search</h1>
+
+<div id="accessibleForm" class="form1Part">
+<div class="browseSearchtool">
+<form action="/search/" method="get" name="search" id="search" onSubmit="return iiiSearchValidate();">
+
+
+<input type="hidden" id="iiiFormHandle_1">
+
+<!-- Optional legend:
+<fieldset>
+<legend>Type the search term you want to find.</legend>-->
+<div class="formEntryArea">
+<div class="inlineBlock">
+<label for="searchtype" class="accessibleAddInfo">Search type</label>
+<select name="searchtype" id="searchtype">
+<option value="Y" selected="selected">Keyword</option>
+<option value="t">Title</option>
+<option value="a">Author</option>
+<option value="s">Journal Title</option>
+<option value="d">LC Subject</option>
+<option value="m">Children's Subject</option>
+<option value="j">Medical Subject</option>
+<option value="c">LC Call Number</option>
+<option value="e">Dewey Call Number</option>
+<option value="f">Local Call Number</option>
+<option value="g">SuDoc Number</option>
+<option value="i">Standard Number</option>
+<option value="o">OCLC Number</option>
+</select>
+<!--{nosort}-->
+<label for="searcharg" class="accessibleAddInfo">Search term</label>
+<input maxlength="75" name="searcharg" size="20" >
+</div>
+<div class="inlineBlock">
+<label for="scope" class="accessibleAddInfo">Location</label>
 <!--{scope}-->
+<span class="formButtonArea">
 
-        </td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr> 
-        <td> 
-          <div align="right"><font size="-2" face="Arial, Helvetica, sans-serif"><b> 
-            Search for: </b></font></div>
-        </td>
-        <td colspan="3"> 
-          <input type="TEXT" name="searcharg" maxlength="75" size="45">
-        </td>
-        <td align="right"> 
-          <input name="cmdSubmit" type="Submit" value="Search">
-          <input type="Hidden" name="SORT" VALUE="D">
-        </td>
-      </tr>
-    </table>
-  </form>
-</center>
-
-<script language="JavaScript">
-<!-- hide JavaScript
-document.SearchForm.searcharg.focus();
-document.SearchForm.searcharg.select();
-//-->
-</script>
-
-<!-- Guided Searches -->
-<CENTER>
-<table width="570" border="0" cellspacing="0" cellpadding="2" vspace="10">
-    <tr valign="top" bgcolor="#0000CC"> 
-      <td colspan="3"><font color="#FFFFFF" face="Arial, Helvetica, sans-serif"><b>Guided 
-        Searches</b></font></td>
-    </tr>
-    <tr valign="top"> 
-      <td width="280">
-		<p><a href="/search~S0/Y"><b>KEYWORD</b></a><i>&nbsp; search for a word or words...</i></p>
-		<p><a href="/search~S0/a"><b>AUTHOR</b></a><i>&nbsp; search for a specific author, editor, composer, or organization...</i></p>
-		<p><a href="/search~S0/q"><b>AUTHOR & TITLE</b></a><i>&nbsp; search for an author and a title ...</i></p>
-		<p><a href="/search~S0/s"><b>JOURNAL, MAGAZINE & NEWSPAPER</b></a><i>&nbsp; search for a journal, magazine or newspaper title...</i></p>
-		<p><a href="/search~S0/n"><b>NUMBERS</b></a><i>&nbsp; search by call number or other number...</i></p>
-      </td>
-      <td width="10">&nbsp;</td>
-      <td width="280">
-        <p><a href="/search~S0/t"><b>TITLE</b></a><i>&nbsp; search for a word or words in a title...</i></p>
-		<p><a href="/search~S0/d"><b>SUBJECT (Library of Congress)</b></a><i>&nbsp; search using Library of Congress Subject Headings...</i></p>
-		<p><a href="/search~S0/m"><b>SUBJECT (Children's)</b></a><i>&nbsp; search using children's literature subjects...</i></p>
-		<p><a href="/search~S0/j"><b>SUBJECT (Medical)</b></a><i>&nbsp; limit your subject search to only medical subjects...</i></p>
-      </td>
-    </tr>
-    <tr valign="top">
-      <td width="280">&nbsp;</td>
-      <td width="10">&nbsp;</td>
-      <td width="280">&nbsp;</td>
-    </tr>
-</table>
-</CENTER>
-
-<!-- Other Options -->
-<CENTER>
-<table width="570" border="0" cellspacing="0" cellpadding="2">
-    <tr valign="top" bgcolor="#0000CC"> 
-      <td colspan="3"><font color="#FFFFFF" face="Arial, Helvetica, sans-serif"><b>Other 
-        Options </b></font></td>
-    </tr>
-    <tr valign="top">
-      <td width="260">
-		<p><a href="/patroninfo"><b>VIEW YOUR LIBRARY ACCOUNT</b></a><i>&nbsp; renew items, view your holds, view other items related to your account...</i></p>
-      </td>
-      <td width="10"> 
-        <p>&nbsp;</p>
-        </td>
-      <td width="260"> 
-        <p><b>COURSE RESERVES</b> <br>
-          <i>retrieve by <a href="/search~/p">Instructor Name</a><br>
-          retrieve by <a href="/search~/r">Course Name</a></i> </p>
-      </td>
-    </tr>
-</table>
-</CENTER>
-
-<!--{botlogo}-->
-
-</BODY>
-</HTML>
+  <!--{submit}-->
+
+<input type="hidden" id="iiiFormHandle_1"/>
+<a href="#" onclick="iiiDoSubmit_1();"><div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Submit</span></span></div></div></a>
+
+<input type="submit" class="submitHidden">
+
+</span>
+</div>
+</div><!-- formEntryArea -->
+<!--</fieldset> optional-->
+</form>
+</div><!-- browseSearchtool -->
+</div><!-- form1Part -->
+
+</div><!--pageContentInner -->
+
+<!--{botlogo}-->
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].searcharg.focus(); }
+catch(err) {}
+//--><!]]></script>
+</body>
+</html>
