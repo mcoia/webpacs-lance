@@ -438,7 +438,7 @@ TABLEPARAM_RSRV_BIBS=width="100%" border="0" cellpadding="0" cellspacing="0"
 # Featured Lists
 ICON_BUT_PREVSCRN=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Back</span></span>
 ICON_BUT_RET2FEAT=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Back</span></span>
-#FEATURED_LIST=80,81,82|Featured Lists|Name|
+FEATURED_LIST=80,81,82|Featured Lists|Name|
 
 # Content Linking and Other Resources
 # If your system uses SSL, use the https example, to avoid secure/nonsecure warning on Internet Explorer.
