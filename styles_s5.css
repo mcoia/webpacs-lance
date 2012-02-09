@@ -2,8 +2,8 @@
     width:195px;
 }
 
-.topLogoImage img{
-    margin:25px 8px;
+.topLogoImage {
+    padding:25px 8px;
 }
 
 .clusterLogo {
