@@ -916,6 +916,8 @@ td.progInfoLabel { color:#767C70; font-weight:bold; padding-right:25px; text-ali
 
 #bibDisplayBody .rateData a:link, #bibDisplayBody .rateData a:visited { padding:0; }
 
+
+
 .relSearchLink img { }
 
 .relSearch { padding:0 10%; text-align:left; font-size:.83333em; }
@@ -1073,6 +1075,16 @@ div.rssChannelEntries { border:none; background:#FFFFFF; }
 
 .pageContent > table th.bibVolLabel { padding-left:4px; }
 
+#redirectMessage {
+    margin-left:1em;
+    font-size:1.2em;
+    color:#6c0000;
+}
+
+#redirectMessage a {
+    font-weight:bold;
+}
+
 .resourceScreen table { margin:5px 10px; width:95%; }
 
 .resourceScreen .bibSearchtool { text-align:center; }
@@ -1089,13 +1101,7 @@ div.rssChannelEntries { border:none; background:#FFFFFF; }
 
 .topLogo { position:relative; }
 
-.topLogo img { border:0; display:block; margin-left:auto; margin-right:auto }
-
-.topLogoImage {float:left;}
-
 .topLogoImage, .mobiusLogo {width:250px;}
-
-.topLogoImage img { border:0; margin:15px;}
 
 .mobiusLogo img, .scopeLogo { border:0; margin:10px 15px;}
 
