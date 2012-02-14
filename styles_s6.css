@@ -10,4 +10,4 @@
     background: #FFFFFF;
 }
 
-#searchscope { display:none; }
+#searchscope, #searchscopeDiv, #librarylocationDiv { display:none; }
