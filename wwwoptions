@@ -98,10 +98,15 @@ AVS_TAG=XYZ
 ICON_BUT_MODIFY=<span class="button"><img src="/screens/ico_magnifyingglass_modify.png" alt=""><span class="buttonText">Modify Search</span></span>
 ICON_BUT_SHOWSIM=<span class="button"><img src="/screens/ico_more.png" alt=""><span class="buttonText">More Like This</span></span>
 ICON_REL_GROUP_1=<img src="/screens/relevance5.gif" alt="Most relevant">&nbsp;<h1 class="browseSuperEntryTitle">Most relevant titles</h1>&nbsp;
+ICON_REL_GROUP_16=<img src="/screens/relevance5.gif" alt="Most relevant">&nbsp;<span id="rrTerm1">Match</span> found in main title of&nbsp;
 ICON_REL_GROUP_2=<img src="/screens/relevance4.gif" alt="Highly relevant">&nbsp;<h1 class="browseSuperEntryTitle">Highly relevant titles</h1>&nbsp;
+ICON_REL_GROUP_26=<img src="/screens/relevance4.gif" alt="Most relevant">&nbsp;<span id="rrTerm2">Match</span> found in subtitle or author of&nbsp;
 ICON_REL_GROUP_3=<img src="/screens/relevance3.gif" alt="Very relevant">&nbsp;<h1 class="browseSuperEntryTitle">Very relevant titles</h1>&nbsp;
+ICON_REL_GROUP_36=<img src="/screens/relevance3.gif" alt="Most relevant">&nbsp;<span id="rrTerm3">Match</span> found in chapter title, subject heading, or note of&nbsp;
 ICON_REL_GROUP_4=<img src="/screens/relevance2.gif" alt="Relevant">&nbsp;<h1 class="browseSuperEntryTitle">Relevant titles</h1>&nbsp;
+ICON_REL_GROUP_46=<img src="/screens/relevance2.gif" alt="Most relevant">&nbsp;<span id="rrTerm4">All search terms</span> found in title fields of&nbsp;
 ICON_REL_GROUP_5=<img src="/screens/relevance1.gif" alt="Other relevant">&nbsp;<h1 class="browseSuperEntryTitle">Other relevant titles</h1>&nbsp;
+ICON_REL_GROUP_56=<img src="/screens/relevance1.gif" alt="Most relevant">&nbsp;<span id="rrTerm5">All search terms</span> found in catalog record of&nbsp;
 IMAGE_AVS1=/screens/relevance1.gif
 IMAGE_AVS2=/screens/relevance2.gif
 IMAGE_AVS3=/screens/relevance3.gif
@@ -134,6 +139,7 @@ ICON_962LINK=<img src="/screens/bullet.gif" alt="" border="0" style="margin-righ
 #ICON_BOOKCART=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">Add to Bag</span></span>
 ICON_BOOKCART6=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">Save Record</span></span>
 ICON_BOOKCART_SAVED=<span class="button"><img src="/screens/ico_bag_minus.png" alt=""><span class="buttonText">Remove From Bag</span></span>
+ICON_BOOKCART_SAVED=<span class="button"><img src="/screens/ico_bag_minus.png" alt=""><span class="buttonText">Remove Saved</span></span>
 ICON_FULLRECORD=See Full Record
 ICON_LOCATEINRESULTS=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Locate in results</span></span></div></div>
 ICON_PAGING_CAPTION=Result Page&nbsp;
@@ -142,7 +148,9 @@ ICON_PAGING_PREV=Prev
 ICON_PROGRAM=<img src="/screens/media_program.gif" border="0" alt="Library Event">
 ICON_RESOURCE=<img src="/screens/media_resource.gif" alt="Internet Resource">
 ICON_SAVEALLPAGE=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">Add All On Page</span></span>
+ICON_SAVEALLPAGE6=<span class="button"><img src="/screens/ico_multirequest.png" alt=""><span class="buttonText">Save All On Page</span></span>
 ICON_SAVEMARKED=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">Add Marked to Bag</span></span>
+ICON_SAVEMARKED6=<span class="button"><img src="/screens/ico_checkmark_16px.png" alt=""><span class="buttonText">Save Marked for Print/Email</span></span>
 IMAGE_MATTYPE-=/screens/media_book.gif
 IMAGE_MATTYPEa=/screens/media_book.gif
 IMAGE_MATTYPE2=/screens/media_ebook.gif
@@ -236,6 +244,7 @@ ICON_MYLISTS=<span class="button"><img src="/screens/ico_list.png" alt=""><span 
 ICON_MYLISTS_EXPORT=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Export List</span></span></div></div>
 ICON_MYLISTS_MOVE=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Move Marked</span></span></div></div>
 ICON_MYLISTS_REQUEST=<span class="button"><img src="/screens/ico_checkmark_16px.png" alt=""><span class="buttonText">Request</span></span>
+ICON_MYLISTS_REQUEST6=<span class="button"><img src="/screens/ico_target.png" alt=""><span class="buttonText">Request</span></span>
 ICON_MYLISTS_REMOVE_DUPLICATES=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Remove Duplicates</span></span></div></div>
 ICON_MYLISTS_RENAME=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Change Name/Description</span></span></div></div>
 ICON_MYLISTS_SAVE=<span class="button"><img src="/screens/ico_list_add.png" alt=""><span class="buttonText">Add to My Lists</span></span>
@@ -248,10 +257,15 @@ ICON_MYLISTS_RECORD=<span class="button"><img src="/screens/ico_list_add.png" al
 # Saving and Exporting
 BRIEF_EXPORT=a|t:245|p|e|y:050
 ICON_BUT_BIBEXPORT=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">Add to Bag</span></span>
+ICON_BUT_BIBEXPORT6=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">Save for Print/Email</span></span>
 ICON_BUT_CLEAR_MARKED=<span class="button"><img src="/screens/ico_bag_clear.png" alt=""><span class="buttonText">Empty Bag</span></span>
+ICON_BUT_CLEAR_MARKED6=<span class="button"><img src="/screens/ico_bag_clear.png" alt=""><span class="buttonText">Clear Saved Records</span></span>
 ICON_BUT_EXPORT_MULTI=<span class="button"><img src="/screens/ico_disc.png" alt=""><span class="buttonText">Export Saved</span></span>
+ICON_BUT_EXPORT_MULTI6=<span class="button"><img src="/screens/ico_disc.png" alt=""><span class="buttonText">Print/Email Saved Records</span></span>
 ICON_BUT_EXPORT_VIEW_SAVES=<span class="button"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">View Bag</span></span>
+ICON_BUT_EXPORT_VIEW_SAVES6=<span class="button"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">View Marked Records</span></span>
 ICON_BUT_VIEW_SAVES=<span class="button"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">View Bag</span></span>
+ICON_BUT_VIEW_SAVES6=<span class="button"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">View Saved Records</span></span>
 EMAILOP=From the library catalog|exporter|
 EXPORT_SELECT_TABLE=Sendto:browser,email,local|Format:full,brief,marc,procite,endnote
 XRECTYPE=boi
@@ -259,6 +273,7 @@ XRECTYPE=boi
 #Requesting
 #BIBREQUEST=true
 ICON_BUT_REQUEST=<span class="button"><img src="/screens/ico_checkmark.png" alt=""><span class="buttonText">Request</span></span>
+ICON_BUT_REQUEST6=<span class="button"><img src="/screens/ico_target.png" alt=""><span class="buttonText">Request</span></span>
 ICON_BUT_REQUEST_ALL=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Request Available</span></span></div></div>
 ICON_BUT_REQUEST_MULTI=<span class="button"><img src="/screens/ico_request_multi.png" alt=""><span class="buttonText">Request Saved</span></span>
 ICON_BUT_REQUEST_RESET=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Reset Form</span></span></div></div>
@@ -289,6 +304,7 @@ ICON_BUT_PAT_SUBMIT=<div onmousedown="this.className='pressedState';" onmouseout
 ICON_BUT_PSTARTOVER=<span class="button"><img src="/screens/ico_startover.png" alt=""><span class="buttonText">Start Over</span></span>
 ICON_BUT_PLOGOUT=<span class="button"><img src="/screens/ico_patron.png" alt=""><span class="buttonText">Return to My Account</span></span>
 ICON_BUT_RET2PREC=Return to My Account
+ICON_BUT_RET2PREC6=<span class="button"><img src="/screens/ico_patron.png" alt=""><span class="buttonText">Return to My Account</span></span>
 ICON_BUT_UPDATE_HOLDS=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Update List</span></span></div></div>
 CHANGE_HOLD_LOC=true
 #FREEZE_HOLDS=true
@@ -327,11 +343,14 @@ TABLEPARAM_PATFUNC=border="0"|border="0"|border="0"
 
 # My Millennium
 ICON_BUT_LOGOUT=Log Out
+ICON_BUT_LOGOUT6=<span class="button"><img src="/screens/ico_x.png" alt=""><span class="buttonText">Log Out</span></span>
 ICON_BUT_PAT_PSEARCH_REMOVE=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Delete All Searches</span></span></div></div>
 BUT_PAT_PSEARCH_UPDATE=/screens/updatelist.gif" class="button
 ICON_BUT_PAT_PSEARCH_UPDATE=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Update List</span></span></div></div>
 BUT_PAT_SEARCH=/screens/pat_search.gif
 ICON_BUT_PAT_GETPSAVEDRECS=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">Preferred Searches</span></span>
+ICON_BUT_PAT_GETPSAVEDRECS6=<span class="button"><img src="/screens/ico_gear.png" alt=""><span class="buttonText">Preferred Searches</span></span>
+ICON_BUT_PAT_SEARCH6=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">Search Catalog</span></span>
 CIRC_HIST_LIMIT_TEXT=Limit to titles which aren't in my Reading History
 HAS_ALTERNATE_ID=false
 ALTERNATE_ID_EMAIL=username@replacesitename.com|Your login name has changed
