@@ -1245,4 +1245,5 @@ z-index:1000; background:#fff; padding:10px; margin:10px; background:#efefcf; }
 #sms .eg {font-style:italic; font-size:80%; }
 #info {top:500}
 #sms {font-size:70%}
+body > div#bibDisplayBody a#smsbutton { display:none; }
 
