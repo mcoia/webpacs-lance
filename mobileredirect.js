@@ -16,6 +16,7 @@ $.extend({
   }
 });
 
+var mobileHost = 'https://m.lance.searchmobius.org'; // No trailing slash
 var redirectUrl;
 var scope;
 var scopeMatch = /~S(\d+)/.exec(window.location.href);
