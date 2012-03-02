@@ -26,7 +26,7 @@ if (href.indexOf("&redirected") != -1 ) {
     var redirectMessage = "<p>You've been redirected from lance.mobius.umsystem.edu or lance.missouri.edu. Starting in June of 2012, those addresses will no longer work.</p><p>Please update your bookmarks to <a href='http://lance.searchmobius.org'>http://lance.searchmobius.org</a>.</p>"
 
     $(document).ready(function () {
-        $('#redirectMessage').html(redirectMessage);
+        $('#alertMessage').html(redirectMessage);
     });  
 }
 
