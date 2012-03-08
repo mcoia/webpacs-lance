@@ -40,6 +40,7 @@
 AVAILLIM2=<span class="availLimMessage">Limit search to available items</span>|<span class="availLimMessage">Search results limited to available items</span>
 AVAILLIM_STATS=-,r
 BOTLOGO=@screens/botlogo.html
+BOTLOGO6=@screens/botlogo_s6.html
 ICON_BUT_CANCEL=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancel</span></span></div></div>
 ICON_BUT_CLOSEWINDOW=<span class="button"><img src="/screens/ico_x.png" alt=""><span class="buttonText">Close Window</span></span>
 ICON_BUT_RET2CAT=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Return to Catalog</span></span>
@@ -99,10 +100,15 @@ AVS_TAG=XYZ
 ICON_BUT_MODIFY=<span class="button"><img src="/screens/ico_magnifyingglass_modify.png" alt=""><span class="buttonText">Modify Search</span></span>
 ICON_BUT_SHOWSIM=<span class="button"><img src="/screens/ico_more.png" alt=""><span class="buttonText">More Like This</span></span>
 ICON_REL_GROUP_1=<img src="/screens/relevance5.gif" alt="Most relevant">&nbsp;<h1 class="browseSuperEntryTitle">Most relevant titles</h1>&nbsp;
+ICON_REL_GROUP_16=<img src="/screens/relevance5.gif" alt="Most relevant">&nbsp;<span id="rrTerm1">Match</span> found in main title of&nbsp;
 ICON_REL_GROUP_2=<img src="/screens/relevance4.gif" alt="Highly relevant">&nbsp;<h1 class="browseSuperEntryTitle">Highly relevant titles</h1>&nbsp;
+ICON_REL_GROUP_26=<img src="/screens/relevance4.gif" alt="Highly relevant">&nbsp;<span id="rrTerm2">Match</span> found in subtitle or author of&nbsp;
 ICON_REL_GROUP_3=<img src="/screens/relevance3.gif" alt="Very relevant">&nbsp;<h1 class="browseSuperEntryTitle">Very relevant titles</h1>&nbsp;
+ICON_REL_GROUP_36=<img src="/screens/relevance3.gif" alt="Very relevant">&nbsp;<span id="rrTerm3">Match</span> found in chapter title, subject heading, or note of&nbsp;
 ICON_REL_GROUP_4=<img src="/screens/relevance2.gif" alt="Relevant">&nbsp;<h1 class="browseSuperEntryTitle">Relevant titles</h1>&nbsp;
+ICON_REL_GROUP_46=<img src="/screens/relevance2.gif" alt="Relevant">&nbsp;&nbsp;<span id="rrTerm4">All search terms</span> found in title fields of&nbsp;
 ICON_REL_GROUP_5=<img src="/screens/relevance1.gif" alt="Other relevant">&nbsp;<h1 class="browseSuperEntryTitle">Other relevant titles</h1>&nbsp;
+ICON_REL_GROUP_56=<img src="/screens/relevance1.gif" alt="Other relevant">&nbsp;<span id="rrTerm5">All search terms</span> found in catalog record of&nbsp;
 IMAGE_AVS1=/screens/relevance1.gif
 IMAGE_AVS2=/screens/relevance2.gif
 IMAGE_AVS3=/screens/relevance3.gif
