@@ -1113,7 +1113,7 @@ div.rssChannelEntries { border:none; background:#FFFFFF; }
 
 .topLogoImage { padding:10px;}
 
-.topLogoImage, .mobiusLogo {width:250px;}
+.topLogoImage, .mobiusLogo, .clusterLogo {width:250px;}
 
 .topLogoImage a:link, .topLogoImage a:visited, .mobiusLogo a:link, .mobiusLogo a:visited, .scopeLogo a:link, .scopeLogo a:visited { background:#FFFFFF; padding:0; }
 
