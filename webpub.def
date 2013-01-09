@@ -36,9 +36,9 @@ b|T|||||
 b|r|30[0-9]|-6|Description||b|
 b|r|310|-6|Frequency||b|
 b|r|321|-6|Frequency||b|
-b|r|336|-b268|Descript.||b|
-b|r|337|-b268|Descript.||b|
-b|r|338|-b268|Descript.||b|
+b|r|336|-6|||b|
+b|r|337|-6|||b|
+b|r|338|-6|||b|
 b|r|350|-6|||b|
 b|r|362|-6|Pub History||b|
 b|r|380|-0268|Descript.||b|
