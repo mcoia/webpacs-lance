@@ -1,3 +1,10 @@
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="/screens/jquery.cookie.js"></script>
+<script type="text/javascript" src="/screens/domainredirect2.js"></script>
+<script type="text/javascript" src="/screens/mobileredirect.js"></script>
+<script src="/screens/menu-collapsed.js" type="text/javascript"></script>
+<link type="text/css" rel="stylesheet" href="/screens/jquery.modalbox.css" />
+<script type="text/javascript" src="/screens/jquery.modalbox-1.5.0-min.js"></script>
 <div class="minHeight">
 <div class="fullPage">
 <div class="pageContent">
@@ -43,13 +50,25 @@
 <!--{pin2}-->
 </div>
 </fieldset>
-<div class="pinInstruc">
-<p>The PIN must not contain common trivial patterns. For example:</p>
+
+<a class="openmodalbox" href="javascript:void(0);">
+<div id="idHelpButton">
+<p>LANCE</p>
+<p>PIN Help</p>
+</div>
+    <span class="modalboxContent">
+<h3>The PIN must not contain common trivial patterns. For example:</h3>
     <ul>
     <li>A character that is consecutively repeated three or more times(for example, aaaa, ababa, bbbb).</li>
     <li>A set of up to four characters is that is consecutively repeated two or more times (for example, abab, abcabc, abcdabcd).</li>
 </ul>
-</div>
+
+    </span>
+</a>
+
+
+
+
 </div><!--formFieldsetInner -->
 <div class="formButtonArea">
 <!--{submit}-->
