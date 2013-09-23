@@ -38,6 +38,16 @@ For 10pt, apply .7353em
 /* Section 1 */
 /*Global tag styles*/
 
+#idHelpButton { margin:10px; text-align:center; width:76px; float:left; }
+
+#idHelpButton:hover { cursor:pointer; }
+
+#idHelpButton p:first-child { background-color: #1D4069; color:#ffffff; border-top-right-radius:10px; border-top-left-radius:10px; -moz-border-top-right-radius:10px; -moz-border-top-left-radius:10px; font-weight:bold; padding: .2em 0; }
+
+#idHelpButton p:last-child { background-color: #fcffff; border-bottom-right-radius:10px; border-bottom-left-radius:10px; -moz-border-bottom-right-radius:10px; -moz-border-bottom-right-radius:10px; font-size:1.3em; color:#0096a7; padding: .6em 0; }
+
+#idHelpButton p { border:1px #1d4069 solid; margin:0; }
+
 a img {border:none;}
 
 body { font-family:"Trebuchet MS",Verdana,Arial,Helvetica,sans-serif; font-size:85%; font-style:normal; font-weight: normal; height:100%; text-align:center; width:100%; margin-top:0px; background:#FFFFFF }
