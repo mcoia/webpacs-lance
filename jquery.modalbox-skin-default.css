@@ -4,7 +4,7 @@
 /* modalBoxBodyContent */
 div#modalBox div#modalBoxBody div.modalBoxBodyContent {
 	background-color:white;
-	padding:15px 0 0 0;
+	padding: 12px 0 0 12px;
 }
 div#modalBox.emphasis div#modalBoxBody div.modalBoxBodyContent {
 	border:1px dotted red;
@@ -29,7 +29,7 @@ div#modalBox div#modalBoxBody div#modalBoxCloseButton a.closeModalBox span {
 div#modalBox div#modalBoxBody div#modalBoxCloseButton a.closeModalBox {
 	background:#efefef url(/screens/closebutton_21x21.png) 99% 50% no-repeat;
 	border-bottom:1px solid #E5E5E5;
-	margin:0 19px;
+	margin:0 39px;
 	padding:5px 0;
 }
 div#modalBox div#modalBoxBody div#modalBoxCloseButton a.closeModalBox span {
