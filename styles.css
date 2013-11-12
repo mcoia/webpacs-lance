@@ -210,6 +210,8 @@ a:hover  { color: #014184; }
 
 /* .bibDisplayRatings  { position:absolute; float:left; width: 80% } */
 
+.bibLinks {margin-left: 12px;}
+
 .bibLinks th { text-align:center; }
 
 .bibMedia  { margin-left:auto; margin-right:auto; }
