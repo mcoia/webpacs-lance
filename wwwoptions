@@ -451,7 +451,8 @@ FEATURED_LIST=80,81,82|Featured Lists|Name|
 
 # Content Linking and Other Resources
 # If your system uses SSL, use the https example, to avoid secure/nonsecure warning on Internet Explorer.
-BIBIMAGE=http://www.syndetics.com/index.aspx?isbn=%s/SC.GIF&client=trumanstateu&type=rn12|i|http://www.syndetics.com/index.aspx?isbn=%s/LC.GIF&client=trumanstateu&type=rn12
+BIBIMAGE=http://www.syndetics.com/index.aspx?isbn=%s/SC.GIF&client=trumanstateu|i|http://www.syndetics.com/index.aspx?isbn=%s/index.html&client=trumanstateu&type=rn12 
+
 BIBIMAGE_TEXT6=Click for larger image
 BUT_ENCYCPD=/screens/encycpd.gif
 BUT_FULL_TEXT=/screens/full_text.gif
