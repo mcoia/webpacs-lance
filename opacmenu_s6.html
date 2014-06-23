@@ -36,23 +36,57 @@ obj.submit();
 <div class="miscButtons">
 <!--{logout}-->
 </div>
+
 <div class="pageContentInner mainSearch">
 
-<h1 class="accessibleAddInfo">Search</h1>
+  <div id="tabs">
+    <ul id="tabList">
+      <li id="Y"><a>Keyword</a></li>
+      <li id="t"><a>Title</a></li>
+      <li id="a"><a>Author</a></li>
+      <li id="d"><a>Subject</a></li>
+      <li id="X"><a href="/search/X">Advanced</a></li>
+    </ul>
 
-<div id="accessibleForm" class="form1Part">
-<div class="browseSearchtool">
-<form action="/search/" method="get" name="search" id="search" onSubmit="return iiiSearchValidate();">
-<input type="hidden" id="iiiFormHandle_1">
+    <div id="tab-1" class="tabContent">
+ 
 
-<!-- Optional legend:
-<fieldset>
-<legend>Type the search term you want to find.</legend>-->
-<div class="formEntryArea">
-<div class="inlineBlock">
+<div class="innerTab">
+<div class="innerTabForm Y">
+<select name="searchtype" class="searchtype">
+<option selected="selected" value="Y">Keyword</option>
+<option value="t">Title</option>
+<option value="s">Journal Title</option>
+<option value="a">Author</option>
+<option value="d">Subject</option>
+<option value="c">LC Call No</option>
+</select>
+<form action="/search~S4/X" method="get">
+
 <label for="searchtype" class="accessibleAddInfo">Search type</label>
-<select name="searchtype" id="searchtype">
-<option value="Y" selected="selected">Keyword</option>
+<input maxlength="75" name="SEARCH" size="20" >
+<select name="m">
+<option value="">All Collections</option>
+<option value="2">E-Books</option>
+<option value="i">Spoken Audio</option>
+<option value="g">Video/Film</option>
+</select>
+<!--{nosort}-->
+<input type="hidden" name="searchscope" value="6">
+<span class="nowrap formButtonArea">
+
+<input value="Search" type="submit">
+
+</span>
+
+</form>
+</div>
+<div class="innerTabForm otherIndexes">
+<form action="/search/" method="get" name="search" id="search">
+
+<label for="searchtype" class="accessibleAddInfo">Search type</label>
+<select name="searchtype" class="searchtype">
+<option selected="selected" value="X">Keyword</option>
 <option value="t">Title</option>
 <option value="s">Journal Title</option>
 <option value="a">Author</option>
@@ -60,28 +94,21 @@ obj.submit();
 <option value="c">LC Call No</option>
 </select>
 <!--{nosort}-->
-<label for="searcharg" class="accessibleAddInfo">Search term</label>
 <input maxlength="75" name="searcharg" size="20" >
-</div>
-<div class="inlineBlock">
-<label for="scope" class="accessibleAddInfo">Location</label>
-<!--{scope}-->
+<input type="hidden" name="searchscope" value="4">
 <span class="nowrap formButtonArea">
 
-  <!--{submit}-->
-
-<input type="hidden" id="iiiFormHandle_1"/>
-<a href="#" onclick="iiiDoSubmit_1();"><div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Submit</span></span></div></div></a>
-
-<input type="submit" class="submitHidden">
+<input value="Search" type="submit">
 
 </span>
-</div>
-</div><!-- formEntryArea -->
-<!--</fieldset> optional-->
+
 </form>
-</div><!-- browseSearchtool -->
-</div><!-- form1Part -->
+</div>
+</div>
+
+</div>
+
+</div>
 
 </div><!--pageContentInner -->
 
