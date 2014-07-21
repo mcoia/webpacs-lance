@@ -77,16 +77,16 @@
 	float: left;
 }
 #tabList li.active {
-	background: #DFE6D2;
+	background: #bdadc9;
 }
 #tabList li {
-	background: #F1F4EB;
+	background: #ded6e4;
 }
 #tabList li.active a {
 	color: #333333;
 }
 #tabs .tabContent {
-	background-color:#DFE6D4;
+	background-color:#bdadc9;
 	clear: both;
 	padding: 15px 0;
 	min-height: 100px;

@@ -17,8 +17,8 @@ $.extend({
 
 function change_tab(tabId) {
 	$(".searchtype").val(tabId);
-	$("#tabList li").css("background-color", "#F1F4EB");
-	$("#tabList #" + tabId).css("background-color", "#DFE6D4");
+	$("#tabList li").css("background-color", "#ded6e4");
+	$("#tabList #" + tabId).css("background-color", "#bdadc9");
 	$("#exampleText").load("/screens/" + tabId + ".inc");
 	if (tabId == "Y"){
 	  $('.Y.innerTabForm').show();
@@ -53,7 +53,7 @@ function front_tabs(){
 
 $(document).ready(function () {
     var tabId = $('.searchtype').val();
-    $("#tabList #" + tabId).css("background-color", "#DFE6D4");
+    $("#tabList #" + tabId).css("background-color", "#ded6e4");
 	if (tabId == "Y"){
 	  $('.Y.innerTabForm').show();
 	  $('.otherIndexes.innerTabForm').hide();
