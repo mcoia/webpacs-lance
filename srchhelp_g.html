@@ -1,39 +1,65 @@
-<HTML>
-<HEAD>
-	<TITLE>LANCE/ LANCE Catalog</TITLE>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-</HEAD>
-
-<BODY bgcolor="#ffffff" link="#0000FF" alink="#0000FF" vlink="#0000FF" onLoad="document.forms[0].SEARCH.focus(); document.forms[0].SEARCH.select();">
-
-<!--{toplogo}-->
-
-<br>
-
-<!--{patron}-->
-<!--{logout}-->
-
-<!-- Begin Search Help Text -->
-<center><table border="0" width="570"><tr><td>
-<h3 align="center"><b>Government Document Number Search</b></h3>
-<form METHOD="GET" ACTION="/search/g">
-  <p ALIGN="CENTER"> 
-    <input TYPE="TEXT" NAME="SEARCH" MAXLENGTH="64" SIZE="48">
-    <input TYPE="SUBMIT" VALUE="Search"><br>
-
-  </p>
-</form>
-<p>Type as much of the Document Number as you know.</p>
-<table border="0"><tr><td nowrap valign="top">
-<i>for example:</i> </td><td>
-<pre>    Y4.ag4/2:e
-    Con2:w
-    E1.10
-</pre>
-</td></tr></table>
-</td></tr></table></center>
-<!-- End Search Help Text -->
-<p align="center"><A HREF="/search/"><IMG SRC="/screens/b_newsrch.gif" BORDER=0 ALT="[START OVER]"></A></p> 
-<!--{botlogo}-->
-</BODY>
-</HTML>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>LANCE Catalog - Government Document Number Search</title>
+
+  <script language="JavaScript">
+    <!-- Hide the JS
+    startTimeout(600000, "/");
+    // -->
+  </script>
+
+  <noscript>
+    <meta http-equiv="Refresh" content="600;URL=/" />
+  </noscript>
+
+</head>
+
+<body>
+<!--{toplogo}-->
+<!--{patron}-->
+<!--{logout}-->
+
+<div class="pageContentInner">
+
+  <h1 class="pageHeader">Government Document Number Search</h1>
+
+  <form method="get">
+
+    <fieldset>
+
+      <!-- Optional legend:
+      <legend>Type the author you want to find, then press the Enter key or click Submit.</legend>
+      -->
+
+      <div class="formEntryArea">
+        <!-- <span class="formLabel">
+          <label for="SEARCH">Search for:</label>
+        </span> -->
+<!--{search}-->
+      </div> <!-- formEntryArea -->
+
+      <div class="formButtonArea">
+<!--{submit}-->
+      </div> <!-- formButtonArea -->
+
+    </fieldset>
+
+  </form>
+
+  <p>Type as much of the Document Number as you know. For example:</p>
+  <ul>
+    <li> Y4.ag4/2:e </li>
+    <li> Con2:w </li>
+  </ul>
+
+  <br />
+
+</div><!-- pageContentInner -->
+
+<br />
+<!--{botlogo}-->
+</body>
+</html>
