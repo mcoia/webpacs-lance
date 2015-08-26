@@ -622,3 +622,6 @@ LOC_tpvii=/screens/tpvii.htm "target=_blank"
 LOC_tpxii=/screens/tpxii.htm "target=_blank" 
 LOC_tpyii=/screens/tpyii.htm "target=_blank" 
 LOC_tpz*=/screens/tpz.htm "target=_blank" 
+# FOR Encore
+PATFEEDS_MT=10.17.202.31
+IPSSO_USEHTML=t
