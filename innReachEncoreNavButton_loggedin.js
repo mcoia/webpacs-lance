@@ -31,7 +31,7 @@ function updateinnReachButton() {
 
 	    if($(".browseScreen")[0]) {
 
-	        $(".navigationRow a .modifySearch").parent().parent().after(innReachButton); // drop a button that doesn't go anywhere
+	        $(".navigationRow a .anotherSearch").parent().parent().after(innReachButton); // drop a button that doesn't go anywhere
 
 	        updateinnReachButton(); // Just set the href initially
 
@@ -43,7 +43,7 @@ function updateinnReachButton() {
 	                updateinnReachButton();
 	        });
 	    } else if ($(".bibSearch")[0]) {
-	        $("span.moreLike").parent().parent().after(innReachButton);
+	        $("span.anotherSearch").parent().parent().after(innReachButton);
 	        title = $(".bibInfoLabel:contains('Title')").next().text();
 	        // keep stuff before the slash, drop non-alphanumeric
 	        tidyTitle = title.split("/", 1).join().replace(/^[.\X]*$/gmi, " ").replace(/\s+/g, " ").trim();
