@@ -1,6 +1,8 @@
 <!--{toplogo}-->
+<!-- begin pverify_web.html-->
+
 <div class="pageContentInner">
-<h1 class="pageHeader">Login</h1>
+<span style="font-weight:700;" class="pageHeader">Login</span>
 <div class="form1Part formLogin" id="accessibleForm">
 <!--{formbegin}-->
 <!--{iferrmsg}-->
@@ -19,7 +21,7 @@
 </legend>
 
 <!--{ifextpat}-->
-<h2>Students, Staff, and Faculty</h2>
+<span style="font-weight:700;">Students, Staff, and Faculty</span>
 <div class="formEntryArea">
 <label for="extpatid"><span class="formLabel">
 Username:
@@ -82,7 +84,6 @@ Password:
 <span class="formLabelExample">
 <!--{pininstructions}-->
 </span>
-
 </div>
 
 <!--{xif}-->
@@ -98,24 +99,8 @@ Password:
 <!--{pinresetrequest}-->
 <!--{xif}-->
 <!--{submit}-->
-<input type="submit" class="submitHidden">
+<input type="submit" class="submitHidden" style="display:none">
 </div>
-<a class="openmodalbox" href="javascript:void(0);">
-<div id="idHelpButton">
-<p>LANCE</p>
-<p>PIN Help</p>
-</div>
-    <span class="modalboxContent">
-<h3>A valid PIN consists of up to 30 alphanumeric characters.</h3> 
-    <p>The PIN must not contain common trivial patterns. For example:</p>
-
-<ul>
-    <li>A character that is consecutively repeated three or more times(for example, aaaa, ababa, bbbb).</li>
-    <li>A set of up to four characters is that is consecutively repeated two or more times (for example, abab, abcabc, abcdabcd).</li>
-</ul>
-
-    </span>
-</a>
 </fieldset>
 <!--{formend}-->
 
@@ -127,3 +112,6 @@ Password:
 try { document.forms[0].elements[1].focus(); }
 catch(err) {}
 //--><!]]></script>
+
+</body>
+</html>
