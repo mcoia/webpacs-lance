@@ -4,16 +4,20 @@
     <title>Library Log in</title>
     <meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4"><meta http-equiv="Content-type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width = device-width, user-scalable = no">
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script type="text/javascript" src="/scripts/common.js"></script>
     <!--<link rel="stylesheet" type="text/css" href="/apps/CAS/resources/login_mobile.css">
     <link rel="stylesheet" type="text/css" href="/apps/CAS/resources/login_ldap.css" media="screen and (min-device-width: 481px)"> -->
     
     <link rel="stylesheet" type="text/css" href="/apps/CAS/resources/login_mobile.css"  />
+    <link rel="stylesheet" type="text/css" href="/screens/styles_s1.css"  />
 	<style type="text/css" media="screen and (min-width: 481px)">
     <!--
     @import url("/apps/CAS/resources/login_ldap.css");
     -->
     </style>
+    <link type="text/css" rel="stylesheet" href="/screens/jquery.modalbox.css" />
+<script type="text/javascript" src="/screens/jquery.modalbox-1.5.0-min.js"></script>
     <!--[if IE]><link rel="stylesheet" type="text/css" href="/apps/CAS/resources/login_ldap.css"  media="screen" /><![endif]-->
     <link href="/apps/CAS/resources/login_mobile.css" rel="stylesheet" type="text/css" media="handheld, only screen and (max-device-width: 480px)" />
     
@@ -123,10 +127,26 @@ if (keycode==13)
 }
 
 //--><!]]></script>
+<a class="openmodalbox" href="javascript:void(0);">
+<div id="idHelpButton">
+<p>LANCE</p>
+<p>PIN Help</p>
+</div>
+    <span class="modalboxContent">
+<h3>A valid PIN consists of up to 30 alphanumeric characters.</h3> 
+    <p>The PIN must not contain common trivial patterns. For example:</p>
 
+<ul>
+    <li>A character that is consecutively repeated three or more times(for example, aaaa, ababa, bbbb).</li>
+    <li>A set of up to four characters is that is consecutively repeated two or more times (for example, abab, abcabc, abcdabcd).</li>
+</ul>
 
-</div> <!-- end loginArea -->
+    </span>
+</a>
 
+</div> 
+
+<!-- end loginArea -->
 <div class="loginActions">
 <span class="loginActionText">New to the library?</span>
 <span class="loginActionSeparator"></span>
