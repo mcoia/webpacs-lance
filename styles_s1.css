@@ -5,7 +5,7 @@
 .topLogoImage {
     padding:20px 15px;
 }
-#idHelpButton { margin:10px; text-align:center; width:76px; float:left; }
+#idHelpButton { margin:10px; text-align:center; width:76px; display: inline-block; padding: 2px 6px 7px 15px;}
 
 #idHelpButton:hover { cursor:pointer; }
 

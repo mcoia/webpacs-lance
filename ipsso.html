@@ -92,12 +92,28 @@
 
 	  </fieldset>
 	</div>  <!-- end login -->
+
     <div class="clearfloats"></div>
     <div class="formButtons">
     	<a href="#" onclick="document.forms['fm1'].submit();"><div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Submit</span></span></div></div></a>
   	</div>
 </form>
+    <a class="openmodalbox" href="javascript:void(0);">
+        <div id="idHelpButton">
+        <p>LANCE</p>
+        <p>PIN Help</p>
+        </div>
+            <span class="modalboxContent">
+        <h3>A valid PIN consists of up to 30 alphanumeric characters.</h3> 
+            <p>The PIN must not contain common trivial patterns. For example:</p>
 
+        <ul>
+            <li>A character that is consecutively repeated three or more times(for example, aaaa, ababa, bbbb).</li>
+            <li>A set of up to four characters is that is consecutively repeated two or more times (for example, abab, abcabc, abcdabcd).</li>
+        </ul>
+
+            </span>
+    </a>
 <!--Enable form focus-->
 <script type="text/javascript"><!--//--><![CDATA[//><!--
 //Hide the main PIN entry if the new pin section is active.
@@ -127,26 +143,11 @@ if (keycode==13)
 }
 
 //--><!]]></script>
-<a class="openmodalbox" href="javascript:void(0);">
-<div id="idHelpButton">
-<p>LANCE</p>
-<p>PIN Help</p>
-</div>
-    <span class="modalboxContent">
-<h3>A valid PIN consists of up to 30 alphanumeric characters.</h3> 
-    <p>The PIN must not contain common trivial patterns. For example:</p>
-
-<ul>
-    <li>A character that is consecutively repeated three or more times(for example, aaaa, ababa, bbbb).</li>
-    <li>A set of up to four characters is that is consecutively repeated two or more times (for example, abab, abcabc, abcdabcd).</li>
-</ul>
-
-    </span>
-</a>
-
 </div> 
 
 <!-- end loginArea -->
+
+
 <div class="loginActions">
 <span class="loginActionText">New to the library?</span>
 <span class="loginActionSeparator"></span>
