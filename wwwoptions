@@ -36,6 +36,7 @@
 
 
 # General Display and Behavior
+REFRESH_MESSAGE=You are getting this error because the catalog server received multiple requests in a short period of time. This can happen if you double-click a link, refresh the browser too quickly, or redo the same search quickly. You should be able to get past this error by using your browser's "back" button or by refreshing this window. (Please click the refresh button just once.)
 #AVAILLIM=<span class="availLimMessage">Limit search to available items</span>|<span class="availLimMessage">Search results limited to available items</span>
 AVAILLIM2=<span class="availLimMessage">Limit search to available items</span>|<span class="availLimMessage">Search results limited to available items</span>
 AVAILLIM_STATS=-,r
@@ -273,10 +274,12 @@ ICON_BUT_REQUEST_RESET=<div onmousedown="this.className='pressedState';" onmouse
 ICON_BUT_REQUEST_SELECTED=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Request Selected</span></span></div></div>
 ICON_REQUEST=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Request
 #REQFILLTIME=14|<br>Request available in approximately %d days|<br>Current estimated availability: approximately %d days|<br>This material may be immediately available
-REQUEST=Request this title|denyiflocalavail|ask|yes
+#REQUEST=Request this title|denyiflocalavail|ask|yes
 #REQUEST_ARTICLE_IFCHKIN=Y
 REQUEST_INSTRUCTION=Any special instructions?
-REQUEST_MULTI=Request all|denyiflocalavail|ask|yes
+#REQUEST_MULTI=Request all|denyiflocalavail|ask|yes
+REQUEST=Request this title|bib|ask|yes
+REQUEST_MULTI=Request all|bib|ask|yes
 
 # Patron Record
 ICON_BUT_PAT_CANCEL=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancel</span></span></div></div>
@@ -428,6 +431,8 @@ ILL_HOME=/screens/ill.html
 
 # INN-Reach
 IR_PLACEMENT=1
+#ICON_INNREACH_ENCORE=<span class="button"><img src="/screens/ico_mobius.png" alt=""><span class="buttonText">Search MOBIUS</span></span></span>
+#INNREACH_ENCORE=http://searchmobius.org/iii/encore/search/C__S%s__Orightresult__U?lang=eng&suite=cobalt
 INNREACH=<span class="button"><img src="/screens/ico_mobius.png" alt=""><span class="buttonText">Search MOBIUS</span></span>@searchmobius.org(X=X*;Y=Y*;a=a;c=c;d=d;e=e;g=g;i=i;j=m;m=h;o=o;s=s;t=t)
 
 # Media Management
@@ -621,3 +626,6 @@ LOC_tpvii=/screens/tpvii.htm "target=_blank"
 LOC_tpxii=/screens/tpxii.htm "target=_blank" 
 LOC_tpyii=/screens/tpyii.htm "target=_blank" 
 LOC_tpz*=/screens/tpz.htm "target=_blank" 
+# FOR Encore
+PATFEEDS_MT=10.17.202.31
+IPSSO_USEHTML=t
