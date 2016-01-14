@@ -28,13 +28,11 @@ function updateinnReachButton() {
 		//selectAny.prependTo("#b")
 		//Hides the out-of-scope locations
 		innReachButton = "<a id='innReachLink' href=''><span class='button'><img src='/screens/ico_mobius.png' alt=''><span class='buttonText'>Search MOBIUS</span></span></a>";
-
 	    if($(".browseScreen")[0]) {
 
 	        $(".navigationRow a .anotherSearch").parent().parent().after(innReachButton); // drop a button that doesn't go anywhere
 
 	        updateinnReachButton(); // Just set the href initially
-
 	        // update the link href if the user changes search types (even if they don't actually submit it)
 	        $("#searcharg").change(function() {
 	                updateinnReachButton();
@@ -47,7 +45,6 @@ function updateinnReachButton() {
 	        title = $(".bibInfoLabel:contains('Title')").next().text();
 	        // keep stuff before the slash, drop non-alphanumeric
 	        tidyTitle = title.split("/", 1).join().replace(/^[.\X]*$/gmi, " ").replace(/\s+/g, " ").trim();
-
 	        $("#innReachLink").attr("href", innReachUrl + tidyTitle);
 	        }
 

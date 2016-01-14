@@ -7,6 +7,9 @@ function updateinnReachButton() {
 	    }
 	    else {
 	            innReachArg = searchArg;
+	    } 
+	    else { 
+	            innReachArg = searchArg; 
 	    }
 
 	    $("#innReachLink").attr("href", innReachUrl + innReachArg)
@@ -34,7 +37,6 @@ function updateinnReachButton() {
 	        $(".navigationRow a .modifySearch").parent().parent().after(innReachButton); // drop a button that doesn't go anywhere
 
 	        updateinnReachButton(); // Just set the href initially
-
 	        // update the link href if the user changes search types (even if they don't actually submit it)
 	        $("#searcharg").change(function() {
 	                updateinnReachButton();
@@ -47,7 +49,6 @@ function updateinnReachButton() {
 	        title = $(".bibInfoLabel:contains('Title')").next().text();
 	        // keep stuff before the slash, drop non-alphanumeric
 	        tidyTitle = title.split("/", 1).join().replace(/^[.\X]*$/gmi, " ").replace(/\s+/g, " ").trim();
-
 	        $("#innReachLink").attr("href", innReachUrl + tidyTitle);
 	        }
 
