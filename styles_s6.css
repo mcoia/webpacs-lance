@@ -1,0 +1,15 @@
+@import url("styles.css");
+
+.minHeight {
+    width: 1067px;
+}
+
+.linkBanner {
+    background-color: #5C3278;
+}
+
+.form1Part {
+    background: #FFFFFF;
+}
+
+#searchscope, #searchscopeDiv, #librarylocationDiv { display:none; }

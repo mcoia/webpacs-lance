@@ -1,338 +1,177 @@
 <!--{toplogo}-->
-	<!-- /toplogo -->
-
-<!-- for external access  -->
-<script type="text/javascript" src="http://library2.udayton.edu/bibliographic/checkoffcampus.js.php"></script>
-	
-	<!-- ifbibdisplay -->
 <!--{ifbibdisplay}-->
-	<!-- /ifbibdisplay -->
-
 <!--{xif}-->
-
-	<!-- catedit -->
 <!--{catedit}-->
-	<!-- /catedit -->
 
 <div id="bibDisplayBody">
-
-
-<div class="navigationRowRecord" style="
-	text-align: center;
-">
-	<!-- navrow -->
+<div class="navigationRowRecord">
 <!--{navrow}-->
-	<!-- /navrow -->
-	
-	<!--{innreach}-->
 <!--{innreach}-->
-	<!--{innreach}-->	
-
-	<a>
-		<div style="display:none" id="ICON_REFWORKS" class="REFWORKS btn btn-default catnav">
-			<i class="fa fa-file-text"></i> export to refworks
-		</div>
-	</a>
-
-	<a>
-		<div style="display:none" id="ICON_ROESCH_2_U" class="ROESCH_2_U btn btn-default catnav">
-			<i class="fa fa-truck" style="font-size:150%"></i> Roesch 2U<div>(faculty use only)</div>
-		</div>
-	</a>
-	
-	<a>
-		<div style="display:none" id="SMS2ME" class="sms2me btn btn-default catnav">
-			<i class="fa fa-mobile" style="font-size:150%"></i> Text this to me
-		</div>
-	</a>
-		
-	<!-- collect author, title, callnumber, and issn -->
-	<div id="collect_author" style="display:none">
-		<!--{recordinfo:a}-->
-<!--{recordinfo:a}-->
-		<!--{recordinfo:a}-->
-	</div>
-	
-	<div id="collect_title" style="display:none">
-		<!--{recordinfo:t}-->
-<!--{recordinfo:t}-->
-		<!--{recordinfo:t}-->
-	</div>
-	
-	<div id="collect_issn" style="display:none">
-		<!--{recordinfo:i}-->
-<!--{recordinfo:i}-->
-		<!--{recordinfo:i}-->
-	</div>
-	
 </div>
-
-<div class="spacer">&nbsp;</div>
-
 <div id="bibDisplayContent">
-
-<!-- bibSearch -->
-<div align="center" class="bibSearch">
-	<!-- searchtool -->
+<div class="bibSearch">
 <!--{searchtool}-->
-	<!-- /searchtool -->
 <div class="bibSearchHistory">
-	<!-- searchhistory -->
 <!--{searchhistory}-->
-	<!-- /searchhistory -->
 </div>
-</div>
-<!-- /bibSearch -->
+</div><!-- bibSearch -->
 
-<div class="bibPager" style="text-align: center; margin: 15px 15px;">
-	<!-- pager -->
+<div class="bibPager">
 <!--{pager}-->
-	<!-- /pager -->
 </div>
 
-<div class="bibResourceSidebar">
-	<!-- ifhasresourcetable -->
-<!--{ifhasresourcetable}-->
-	<!-- /ifhasresourcetable -->
+<div class="bibClear"></div>
 
-	<!-- resourcetable -->
-<!--{resourcetable}-->
-	<!-- /resourcetable -->
+<div class="bibDisplayJacket">
+<!--{bibimage}-->
+<div class="bibMedia">
+<!--{media}-->
+</div>
+<div id="googlebooks" name="googlebooks"></div>
+</div>
+
+<div class="bibDisplayContentMain">
+
+<!--{recordinfo:a}-->
+
+<h1 class="bibDisplayTitle">
+<!--{recordinfo:t}-->
+</h1>
+
+<!--{recordinfo:pe}-->
+
+<!--{ifhaspatrate}-->
+<div class="bibDisplayRatings">
+<!--{ratings}-->
+</div>
 <!--{xif}-->
 
-
-	<!-- relsearch -->
-<!--{relsearch}-->
-	<!-- /relsearch -->
-</div>
-
-
-
-<div class="row">
-
-	<div class="col-md-1">
-
-		<div class="briefcit_bookjacket">
-			<!-- bibimage -->
-<!--{bibimage}-->
-			<!-- /bibimage -->
-		</div>
-			
-		<div id="token_media" class="bibMedia">
-			<!-- media -->
-<!--{media}-->
-			<!-- /media --> 
-		</div>
-	
-	</div>
-	<!-- /class="col-md-1" -->
-	
-	
-	<div class="col-md-9">
-
-		<!-- recordinfo:tapr -->
-<!--{recordinfo:tapr}-->
-		<!-- /recordinfo:tapr -->
-	
-	</div>
-	<!-- /class="col-md-9" -->
-	
-	<div class="col-md-2" id="icon_but_output">
-	</div>
-	<!-- /class="col-md-2" id="icon_but_output"-->
-
-<script>
-	//these are the IDs we are targeting. Adjust the order of these as desired.
-	var button_id_array = [
-		['ICON_BUT_REQUEST',], //request
-		['ICON_INNREACH'], //OHIOLINK
-		['ICON_BUT_SHOWSIM',], //more like this
-		['ICON_REFWORKS',], //export to refworks
-		['ICON_BUT_BIBEXPORT',], //add to saved
-		['ICON_BOOKCART_SAVED',], //remove from saved
-		['ICON_MYLISTS_SAVE',], //add to my lists
-		['ICON_MYLISTS_SAVE_TO_LIST',], //Add Marked to My Lists
-		['ICON_MYLISTS_RECORD'], //Add to My Lists
-		['ICON_BUT_MARC_DISPLAY',], //marc display
-		['SMS2ME',], //text this to me
-		['ICON_ROESCH_2_U',], //ROESCH 2 U
-	];
-
-	//loop through the array of IDs and place the element into its cosponsoring array position [i][1]
-	for (var i=0; i<button_id_array.length; i++) {
-		button_id_array[i][1] = document.getElementById(button_id_array[i][0]);
-		
-		//if we found that id, AND it is wrapped in an anchor tag, clone it and append it to the 'icon_but_output' area
-		if (button_id_array[i][1]) {
-			if (button_id_array[i][1].parentElement.tagName == 'A') {
-				//console.log (button_id_array[i][1]);
-				temp_element = button_id_array[i][1].parentElement.cloneNode(true);
-				temp_element.id = temp_element.getElementsByTagName('DIV')[0].id + '_clone';
-				document.getElementById('icon_but_output').appendChild(temp_element);
-				delete temp_element;
-			}
-		}
-	}
-
-	//loop back through the list of elements in the 'icon_but_output' area and adjust the style elements to display.
-	var icon_but_output_elements = document.getElementById('icon_but_output').getElementsByTagName('A');
-
-	for (var i=0; i<icon_but_output_elements.length; i++) {
-		icon_but_output_elements[i].style = 'block';
-		icon_but_output_elements[i].getElementsByTagName('DIV')[0].style.width = '100%';
-		icon_but_output_elements[i].getElementsByTagName('DIV')[0].style.display = 'inline-block';
-	}
-	
-	//make sure to turn off the 'ROESCH2U' button if this is an 'E-RESOURCE'
-	try {
-		if (document.getElementById('token_media').getElementsByTagName('IMG')[0].alt == 'E-RESOURCE') {
-			document.getElementById('ICON_ROESCH_2_U_clone').style.display = 'none';
-		}
-	}
-	catch (e) {}
-	
-</script>
-	
-</div>
-<!-- /class="row" -->
-
-	<!-- booking -->
-	<!--TURNED OFF-->
-	<!-- /booking -->
-
-	<!-- holdingslink -->
+<!--{booking}-->
 <!--{holdingslink}-->
-	<!-- /holdingslink -->
-
 <div class="testlinkeddocs">
-	<!-- linkeddocs -->
 <!--{linkeddocs}-->
-	<!-- /linkeddocs -->
 </div>
-
-<div id = "checkoffcampus" class="bibDisplayUrls">
-	<!-- URLS -->
+<div class="bibDisplayUrls">
 <!--{URLS}-->
-	<!-- /URLS -->
 </div>
 
-<script>
-	//rewrite the URLs
-	CheckOffCampus();
-</script>
-
-	<!-- bloblinks -->
 <!--{bloblinks}-->
-	<!-- /bloblinks -->
-	
-	<!-- imagelinks -->
 <!--{imagelinks}-->
-	<!-- /imagelinks -->
-
-	<!-- artthumb -->
 <!--{artthumb}-->
-	<!-- /artthumb -->
-
-	<!-- xmlframe -->
 <!--{xmlframe}-->
-	<!-- /xmlframe -->
-
-	<!-- holds -->
 <!--{holds}-->
-	<!-- /holds -->
-
-	<!-- holdings -->
 <!--{holdings}-->
-	<!-- /holdings -->
 
 <div class="bibDisplayItems">
-<div class="bibDisplayItemsHeader"><strong>Copies</strong></div>
 <div class="bibDisplayItemsMain">
-	<!-- items -->
 <!--{items}-->
-	<!-- /items -->
-</div>
-</div>
-
-	<!-- orders -->
-<!--{orders}-->
-	<!-- /orders -->
-
-<div class="bibDisplayContentMore">
-	<!--{recordinfo:ecsndoijbuqwxyz}-->
-<!--{recordinfo:ecsndoijbuqwxyz}-->
-	<!--{recordinfo:ecsndoijbuqwxyz}-->
-	
-</div>
-
-	<!-- IFELCONTENT:365 -->
-<!--{IFELCONTENT:365}-->
-	<!-- IFELCONTENT:365 -->
-	
-<!-- Replace the number for your enhanced content in Pathfinder Pro -->
-<div class="bibDisplayContentMore">
-<ul id="elContent">
-
-	<!-- ELCONTENT:365 -->
-<!--{ELCONTENT:365}-->
-	<!-- ELCONTENT:365 -->
-	
-</ul>
-</div>
-<!--{xif}-->
-
-<div class="bibDisplayContentMore bibDisplayReviews">
-<div id="bib_link" class="bibDisplayPermLink actionButtonArea">
-
-	<!-- recordlink -->
-<!--{recordlink}-->
-	<!-- /recordlink -->
-	<script>
-	var bib_num = document.getElementById('ICON_RECORDLINK').href.split('record=b')[1];
-	</script>
-</div>
-
-	<!-- patronreviewsfull -->
-<!--{patronreviewsfull}-->
-	<!-- /patronreviewsfull-->
-
-</div>
-
 
 <!--{ifTOC}-->
-<div class="table-responsive">
-	<!-- TOC -->
 <!--{TOC}-->
-	<!-- /TOC -->
-</div>
 <!--{xif}-->
+
+<a href="#here" name=smsbutton id=smsbutton onClick="showsms();return false;">
+<div id="smsfeatures" class="resourceButton">
+    <span class="button">
+    <img src="/screens/ico_phone.png">
+        <span class="buttonText">Text call number</span>
+    </span>
+</div>
+</a>
+       
+    <!-- just a placeholder for the sms form -->
+    <div id='sms' style="visibility:hidden;display:none">
+    </div>
+
+</div>
+</div>
+
+<!--{orders}-->
+
+<div class="bibDisplayContentMore">
+<!--{recordinfo:#}-->
+</div>
+
+<div class="bibDisplayContentMore bibDisplayReviews">
+<div class="bibDisplayPermLink actionButtonArea">
+<!--{recordlink}-->
+</div>
+<!--{patronreviewsfull}-->
+
+</div>
+
+</div>
 
 
 </div><!-- close bibDisplayContent -->
 <div class="clear"></div>
 </div><!-- close bibDisplayBody -->
-
-
-	<script>
-		//start with the base URL for illiad
-		//var illiad_url = 'https://udayton.illiad.oclc.org/illiad/illiad.dll?Action=10&Form=20&value=GenericRequestBook-Faculty';
-		
-		var illiad_url = 'http://library2.udayton.edu/bibliographic/illiad.php?b=' + bib_num;
-		var text_url = 'http://library2.udayton.edu/bibliographic/sms-send.php?b=' + bib_num;
-		var refworks_url = 'http://www.refworks.com/express/ExpressImport.asp?vendor=University%20of%20Dayton&filter=MARC%20Format&encoding=65001&url=';
-		    refworks_url += encodeURIComponent('http://library2.udayton.edu/bibliographic/get_marc.php?b=' + bib_num);
-	
-		document.getElementById('ICON_ROESCH_2_U_clone').href = illiad_url;
-		document.getElementById('ICON_ROESCH_2_U_clone').target = '_blank';
-		
-		document.getElementById('SMS2ME_clone').href = text_url;
-		document.getElementById('SMS2ME_clone').target = '_blank';
-	
-		document.getElementById('ICON_REFWORKS_clone').href = refworks_url;
-		document.getElementById('ICON_REFWORKS_clone').target = 'RefWorksMain';
-	
-	</script>
-
-	<!--{botlogo}-->
 <!--{botlogo}-->
-	<!--{botlogo}-->
+
+
+    <!-- a quick script to hide the SMS menu if there are no items. same as the javascript in the SMS form, but it's really just to see if the items exist.  If they don't, we hide the buttons -->
+       <script>
+       var f = document.getElementById('bib_detail');
+       try { 
+        var itms = document.getElementById('bib_items');
+        var tr = itms.getElementsByTagName('TR');
+        for(i = 1; i < tr.length; i++) {
+         var x=tr[i].getElementsByTagName('TD');
+         if (x.length == 3) {
+          var loc = x[0].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+          var call = x[1].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+          var status = x[2].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+         }
+        }
+       } catch (e) {
+         document.getElementById('smsfeatures').style.visibility='hidden';
+       }
+
+    </script>
+
+<script type='text/javascript'> 
+    var ProcessResults = function(bookInfo) {
+        var buttonImg = "<img src='/screens/googlebutton.gif' alt='Google Preview'>"
+        var textGBS = "";
+        for (ISBN in bookInfo) {
+            var b = bookInfo[ISBN];
+            var googleButton = "<a href='" + b.preview_url + "' target='blank'>" + buttonImg;
+            //form the text of Google Book contents
+            if (b && (b.preview == "full")) {
+                //textGBS = "Full Text";
+                //"Google Book Search";
+                document.getElementById("googlebooks").innerHTML = googleButton
+            }
+            else if (b && (b.preview == "partial")) {
+                //textGBS = "(Limited preview)"
+                //"Preview at Google Book Search";
+                document.getElementById("googlebooks").innerHTML = googleButton
+            }
+            else if (b && (b.preview == "noview")) {
+                //"Preview at Google Book Search";
+                if (b.thumbnail_url != undefined){
+                document.getElementById("googlebooks").innerHTML = bookJacket + "<a href='" + b.preview_url + "'>" + buttonImg + "</a>"
+                }
+            }
+            else {
+                //document.getElementById("googlebooks").innerHTML = "None available.";
+            }
+    }
+}
+</script>
+
+<script type='text/javascript'>
+       
+var ISBN = $(".bibInfoLabel:contains('ISBN')").siblings(".bibInfoData").text().replace(/[^0123456789]/g,"")
+
+var cburl = "http://books.google.com/books";
+// Retrieve the info for these bibkeys
+var api_url = cburl + "?jscmd=viewapi&bibkeys=ISBN:" + ISBN;
+var s = document.createElement("script");
+s.setAttribute("type", "text/javascript");
+//alert("searching for: " + ISBN);
+s.setAttribute("src", "http://books.google.com/books?jscmd=viewapi&bibkeys=ISBN:" + ISBN + "&callback=ProcessResults");
+document.documentElement.firstChild.appendChild(s);
+//alert (api_url);
+
+</script>

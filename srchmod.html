@@ -1,48 +1,30 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- 2006 WebPAC Pro Version, set from 26 March, 2007 -->
-<!-- This file last changed: 9 February, 2007 -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<!-- Rel 2009B Example Set -->
 <head>
-<title>Millennium Library Catalog</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
-<link rel="stylesheet" type="text/css" href="/screens/styles.css" title="default" />
-<!--[if lte IE 8]>
+<title>LANCE Library Catalog</title>
+<script language="JavaScript">
+<!-- Hide the JS
+startTimeout(600000, "/");
+// -->
 
-<link rel="stylesheet" media="all" type="text/css" href="/screens/ie_styles.css" />
-
-<![endif]-->
-<script type="text/javascript">var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-1812745-2"]);_gaq.push(["_trackPageview"]);(function(){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()</script>
+</script>
+<noscript>
+<meta http-equiv="Refresh" content="600;URL=/" />
+</noscript>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
 </head>
+
 <body>
 <!--{toplogo}-->
-
-<table width="100%">
-<tr valign="middle">
-<td rowspan="2">
 <!--{patron}-->
-</td>
-</tr><tr valign="top" align="right">
-<td >
-<!--{prevpage}-->
-</td>
-<td>
-<!--{logout}-->
-</td>
-<td>
 <!--{return}-->
-</td></tr></table>
-<div><!-- "folder" interface wrapper div-->
-	<div class="mainSpacer"><!--wrapper div that contains the selection tabs-->
-		<div class="helpActiveTabLarge"><!--active tab-->
-			<b class="tabTop"><b class="active1"></b><b class="active2"></b><b class="active3"></b><b class="active4"></b></b>
-			<div class="DisplayBoxContent"><div class="helpTabActiveContentLarge">Limit/Sort Search</div></div>
-		</div><!--close active tab-->
-	</div><!--close selection tab wrapper-->
-	<div class="mainSpacer"><!-- main content wrapper div -->
-		<div class="helpActiveContent">
-<table class="textFix unpadded" width="90%">
-<tr>
-<td rowspan="2">
-<!--{formbegin}-->
+
+<div class="pageContentInner">
+<h1 class="pageHeader">Limit/Sort Search</h1>
+
+<p>
 You searched for the
 <!--{searchtypeindex}-->
 
@@ -50,59 +32,83 @@ You searched for the
 -
 <!--{entriesfoundnum}-->
  entries found.
-</td>
-</tr><tr valign="right">
-<td align="center" width="10%">
-<!--{submit}-->
-</td>
-<td align="center" width="10%">
-<!--{cancel}-->
-</td>
-</tr>
-</table>
-<div>
-Please select criteria to limit by:
-</div>
+</p>
+
 <!--{iferr}-->
-<br/>
-<div>
+<div><span class="errormessage">
 <!--{errmsg}-->
-</div>
+</span></div>
 <!--{xif}-->
-<table class="textFix" cellpadding="5">
-<tr valign="middle">
-<td>Location:</td>
-<td>
+
+<div class="form1Part" id="accessibleForm">
+<!--{formbegin}-->
+
+<fieldset>
+<legend>Please select criteria to limit by:</legend>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="W">Location:</label>
+</span>
 <!--{WHERE_select}-->
-</td>
-<td>Material type:</td>
-<td>
+</div>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="M">Material type:</label>
+</span>
 <!--{MATERIAL_select}-->
-</td>
-<td>Language:</td>
-<td>
+</div>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="L">Language:</label>
+</span>
 <!--{LANGUAGE_select}-->
-</td>
-</tr>
-</table>
-<div>Year of publication:
+</div>
+
+<div class="formEntryArea">
+<fieldset class="formFieldsetInner">
+<legend>Year of publication:</legend>
+<div class="formEntryArea">
+<!--<span class="formLabel">
+<label for="Ya">Year of publication:</label>
+</span> -->
 <!--{YEAR_select}-->
 </div>
-<br/>
-<div>
+</fieldset>
+</div>
+
+<div class="formEntryArea">
+<label for="NAME" class="accessibleAddInfo">Limit type:</label>
+<span class="formLabel"><label for="VALUE">Enter limits:</label></span>
 <!--{TITLE_label}-->
 <!--{TITLE_select}-->
+<!--{PUBLISHER_label}-->
+<!--{PUBLISHER_select}-->
 </div>
-<br/>
-<div>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="sortdropdown">Sort By:</label>
+</span>
 <!--{sort}-->
 </div>
+
+<div class="formButtonArea">
+<!--{submit}-->
+<!--{cancel}-->
+</div>
+
+</fieldset>
 <!--{formend}-->
-		</div>
-	<b class="conbottom"><b class="conb4"></b><b class="conb3"></b><b class="conb2"></b><b class="conb1"></b></b>
-	</div><!--close main content wrapper div-->
-</div><!--close wrapper of "folder interface"-->
-<div style="clear:both"></div>
+</div> <!-- form1Part -->
+
+
+</div><!-- pageContentInner -->
 <!--{botlogo}-->
 </body>
 </html>
+
+
+

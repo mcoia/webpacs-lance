@@ -1,0 +1,32 @@
+@import url("styles.css");
+
+.clusterLogo {
+    top:14px;
+}
+
+.topLogoImage {
+    padding:20px 15px;
+}
+#idHelpButton { margin:10px; text-align:center; width:76px; display: inline-block; padding: 2px 6px 7px 15px;}
+
+#idHelpButton:hover { cursor:pointer; }
+
+#idHelpButton p:first-child { background-color: #1D4069; color:#ffffff; border-top-right-radius:10px; border-top-left-radius:10px; -moz-border-top-right-radius:10px; -moz-border-top-left-radius:10px; font-weight:bold; padding: .2em 0; }
+
+#idHelpButton p:last-child { background-color: #fcffff; border-bottom-right-radius:10px; border-bottom-left-radius:10px; -moz-border-bottom-right-radius:10px; -moz-border-bottom-right-radius:10px; font-size:1.3em; color:#0096a7; padding: .6em 0; margin-top: -5px;}
+
+#idHelpButton p { border:1px #1d4069 solid; margin:0; }
+
+body {
+    font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+body > * {
+    text-align: left;
+}
+
+a:link {
+    color: #014184;
+}

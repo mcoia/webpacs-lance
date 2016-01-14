@@ -1,0 +1,84 @@
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="/screens/jquery.cookie.js"></script>
+<script type="text/javascript" src="/screens/domainredirect2.js"></script>
+<script type="text/javascript" src="/screens/mobileredirect.js"></script>
+<script src="/screens/menu-collapsed.js" type="text/javascript"></script>
+<link type="text/css" rel="stylesheet" href="/screens/jquery.modalbox.css" />
+<script type="text/javascript" src="/screens/jquery.modalbox-1.5.0-min.js"></script>
+<div class="minHeight">
+<div class="fullPage">
+<div class="pageContent">
+<div class="pageContentInner popupContentInner">
+<!--Beginning main page content-->
+<h1 class="popupFormHeading">Create a Patron Identification Number (PIN)</h1>
+
+<!--{iferrmsg}-->
+<div class="errormessage">
+<!--{errmsg}-->
+</div>
+<!--{xif}-->
+
+<form target="_self" method="post" id="accessibleForm" class="form1Part">
+
+<!--Optionally you can display pininstructions here, though it normally doesn't make sense on the newpin form. -->
+<fieldset>
+<!--
+<legend> -->
+  <!--{pininstructions}-->
+<!--</legend> -->
+<div class="formEntryArea">
+<span class="formLabel">
+<!--{pinprompt}-->
+</span>
+<!--{pin}-->
+</div>
+<div class="formEntryArea formFieldsetInner">
+<fieldset>
+<legend>
+<!--{newpinmsg}-->
+</legend>
+<div class="formEntryArea">
+<span class="formLabel">
+<!--{pin1prompt}-->
+</span>
+<!--{pin1}-->
+</div>
+<div class="formEntryArea">
+<span class="formLabel">
+<!--{pin2prompt}-->
+</span>
+<!--{pin2}-->
+</div>
+</fieldset>
+
+<a class="openmodalbox" href="javascript:void(0);">
+<div id="idHelpButton">
+<p>LANCE</p>
+<p>PIN Help</p>
+</div>
+    <span class="modalboxContent">
+<h3>A valid PIN consists of up to 30 alphanumeric characters.</h3> 
+    <p>The PIN must not contain common trivial patterns. For example:</p>
+
+<ul>
+    <li>A character that is consecutively repeated three or more times(for example, aaaa, ababa, bbbb).</li>
+    <li>A set of up to four characters is that is consecutively repeated two or more times (for example, abab, abcabc, abcdabcd).</li>
+</ul>
+
+    </span>
+</a>
+
+
+
+
+</div><!--formFieldsetInner -->
+<div class="formButtonArea">
+<!--{submit}-->
+</div>
+</fieldset><!--Close the pininstructions fieldset -->
+</form>
+
+</div><!--popupContentInner -->
+</div><!--pageContent -->
+</div><!--fullPage -->
+</div><!--minHeight -->
