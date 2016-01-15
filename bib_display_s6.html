@@ -1,0 +1,354 @@
+<!--{toplogo}-->
+	<!-- /toplogo -->
+	
+	<!-- ifbibdisplay -->
+<!--{ifbibdisplay}-->
+	<!-- /ifbibdisplay -->
+
+<!--{xif}-->
+
+	<!-- catedit -->
+<!--{catedit}-->
+	<!-- /catedit -->
+
+<div id="bibDisplayBody">
+
+
+<div class="navigationRowRecord" style="
+	text-align: center;
+">
+	<!-- navrow -->
+<!--{navrow}-->
+	<!-- /navrow -->
+	
+	<!--{innreach}-->
+<!--{innreach}-->
+	<!--{innreach}-->	
+	
+</div>
+
+<div class="spacer">&nbsp;</div>
+
+<div id="bibDisplayContent">
+
+<!-- bibSearch -->
+<div align="center" class="bibSearch">
+	<!-- searchtool -->
+<!--{searchtool}-->
+	<!-- /searchtool -->
+<div class="bibSearchHistory">
+	<!-- searchhistory -->
+<!--{searchhistory}-->
+	<!-- /searchhistory -->
+</div>
+</div>
+<!-- /bibSearch -->
+
+<div class="bibPager" style="text-align: center; margin: 15px 15px;">
+	<!-- pager -->
+<!--{pager}-->
+	<!-- /pager -->
+</div>
+
+
+<div class="row">
+
+	<div class="col-md-1">
+
+		<div class="briefcit_bookjacket">
+			<!-- bibimage -->
+<!--{bibimage}-->
+			<!-- /bibimage -->
+		</div>
+			
+		<div id="token_media" class="bibMedia">
+			<!-- media -->
+<!--{media}-->
+			<!-- /media --> 
+		</div>
+	
+	</div>
+	<!-- /class="col-md-1" -->
+	
+	
+	<div class="col-md-9">
+
+		<!-- recordinfo:atpe -->
+<!--{recordinfo:atpe}-->
+		<!-- /recordinfo:atpe -->
+
+<div class="row">
+<div class="hidebutton">
+		<a href="#here" name="smsbutton" id="smsbutton" onClick="showsms();return false;">
+    <div id="smsfeatures" class="btn btn-default catnav">
+        <i class="fa fa-mobile" style="font-size:150%"></i> Text call number
+    </div>
+</a>
+</div> <!--hidebutton-->
+
+<!-- just a placeholder for the sms form -->
+<div id='sms' style="visibility:hidden;display:none">
+</div>
+
+</div> <!--row for sms-->
+</div>
+	<!-- /class="col-md-9" -->
+
+<div id="buttondisplaylarge">	
+	<div class="col-md-2" id="icon_but_output_full">
+	</div>
+	<!-- /class="col-md-2" id="icon_but_output_full"-->
+
+<script>
+	//these are the IDs we are targeting. Adjust the order of these as desired.
+	var button_id_array = [
+		['ICON_BUT_REQUEST',], //request
+		['ICON_INNREACH'], //MOBIUS
+		['ICON_BUT_SHOWSIM',], //more like this
+		['ICON_BUT_BIBEXPORT',], //add to saved
+		['ICON_BOOKCART_SAVED',], //remove from saved
+		['ICON_MYLISTS_SAVE',], //add to my lists
+		['ICON_MYLISTS_SAVE_TO_LIST',], //Add Marked to My Lists
+		['ICON_MYLISTS_RECORD',], //Add to My Lists
+		['ICON_BUT_MARC_DISPLAY',], //marc display
+		['smsfeatures',], //text this to me
+	];
+
+	//loop through the array of IDs and place the element into its cosponsoring array position [i][1]
+	for (var i=0; i<button_id_array.length; i++) {
+		button_id_array[i][1] = document.getElementById(button_id_array[i][0]);
+		
+		//if we found that id, AND it is wrapped in an anchor tag, clone it and append it to the 'icon_but_output_full' area
+		if (button_id_array[i][1]) {
+			if (button_id_array[i][1].parentElement.tagName == 'A') {
+				//console.log (button_id_array[i][1]);
+				temp_element = button_id_array[i][1].parentElement.cloneNode(true);
+				temp_element.id = temp_element.getElementsByTagName('DIV')[0].id + '_clone';
+				document.getElementById('icon_but_output_full').appendChild(temp_element);
+				delete temp_element;
+			}
+		}
+	}
+
+	//loop back through the list of elements in the 'icon_but_output_full' area and adjust the style elements to display.
+	var icon_but_output_elements = document.getElementById('icon_but_output_full').getElementsByTagName('A');
+
+	for (var i=0; i<icon_but_output_elements.length; i++) {
+		icon_but_output_elements[i].style = 'block';
+		icon_but_output_elements[i].getElementsByTagName('DIV')[0].style.width = '100%';
+		icon_but_output_elements[i].getElementsByTagName('DIV')[0].style.display = 'inline-block';
+	}
+	
+	
+</script>
+</div> <!--buttondisplaylarge-->
+	
+</div>
+<!-- /class="row" -->
+
+	<!-- booking -->
+	<!--TURNED OFF-->
+	<!-- /booking -->
+
+	<!-- holdingslink -->
+<!--{holdingslink}-->
+	<!-- /holdingslink -->
+
+<div class="testlinkeddocs">
+	<!-- linkeddocs -->
+<!--{linkeddocs}-->
+	<!-- /linkeddocs -->
+</div>
+
+<div class="bibDisplayUrls">
+	<!-- URLS -->
+<!--{URLS}-->
+	<!-- /URLS -->
+</div>
+
+	<!-- bloblinks -->
+<!--{bloblinks}-->
+	<!-- /bloblinks -->
+	
+	<!-- imagelinks -->
+<!--{imagelinks}-->
+	<!-- /imagelinks -->
+
+	<!-- artthumb -->
+<!--{artthumb}-->
+	<!-- /artthumb -->
+
+	<!-- xmlframe -->
+<!--{xmlframe}-->
+	<!-- /xmlframe -->
+
+	<!-- holds -->
+<!--{holds}-->
+	<!-- /holds -->
+
+	<!-- holdings -->
+<!--{holdings}-->
+	<!-- /holdings -->
+
+	<br>
+	<br>
+	
+<!--<div class="bibDisplayItems">
+<div class="bibDisplayItemsHeader"><strong>Copies</strong></div>
+<div class="bibDisplayItemsMain">
+	<!-- items -->
+<!--{items}-->
+	<!-- /items -->
+<!--</div>
+</div>-->
+
+<div id="showsmallsplit1">
+<div class="row" id="icon_but_output_top_mobile">
+</div>
+<script>
+	//these are the IDs we are targeting. Adjust the order of these as desired.
+	var button_id_array = [
+		['ICON_BUT_REQUEST',], //request
+		['ICON_BUT_BIBEXPORT',], //add to saved
+		['ICON_BOOKCART_SAVED',], //remove from saved
+		['ICON_MYLISTS_SAVE',], //add to my lists
+		['smsfeatures',], //text this to me
+	];
+
+	//loop through the array of IDs and place the element into its cosponsoring array position [i][1]
+	for (var i=0; i<button_id_array.length; i++) {
+		button_id_array[i][1] = document.getElementById(button_id_array[i][0]);
+		
+		//if we found that id, AND it is wrapped in an anchor tag, clone it and append it to the 'icon_but_output_top_mobile' area
+		if (button_id_array[i][1]) {
+			if (button_id_array[i][1].parentElement.tagName == 'A') {
+				//console.log (button_id_array[i][1]);
+				temp_element = button_id_array[i][1].parentElement.cloneNode(true);
+				temp_element.id = temp_element.getElementsByTagName('DIV')[0].id + '_clone';
+				document.getElementById('icon_but_output_top_mobile').appendChild(temp_element);
+				delete temp_element;
+			}
+		}
+	}
+
+	//loop back through the list of elements in the 'icon_but_output_top_mobile' area and adjust the style elements to display.
+	var icon_but_output_elements = document.getElementById('icon_but_output_top_mobile').getElementsByTagName('A');
+
+	for (var i=0; i<icon_but_output_elements.length; i++) {
+		icon_but_output_elements[i].style = 'block';
+		icon_but_output_elements[i].getElementsByTagName('DIV')[0].style.width = '100%';
+		icon_but_output_elements[i].getElementsByTagName('DIV')[0].style.display = 'inline-block';
+	}
+	
+	
+</script>
+</div> <!--show small split1-->
+
+	<!-- orders -->
+<!--{orders}-->
+	<!-- /orders -->
+
+<div class="bibDisplayContentMore">
+	<!--this is flyers{recordinfo:ecsndoijbuqwxyz}-->
+<!--{recordinfo:#}-->
+	
+</div>
+
+
+<div class="tablebib" class="bibDisplayContentMore bibDisplayReviews">
+<div id="bib_link" class="bibDisplayPermLink actionButtonArea">
+
+	<!-- recordlink -->
+<!--{recordlink}-->
+	<!-- /recordlink -->
+
+</div>
+
+	<!-- patronreviewsfull -->
+<!--{patronreviewsfull}-->
+	<!-- /patronreviewsfull-->
+
+</div>
+
+
+<!--{ifTOC}-->
+<div class="table-responsive">
+	<!-- TOC -->
+<!--{TOC}-->
+	<!-- /TOC -->
+</div>
+<!--{xif}-->
+
+<div id="showsmallsplit2">
+<div class="row" id="icon_but_output_bot_mobile">
+</div>
+<script>
+	//these are the IDs we are targeting. Adjust the order of these as desired.
+	var button_id_array = [
+		['ICON_INNREACH'], //MOBIUS
+		['ICON_BUT_SHOWSIM',], //more like this
+		['ICON_MYLISTS_SAVE_TO_LIST',], //Add Marked to My Lists
+		['ICON_MYLISTS_RECORD',], //Add to My Lists
+		['ICON_BUT_MARC_DISPLAY',], //marc display
+	];
+
+	//loop through the array of IDs and place the element into its cosponsoring array position [i][1]
+	for (var i=0; i<button_id_array.length; i++) {
+		button_id_array[i][1] = document.getElementById(button_id_array[i][0]);
+		
+		//if we found that id, AND it is wrapped in an anchor tag, clone it and append it to the 'icon_but_output_bot_mobile' area
+		if (button_id_array[i][1]) {
+			if (button_id_array[i][1].parentElement.tagName == 'A') {
+				//console.log (button_id_array[i][1]);
+				temp_element = button_id_array[i][1].parentElement.cloneNode(true);
+				temp_element.id = temp_element.getElementsByTagName('DIV')[0].id + '_clone';
+				document.getElementById('icon_but_output_bot_mobile').appendChild(temp_element);
+				delete temp_element;
+			}
+		}
+	}
+
+	//loop back through the list of elements in the 'icon_but_output_bot_mobile' area and adjust the style elements to display.
+	var icon_but_output_elements = document.getElementById('icon_but_output_bot_mobile').getElementsByTagName('A');
+
+	for (var i=0; i<icon_but_output_elements.length; i++) {
+		icon_but_output_elements[i].style = 'block';
+		icon_but_output_elements[i].getElementsByTagName('DIV')[0].style.width = '100%';
+		icon_but_output_elements[i].getElementsByTagName('DIV')[0].style.display = 'inline-block';
+	}
+	
+	
+</script>
+</div> <!--show small split2-->
+
+
+</div><!-- close bibDisplayContent -->
+<div class="clear"></div>
+</div><!-- close bibDisplayBody -->
+
+
+
+	<!--{botlogo}-->
+<!--{botlogo}-->
+	<!--{botlogo}-->
+
+
+    <!-- a quick script to hide the SMS menu if there are no items. same as the javascript in the SMS form, but it's really just to see if the items exist.  If they don't, we hide the buttons -->
+       <script>
+       var f = document.getElementById('bib_detail');
+       try { 
+        var itms = document.getElementById('bib_items');
+        var tr = itms.getElementsByTagName('TR');
+        for(i = 1; i < tr.length; i++) {
+         var x=tr[i].getElementsByTagName('TD');
+         if (x.length == 3) {
+          var loc = x[0].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+          var call = x[1].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+          var status = x[2].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+         }
+        }
+       } catch (e) {
+         document.getElementById('smsfeatures').style.visibility='hidden';
+       }
+
+    </script>
