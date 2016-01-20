@@ -15,7 +15,7 @@
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> 
 		<![endif]-->
 		<script type="text/javascript" src="/screens/bibdisplay.js"></script>
-<link href="/screens/style_s6.css" rel="stylesheet">
+<link href="/screens/styles_s6.css" rel="stylesheet">
 
 		<title>LANCE Catalog</title>
  
@@ -52,7 +52,7 @@
 				<option id="mobile_title" value="#title">Title</option>
 				<option id="mobile_subject" value="#subject">Subject</option>
 				<option id="mobile_numbers" value="#numbers">Number</option>
-				<option id="mobile_advanced" value="/search/X">Advanced Search</option>
+				<option id="mobile_advanced" value="/search~S6/X">Advanced Search</option>
 			</select>
 		</div>
 		
@@ -66,7 +66,7 @@
 		<div id="KEYWORD_BASIC">
 		<!--              -->
 
-			<form class="form-horizontal" role="form" action="/search/X" method="get">
+			<form class="form-horizontal" role="form" action="/search~S6/X" method="get">
 			
 				<span class="help-block">Enter Search Terms For <strong>Keyword Search</strong></span>
 
@@ -377,10 +377,10 @@
 			$(document).ready(function() {
 				//change advanced search tab to direct link 
 				//	:do this only if we're NOT on the advanced search page
-				if ( (location.pathname != '/search/X') && (location.pathname != '/search/') && (location.pathname != '/search') ) {
+				if ( (location.pathname != '/search~S6/X') && (location.pathname != '/search~S6/') && (location.pathname != '/search~S6') ) {
 					document.getElementById('tab-advanced').getElementsByTagName('a')[0].removeAttribute('data-toggle');
 					//document.getElementById('mobile_advanced').getElementsByTagName('a')[0].removeAttribute('data-toggle');
-					document.getElementById('tab-advanced').getElementsByTagName('a')[0].href='/search/X';
+					document.getElementById('tab-advanced').getElementsByTagName('a')[0].href='/search~S6/';
 					//document.getElementById('mobile_advanced').getElementsByTagName('option').value='#advanced';
 				}
 				//do this if we're on the advanced search page
@@ -422,7 +422,7 @@
 		<div id="TITLE">
 		<!--              -->			
 
-			<form class="form-horizontal" action="/search/t" method="get" role="form">
+			<form class="form-horizontal" action="/search~S6/t" method="get" role="form">
 
 				<span class="help-block">Enter Search Terms For <strong>Title</strong></span>
 			
@@ -470,7 +470,7 @@
 			</form>
 			<hr>
 
-<form class="form-horizontal" role="form" action="/search/s" method="get">
+<form class="form-horizontal" role="form" action="/search~S6/s" method="get">
 
 				<span class="help-block">Enter Search Terms For <strong>Journal, Magazine & Newspaper Title</strong></span>
 			
@@ -545,7 +545,7 @@ if (targ.form)
 		<div id="AUTHOR">
 		<!--              -->			
 		
-			<form class="form-horizontal" role="form" action="/search/a" method="get">
+			<form class="form-horizontal" role="form" action="/search~S6/a" method="get">
 
 				<span class="help-block">Enter Search Terms For <strong>Author</strong></span>
 			
@@ -603,7 +603,7 @@ if (targ.form)
 		<div id="SEARCH_SUBJECT">
 		<!--              -->			
 		
-			<form class="form-horizontal" role="form" action="/search/d" method="get">
+			<form class="form-horizontal" role="form" action="/search~S6/d" method="get">
 
 				<span class="help-block">Enter Search Terms For <strong>Subject</strong></span>
 			
@@ -648,7 +648,7 @@ if (targ.form)
 
 			<hr>
 
-			<form class="form-horizontal" role="form" action="/search/j" method="get">
+			<form class="form-horizontal" role="form" action="/search~S6/j" method="get">
 
 				<span class="help-block">Enter Search Terms For <strong>Medical Subject</strong></span>
 			
@@ -693,7 +693,7 @@ if (targ.form)
 
 			<hr>
 
-						<form class="form-horizontal" role="form" action="/search/j" method="get">
+						<form class="form-horizontal" role="form" action="/search~S6/j" method="get">
 
 				<span class="help-block">Enter Search Terms For <strong>Children's Subject</strong></span>
 			
@@ -751,7 +751,7 @@ if (targ.form)
 		<div id="SEARCH_JOURNAL">
 		<!--              -->			
 		
-			<form class="form-horizontal" role="form" action="/search/j" method="get">
+			<form class="form-horizontal" role="form" action="/search~S6/j" method="get">
 
 				<span class="help-block">Enter Search Terms For <strong>Journal Title: </strong></span>
 			
@@ -810,7 +810,7 @@ if (targ.form)
 		<div id="SEARCH_DATABASES">
 		<!--                 -->
 		
-			<form class="form-horizontal" role="form" action="/search/y?" method="get">
+			<form class="form-horizontal" role="form" action="/search~S6/y?" method="get">
 
 				<span class="help-block">Enter Search Terms For <strong>Database Name: </strong></span>
 			
@@ -837,31 +837,31 @@ if (targ.form)
 				
 				<div class="form-group">
 					<div class="col-md-offset-1 col-md-11">
-						<a href="/search/m?database=a">A</a> | 
-						<a href="/search/m?database=b">B</a> | 
-						<a href="/search/m?database=c">C</a> | 
-						<a href="/search/m?database=d">D</a> | 
-						<a href="/search/m?database=e">E</a> | 
-						<a href="/search/m?database=f">F</a> | 
-						<a href="/search/m?database=g">G</a> | 
-						<a href="/search/m?database=h">H</a> | 
-						<a href="/search/m?database=i">I</a> | 
-						<a href="/search/m?database=j">J</a> | 
-						<a href="/search/m?database=k">K</a> | 
-						<a href="/search/m?database=l">L</a> | 
-						<a href="/search/m?database=m">M</a> | 
-						<a href="/search/m?database=n">N</a> | 
-						<a href="/search/m?database=o">O</a> |  
-						<a href="/search/m?database=p">P</a> |
+						<a href="/search~S6/m?database=a">A</a> | 
+						<a href="/search~S6/m?database=b">B</a> | 
+						<a href="/search~S6/m?database=c">C</a> | 
+						<a href="/search~S6/m?database=d">D</a> | 
+						<a href="/search~S6/m?database=e">E</a> | 
+						<a href="/search~S6/m?database=f">F</a> | 
+						<a href="/search~S6/m?database=g">G</a> | 
+						<a href="/search~S6/m?database=h">H</a> | 
+						<a href="/search~S6/m?database=i">I</a> | 
+						<a href="/search~S6/m?database=j">J</a> | 
+						<a href="/search~S6/m?database=k">K</a> | 
+						<a href="/search~S6/m?database=l">L</a> | 
+						<a href="/search~S6/m?database=m">M</a> | 
+						<a href="/search~S6/m?database=n">N</a> | 
+						<a href="/search~S6/m?database=o">O</a> |  
+						<a href="/search~S6/m?database=p">P</a> |
 						<a>Q</a> | 
-						<a href="/search/m?database=r">R</a> | 
-						<a href="/search/m?database=s">S</a> | 
-						<a href="/search/m?database=t">T</a> | 
-						<a href="/search/m?database=u">U</a> | 
-						<a href="/search/m?database=v">V</a> | 
-						<a href="/search/m?database=w">W</a> | 
+						<a href="/search~S6/m?database=r">R</a> | 
+						<a href="/search~S6/m?database=s">S</a> | 
+						<a href="/search~S6/m?database=t">T</a> | 
+						<a href="/search~S6/m?database=u">U</a> | 
+						<a href="/search~S6/m?database=v">V</a> | 
+						<a href="/search~S6/m?database=w">W</a> | 
 						<a>X</a> | 
-						<a href="/search/m?database=y">Y</a> | 
+						<a href="/search~S6/m?database=y">Y</a> | 
 						<a>Z</a>
 					</div>
 				</div>
@@ -885,17 +885,17 @@ if (targ.form)
 
 					<div class="col-md-6">
 							<ul>
-								<li><a href="/search/m?Architecture">Architecture</a></li>
-								<li><a href="/search/m?Art">Art</a></li>
-								<li><a href="/search/m?Literature%20and%20Language">Literature and Language</a></li>
+								<li><a href="/search~S6/m?Architecture">Architecture</a></li>
+								<li><a href="/search~S6/m?Art">Art</a></li>
+								<li><a href="/search~S6/m?Literature%20and%20Language">Literature and Language</a></li>
 							</ul>
 						</div>
 
 						<div class="col-md-6">
 							<ul>
-								<li><a href="/search/m?Music">Music</a></li>
-								<li><a href="/search/m?Philosophy">Philosophy</a></li>
-								<li><a href="/search/m?Religion">Religion</a></li>
+								<li><a href="/search~S6/m?Music">Music</a></li>
+								<li><a href="/search~S6/m?Philosophy">Philosophy</a></li>
+								<li><a href="/search~S6/m?Religion">Religion</a></li>
 							</ul>
 						</div>
 						
@@ -916,9 +916,9 @@ if (targ.form)
 
 						<div class="col-md-6">
 							<ul>
-								<li><a href="/search/m?Business%20and%20Economics">Business and Economics</a></li>
-								<li><a href="/search/m?Communication">Communication</a></li>
-								<li><a href="/search/m?Company%20and%20Industry">Company and Industry</a></li>
+								<li><a href="/search~S6/m?Business%20and%20Economics">Business and Economics</a></li>
+								<li><a href="/search~S6/m?Communication">Communication</a></li>
+								<li><a href="/search~S6/m?Company%20and%20Industry">Company and Industry</a></li>
 							</ul>
 						</div>
 						
@@ -938,8 +938,8 @@ if (targ.form)
 					
 						<div class="col-md-6">
 							<ul>
-								<li><a href="/search/m?Education">Education</a></li>
-								<li><a href="/search/m?Classroom%20Databases">Classroom Databases</a></li>
+								<li><a href="/search~S6/m?Education">Education</a></li>
+								<li><a href="/search~S6/m?Classroom%20Databases">Classroom Databases</a></li>
 							</ul>
 						</div>
 						
@@ -958,9 +958,9 @@ if (targ.form)
 
 						<div class="col-md-6">
 							<ul>
-								<li><a href="/search/m?General">General</a></li>
-								<li><a href="/search/m?Reference%20Resources">Reference Resources</a></li>
-								<li><a href="/search/m?Career%20Information">Career Information</a></li>
+								<li><a href="/search~S6/m?General">General</a></li>
+								<li><a href="/search~S6/m?Reference%20Resources">Reference Resources</a></li>
+								<li><a href="/search~S6/m?Career%20Information">Career Information</a></li>
 							</ul>
 						</div>
 					
@@ -979,8 +979,8 @@ if (targ.form)
 
 						<div class="col-md-6">
 							<ul>
-								<li><a href="/search/m?Health%20Sciences%20and%20Medicine">Health Sciences and Medicine</a></li>
-								<li><a href="/search/m?Physical%20Therapy">Physical Therapy</a></li>
+								<li><a href="/search~S6/m?Health%20Sciences%20and%20Medicine">Health Sciences and Medicine</a></li>
+								<li><a href="/search~S6/m?Physical%20Therapy">Physical Therapy</a></li>
 							</ul>
 						</div>
 						
@@ -998,15 +998,15 @@ if (targ.form)
 
 						<div class="col-md-6">
 							<ul>
-								<li><a href="/search/m?History">History</a></li>
-								<li><a href="/search/m?History%20European">History European</a></li>
-								<li><a href="/search/m?History%20Reference">History Reference</a></li>
+								<li><a href="/search~S6/m?History">History</a></li>
+								<li><a href="/search~S6/m?History%20European">History European</a></li>
+								<li><a href="/search~S6/m?History%20Reference">History Reference</a></li>
 							</ul>
 						</div>
 						
 						<div class="col-md-6">
 							<ul>
-								<li><a href="/search/m?History%20United%20States">History United States</a></li>
+								<li><a href="/search~S6/m?History%20United%20States">History United States</a></li>
 							</ul>
 						</div>
 					
@@ -1026,20 +1026,20 @@ if (targ.form)
 
 						<div class="col-md-6">
 							<ul>
-								<li><a href="/search/m?Biology">Biology</a></li>
-								<li><a href="/search/m?Chemistry">Chemistry</a></li>
-								<li><a href="/search/m?Computer%20Science">Computer Science</a></li>
-								<li><a href="/search/m?Engineering">Engineering</a></li>
-								<li><a href="/search/m?Geology">Geology</a></li>
+								<li><a href="/search~S6/m?Biology">Biology</a></li>
+								<li><a href="/search~S6/m?Chemistry">Chemistry</a></li>
+								<li><a href="/search~S6/m?Computer%20Science">Computer Science</a></li>
+								<li><a href="/search~S6/m?Engineering">Engineering</a></li>
+								<li><a href="/search~S6/m?Geology">Geology</a></li>
 							</ul>
 						</div>
 					
 						<div class="col-md-6">
 							<ul>
-								<li><a href="/search/m?Health%20and%20Sport%20Science">Health and Sport Science</a></li>
-								<li><a href="/search/m?Mathematics">Mathematics</a></li>
-								<li><a href="/search/m?Physics">Physics</a></li>
-								<li><a href="/search/m?Science%20and%20Technology">Science and Technology</a></li>
+								<li><a href="/search~S6/m?Health%20and%20Sport%20Science">Health and Sport Science</a></li>
+								<li><a href="/search~S6/m?Mathematics">Mathematics</a></li>
+								<li><a href="/search~S6/m?Physics">Physics</a></li>
+								<li><a href="/search~S6/m?Science%20and%20Technology">Science and Technology</a></li>
 							</ul>			
 						</div>
 
@@ -1058,19 +1058,19 @@ if (targ.form)
 
 						<div class="col-md-6">
 							<ul>
-								<li><a href="/search/m?Anthropology">Anthropology</a></li>
-								<li><a href="/search/m?Criminal%20Justice">Criminal Justice</a></li>
-								<li><a href="/search/m?Ethnic%20Studies">Ethnic Studies</a></li>
-								<li><a href="/search/m?Political%20Science">Political Science</a></li>
+								<li><a href="/search~S6/m?Anthropology">Anthropology</a></li>
+								<li><a href="/search~S6/m?Criminal%20Justice">Criminal Justice</a></li>
+								<li><a href="/search~S6/m?Ethnic%20Studies">Ethnic Studies</a></li>
+								<li><a href="/search~S6/m?Political%20Science">Political Science</a></li>
 							</ul>
 						</div>
 					
 						<div class="col-md-6">
 							<ul>
-								<li><a href="/search/m?Psychology">Psychology</a></li>
-								<li><a href="/search/m?Sociology">Sociology</a></li>
-								<li><a href="/search/m?Womens%20and%20Gender%20Studies">Womens and Gender Studies</a></li>
-								<li><a href="/search/m?Library%20Science">Library Science</a></li>
+								<li><a href="/search~S6/m?Psychology">Psychology</a></li>
+								<li><a href="/search~S6/m?Sociology">Sociology</a></li>
+								<li><a href="/search~S6/m?Womens%20and%20Gender%20Studies">Womens and Gender Studies</a></li>
+								<li><a href="/search~S6/m?Library%20Science">Library Science</a></li>
 							</ul>			
 						</div>
 
@@ -1099,7 +1099,7 @@ if (targ.form)
 		<div id="SEARCH_RESERVE">
 		<!--              -->			
 		
-			<form class="form-horizontal" role="form" action="/search/r" method="get">
+			<form class="form-horizontal" role="form" action="/search~S6/r" method="get">
 
 				<span class="help-block">Enter Search Terms For <strong>Course Name</strong></span>
 			
@@ -1144,7 +1144,7 @@ if (targ.form)
 			
 			<hr>
 			
-			<form class="form-horizontal" role="form" action="/search/p" method="get">
+			<form class="form-horizontal" role="form" action="/search~S6/p" method="get">
 
 				<span class="help-block">Enter Search Terms For <strong>Professor Name</strong></span>
 			
@@ -1204,7 +1204,7 @@ if (targ.form)
 		<div id="SEARCH_NUMBERS">
 		<!--              -->			
 		
-			<form class="form-horizontal" role="form" action="/search/c" method="get">
+			<form class="form-horizontal" role="form" action="/search~S6/c" method="get">
 
 				<span class="help-block">Enter Search Terms For <strong>Library of Congress  Call Number</strong></span>
 			
@@ -1249,7 +1249,7 @@ if (targ.form)
 			
 			<hr>
 
-			<form class="form-horizontal" role="form" action="/search/e" method="get">
+			<form class="form-horizontal" role="form" action="/search~S6/e" method="get">
 
 				<span class="help-block">Enter Search Terms For <strong>Dewey Call Number</strong></span>
 			
@@ -1293,7 +1293,7 @@ if (targ.form)
 			
 			<hr>
 
-			<form class="form-horizontal" role="form" action="/search/g" method="get">
+			<form class="form-horizontal" role="form" action="/search~S6/g" method="get">
 
 				<span class="help-block">Enter Search Terms For <strong>Government Document Number</strong> or <strong>SUDOC Number</strong></span>
 			
@@ -1337,7 +1337,7 @@ if (targ.form)
 			
 			<hr>
 			
-			<form class="form-horizontal" role="form" action="/search/i" method="get">
+			<form class="form-horizontal" role="form" action="/search~S6/i" method="get">
 
 				<span class="help-block">Enter Search Terms For <strong>ISBN</strong> or <strong>ISSN</strong></span>
 			
@@ -1382,7 +1382,7 @@ if (targ.form)
 			
 			<hr>
 			
-			<form class="form-horizontal" role="form" action="/search/o" method="get">
+			<form class="form-horizontal" role="form" action="/search~S6/o" method="get">
 
 				<span class="help-block">Enter Search Terms For <strong>OCLC Number</strong></span>
 			
@@ -1426,7 +1426,7 @@ if (targ.form)
 
 			<hr>
 
-			<form class="form-horizontal" role="form" action="/search/f" method="get">
+			<form class="form-horizontal" role="form" action="/search~S6/f" method="get">
 
 				<span class="help-block">Enter Search Terms For <strong>Local Call Number</strong></span>
 			
@@ -1497,64 +1497,64 @@ if (targ.form)
 $(document).ready(function() {
 			switch (location.pathname) {
 				case "/":
-				case "/search/w":
+				case "/search~S6/w":
 					$('#desktop_tabs a[href="#keyword"]').tab('show');
 					$('#mobile_drop option[value="#keyword"]').prop("selected", "selected");
 					console.log("keyword: ");
 					break;
 
-				case "/search/X":
-				case "/search/":
+				case "/search~S6/X":
+				case "/search~S6/":
 				case "/search":
 					$('#desktop_tabs a[href="#advanced"]').tab('show');
 					$('#mobile_drop option[value="#advanced"]').prop("selected", "selected");
 					console.log("advanced: ");
 					break;
 				
-				//case "/search/a":
-				case "/search/t":
-				case "/search/s":
+				//case "/search~S6/a":
+				case "/search~S6/t":
+				case "/search~S6/s":
 					$('#desktop_tabs a[href="#title"]').tab('show');
 					$('#mobile_drop option[value="#title"]').prop("selected", "selected");
 					console.log("title:");
 					break;
 
-				case "/search/a":
-				//case "/search/t":
-				//case "/search/j":
+				case "/search~S6/a":
+				//case "/search~S6/t":
+				//case "/search~S6/j":
 					$('#desktop_tabs a[href="#author"]').tab('show');
 					$('#mobile_drop option[value="#author"]').prop("selected", "selected");
 					console.log("author: ");
 					break;
 					
-				case "/search/d":
-				case "/search/j":
-				case "/search/m":
+				case "/search~S6/d":
+				case "/search~S6/j":
+				case "/search~S6/m":
 					$('#desktop_tabs a[href="#subject"]').tab('show');
 					$('#mobile_drop option[value="#subject"]').prop("selected", "selected");
 					console.log("subject: ");
 					break;
 					
-				case "/search/y":
+				case "/search~S6/y":
 					$('#desktop_tabs a[href="#database"]').tab('show');
 					$('#mobile_drop option[value="#database"]').prop("selected", "selected");
 					console.log("database: ");
 					break;
 					
-				case "/search/r":
-				case "/search/p":
-				case "/search/b":
+				case "/search~S6/r":
+				case "/search~S6/p":
+				case "/search~S6/b":
 					$('#desktop_tabs a[href="#reserves"]').tab('show');
 					$('#mobile_drop option[value="#reserves"]').prop("selected", "selected");
 					break;
 
-				case "/search/c":
-				case "/search/g":
-				case "/search/f":
-				case "/search/i":
-				case "/search/o":
-				case "/search/e":
-				case "/search/n":
+				case "/search~S6/c":
+				case "/search~S6/g":
+				case "/search~S6/f":
+				case "/search~S6/i":
+				case "/search~S6/o":
+				case "/search~S6/e":
+				case "/search~S6/n":
 					$('#desktop_tabs a[href="#numbers"]').tab('show');
 					$('#mobile_drop option[value="#numbers"]').prop("selected", "selected");
 					console.log("numbers: ");
