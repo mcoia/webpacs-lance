@@ -1103,7 +1103,53 @@ if (targ.form)
 		<!-- SEARCH_RESERVE-->
 		<div id="SEARCH_RESERVE">
 		<!--              -->			
-		
+
+			<form class="form-horizontal" role="form" action="/search~S6/p" method="get">
+
+				<span class="help-block">Enter Search Terms For <strong>Professor Name</strong></span>
+			
+				<div class="form-group">
+					<label for="input_input_professor" class="col-md-1 control-label">Professor Name: </label>
+					<div class="col-md-8">
+						<input name="SEARCH" type="text" class="form-control" id="input_professor" placeholder="Enter Professor Name">
+					</div>
+					
+					<div class="col-md-3">
+						<select name="sortdropdown" id="sortdropdown_professor" class="form-control">
+							<option value="-">System Sorted</option> 
+							<option value="t"> Title</option> 
+							<option value="a"> Author</option> 
+							<option value="c"> Year</option> 
+							<option value="r"> Reverse Year</option> 
+							<option value="n"> Call Number</option> 
+							<option value="m"> Material Type</option> 
+						</select>
+					</div>
+					
+				</div>
+											
+				<div class="form-group">
+					<div class="col-md-offset-1 col-md-11">
+						<button name="SUBMIT" type="submit" class="btn btn-default">Search</button>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="col-md-offset-1 col-md-11">
+						Examples:
+						<ul>
+							<li> Ogden </li>
+							<li> ogden, linda </li>
+							<li> ruehlman </li>
+							<li> ruehlmann, Thomas </li>
+						</ul>
+					</div>
+				</div>
+				
+			</form>
+
+			<hr>
+			
 			<form class="form-horizontal" role="form" action="/search~S6/r" method="get">
 
 				<span class="help-block">Enter Search Terms For <strong>Course Name</strong></span>
@@ -1146,53 +1192,8 @@ if (targ.form)
 				</div>
 				
 			</form>
-			
-			<hr>
-			
-			<form class="form-horizontal" role="form" action="/search~S6/p" method="get">
 
-				<span class="help-block">Enter Search Terms For <strong>Professor Name</strong></span>
-			
-				<div class="form-group">
-					<label for="input_input_professor" class="col-md-1 control-label">Professor Name: </label>
-					<div class="col-md-8">
-						<input name="SEARCH" type="text" class="form-control" id="input_professor" placeholder="Enter Professor Name">
-					</div>
-					
-					<div class="col-md-3">
-						<select name="sortdropdown" id="sortdropdown_professor" class="form-control">
-							<option value="-">System Sorted</option> 
-							<option value="t"> Title</option> 
-							<option value="a"> Author</option> 
-							<option value="c"> Year</option> 
-							<option value="r"> Reverse Year</option> 
-							<option value="n"> Call Number</option> 
-							<option value="m"> Material Type</option> 
-						</select>
-					</div>
-					
-				</div>
-											
-				<div class="form-group">
-					<div class="col-md-offset-1 col-md-11">
-						<button name="SUBMIT" type="submit" class="btn btn-default">Search</button>
-					</div>
-				</div>
-
-				<div class="form-group">
-					<div class="col-md-offset-1 col-md-11">
-						Examples:
-						<ul>
-							<li>ENG 101</li>
-							<li>BAR EXAM</li>
-							<li>MUSIC THERAPY</li>
-						</ul>
-					</div>
-				</div>
-				
-			</form>
-						
-		<!--               -->
+	<!--               -->
 		</div>
 		<!-- /SEARCH_RESERVE -->
 				
