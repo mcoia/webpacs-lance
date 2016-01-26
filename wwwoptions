@@ -105,10 +105,10 @@ STAFF_LOGGEDIN_MSG=<span class="loggedInMessage">You are logged into staff mode 
 
 # General and Phrase Searching
 ICON_BUT_ANOTHER6=<div style="display:none" class="ICON_BUT_ANOTHER btn btn-default catnav"><i class="fa fa-search fa-sm"></i> Another Search </div>
-ICON_BUT_NEWSRCH6=<div class="ICON_BUT_NEWSRCH btn btn-default catnav"><i class="fa fa-undo fa-sm"></i> New Search </div>
+ICON_BUT_NEWSRCH6=New Search
 ICON_BUT_WORDSRCH6=<div class="ICON_BUT_WORDSRCH btn btn-default catnav"><i class="fa fa-search-plus fa-sm"></i> Search as Words </div>
 ICON_BUT_ANOTHER=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">Another Search</span></span>
-ICON_BUT_NEWSRCH=New Search
+ICON_BUT_NEWSRCH=<div class="ICON_BUT_NEWSRCH btn btn-default catnav"><i class="fa fa-undo fa-sm"></i> New Search </div>
 ICON_BUT_WORDSRCH=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">Search as Words</span></span>
 DROP_DOWN=Xatscegiofdjm
 FRAMEURL=0
