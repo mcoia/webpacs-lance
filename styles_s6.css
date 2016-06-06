@@ -1,3 +1,5 @@
+/*@import url("styles.css");*/
+
 .minHeight {
     width: 1067px;
 }
@@ -11,3 +13,335 @@
 }
 
 #searchscope, #searchscopeDiv, #librarylocationDiv { display:none; }
+
+#bs-example-navbar-collapse-1{
+background-color: #5C3278;
+color: #ffffff;
+font-family:'Trebuchet MS',Verdana,Arial,Helvetica,sans-serif;
+font-size: 77%;
+font-style: normal;
+font-weight: 600;
+padding-bottom: 5px;
+padding-left: 15px;
+padding-top: 5px;
+position: relative;
+overflow-x: hidden;
+overflow-y:hidden;
+}
+
+.bibdisplaytable{
+border-bottom: 2px solid #5C3278;
+margin-bottom: 10px;
+margin-top: 10px;
+}
+
+.bibItemsHeader{
+background: #5C3278;
+border-left: medium solid white;
+color: white;
+text-align: center;
+}
+
+.bibItemsHeader:first-child{
+border-left: none;
+text-align: center;
+}
+
+.bibLinks{
+border: solid medium #5C3278;
+margin-left: auto;
+margin-right: auto;
+margin-top: 15px;
+}
+
+.bibLinks th {
+padding-left: 35%;
+padding-right: 35%;
+text-align: center;
+}
+
+.bibLinks tr td {
+padding-bottom: 10px;
+}
+
+.bibLinks tr td a {
+padding-right:10%;
+padding-left: 10%;
+}
+
+
+.briefcitTitle{
+font-size: 1em;
+}
+
+#briefcit-hr {
+border-top: 2px solid #5C3278;				
+}
+
+.briefcit_bookjacket img {
+margin-bottom: 5px;
+max-width: 64px;				
+}
+
+.briefcitJacket img {
+margin-bottom: 5px;
+max-width: 64px;
+}
+
+.browseHeader{
+background: #5C3278;
+border-left: medium solid white;
+color: white;
+margin-top: 10px;
+}
+.browseHeader:first-child{
+border-left:none;
+}
+
+.browseHeaderData{
+border-right: solid white medium;				
+}
+
+.browseHeaderEntries {
+border-left: solid white medium;
+padding: 5px;			
+}
+.browseHeaderMark{
+border-right: solid white medium;			
+}
+
+.browseHeaderMedia{
+border-right: solid white medium;
+padding: 10px			
+}
+
+.browseHeaderNum{
+border-right: solid white medium;
+}
+
+.browseHeaderYear {
+padding: 10px;
+}
+
+.browseList {
+margin-top: 30px;
+}
+
+.btn .btn-primary {
+background-color: #5C3278;
+background-image: none;
+background: #5C3278;
+}
+
+.btn-primary {
+background-color: #5C3278;
+border-color: #5C3278;
+background: #5C3278;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+background-color: #5C3278;
+border-color: #5C3278;
+background: #5C3278;
+}
+
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
+background-color: #5C3278;
+border-color: #5C3278;
+background: #5C3278;
+}
+
+#buttondisplaylarge {
+display: block;
+}
+
+.catnav{
+background-color: #5C3278;
+background: #5C3278;
+background-image: none;
+color: white;
+}
+
+.checkbox {
+margin: 1px;
+}
+
+
+.header_link{
+margin: 10px;
+}
+
+.header_link .navbar-brand-mob {
+background-color: #0096a7;
+color: #ffffff;
+font-family:'Trebuchet MS',Verdana,Arial,Helvetica,sans-serif;
+font-size: 16px;
+font-weight: bold;
+position: relative;
+width: 100%;
+}
+
+.hidebutton {
+display: none;
+}
+
+.holdingsDivider{
+border: solid 1px #5C3278;
+}
+
+.icon-bar {
+color: white;
+}
+
+.ICON_SAVEALLPAGE.btn.btn-default.catnav{
+margin-bottom: 5px;
+margin-top: 5px;
+}
+
+.ICON_SUBMIT.btn.btn-default.catnav a {
+color: white;
+}
+
+img { 
+display: inline-block;
+}
+
+#gif {
+display: inline-block;
+}
+
+.mobile_header{
+background-color: #ffffff;
+}
+
+.mobile .form-control .btn .btn-primary .dropdown-toggle{
+background-color: #5C3278;
+background: #5C3278;
+background-image: none;
+}
+
+.lance-links{
+color:black;
+text-align:center
+}
+
+.mobile_logo{
+background-image: none; 
+background-repeat: no-repeat;
+background-color: #ffffff;
+height: auto;
+width: 100%;
+}
+
+.navbar-default {
+border-color: #5C3278;
+background-color: #5C3278;
+background: #5C3278;
+color: #ffffff;
+font-family:'Trebuchet MS',Verdana,Arial,Helvetica,sans-serif;
+font-size: 19px;
+font-weight: bold;
+overflow-x: hidden;
+overflow-y: hidden;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+background-color: #5C3278;
+background: #5C3278;
+border: 2px solid #5C3278;
+color: white;
+}
+
+.nav-tabs > li > a:hover {
+background-color: #5C3278;
+color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
+color: white;				
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+color:white;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+background-color:#5C3278;
+background: #5C3278;
+border: 1px solid #5C3278;
+}
+
+.navbar-header{
+background-color: #5C3278;
+background: #5C3278;
+}
+
+.navbar-toggle .collapsed {
+background-color: #5C3278;
+background: #5C3278;
+}
+
+.navbar-default .navbar-toggle {
+border-color: #5C3278;
+background: #5C3278;
+}
+
+.nav-tabs>li>a {
+border: 1px solid #5C3278;
+color: black;
+margin: 3px;
+}
+
+.our_footer {
+color: black;
+}
+
+#showsmallsplit1 {
+display: none;
+}
+
+#showsmallsplit1 #ICON_BOOKCART_SAVED {
+margin: auto;
+}
+
+#showsmallsplit2 {
+display: none;
+}
+
+.tablebib td {
+border-bottom: solid 1px #5C3278;
+}
+
+
+#table-browse-bib{
+border: thick;
+}
+
+.TABLEPARAM_BIB_ITEMS {
+border: 1px solid #5C3278;
+margin-bottom: 10px;
+margin-top: 10px;
+}
+
+td.bibHoldingsLabel {
+font-weight: bold;
+}
+
+td.briefcitCell {
+border-bottom: 2px solid #5C3278;
+margin-bottom: 10px;
+margin-top: 10px;
+}
+
+@media (max-width: 992px) {
+#buttondisplaylarge {display: none;}
+#showsmallsplit1 {
+display: block;
+text-align: center;
+}
+#showsmallsplit2 {
+display: block;
+text-align: center;
+}
+}
+
