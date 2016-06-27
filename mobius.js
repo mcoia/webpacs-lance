@@ -285,8 +285,8 @@ function toggleCreateList() {
         var newlist = getObj('newlist');
 
         if (listvalue == '-1')
-            $(#newlist).removeClass("hide");
+            $('#newlist').removeClass("hide");
         else
-            $(#newlist).addClass("hide");
+            $('#newlist').addClass("hide");
     }
 }
