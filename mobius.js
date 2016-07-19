@@ -275,3 +275,18 @@ function getElemByClass(oElm, strTagName, strClassName){
     }
     return (arrReturnElements)
 }
+
+// Override Innovative's function 
+function toggleCreateList() {
+    if (document.newlistForm)
+    {
+        var list = document.newlistForm.listname;
+        var listvalue = list.options[list.selectedIndex].value;
+        var newlist = getObj('newlist');
+
+        if (listvalue == '-1')
+            $('#newlist').removeClass("hide");
+        else
+            $('#newlist').addClass("hide");
+    }
+}
