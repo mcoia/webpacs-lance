@@ -380,10 +380,10 @@
 			$(document).ready(function() {
 				//change advanced search tab to direct link 
 				//	:do this only if we're NOT on the advanced search page
-				if ( (location.pathname != '/search~S6/X') && (location.pathname != '/search~S6/') && (location.pathname != '/search~S6') ) {
+				if (location.pathname != '/search~S6/X') {
 					document.getElementById('tab-advanced').getElementsByTagName('a')[0].removeAttribute('data-toggle');
 					//document.getElementById('mobile_advanced').getElementsByTagName('a')[0].removeAttribute('data-toggle');
-					document.getElementById('tab-advanced').getElementsByTagName('a')[0].href='/search~S6/';
+					document.getElementById('tab-advanced').getElementsByTagName('a')[0].href='/search~S6/X';
 					////document.getElementById('mobile_advanced').getElementsByTagName('option').value='#advanced';
 				}
 				//do this if we're on the advanced search page
