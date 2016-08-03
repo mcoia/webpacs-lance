@@ -553,7 +553,8 @@ ILL_HOME=/screens/ill.html
 
 # INN-Reach
 IR_PLACEMENT=1
-ICON_INNREACH_ENCORE=<span class="button"><img src="/screens/ico_mobius.png" alt=""><span class="buttonText">Search MOBIUS</span></span></span>
+ICON_INNREACH_ENCORE6=<div id="ICON_INNREACH" class="INNREACH btn btn-default catnav"><i class="fa fa-laptop fa-sm"></i> Search MOBIUS </div>
+ICON_INNREACH_ENCORE=<span class="button"><img src="/screens/ico_mobius.png" alt=""><span class="buttonText">Search MOBIUS</span></span>
 INNREACH_ENCORE=http://searchmobius.org/iii/encore/search/C__S%s__Orightresult__U?lang=eng&suite=cobalt
 #INNREACH6=<div id="ICON_INNREACH" class="INNREACH btn btn-default catnav"><i class="fa fa-laptop fa-sm"></i> Search MOBIUS </div>@searchmobius.org(X=X*;Y=Y*;a=a;c=c;d=d;e=e;g=g;i=i;j=m;m=h;o=o;s=s;t=t)
 #INNREACH=<span class="button"><img src="/screens/ico_mobius.png" alt=""><span class="buttonText">Search MOBIUS</span></span>@searchmobius.org(X=X*;Y=Y*;a=a;c=c;d=d;e=e;g=g;i=i;j=m;m=h;o=o;s=s;t=t)
