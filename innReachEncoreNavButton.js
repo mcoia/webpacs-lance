@@ -8,9 +8,6 @@ function updateinnReachButton() {
 	    else {
 	            innReachArg = searchArg;
 	    } 
-	    else { 
-	            innReachArg = searchArg; 
-	    }
 
 	    $("#innReachLink").attr("href", innReachUrl + innReachArg)
 	}
