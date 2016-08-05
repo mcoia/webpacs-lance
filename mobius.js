@@ -38,7 +38,7 @@ if (/WebKit/i.test(navigator.userAgent)) { // sniff
 }
 
 /* for other browsers */
-window.onload = init;
+addLoadEvent(init);
 
 
 function addLoadEvent(func) {
@@ -51,18 +51,6 @@ var oldonload = window.onload;
      func();
       }
    }
-}
-
-function addLoadEvent(func) {
-  var oldonload = window.onload;
-  if (typeof window.onload != 'function') {
-    window.onload = func;
-  } else {
-    window.onload = function() {
-      oldonload();
-      func();
-    }
-  }
 }
 
 
