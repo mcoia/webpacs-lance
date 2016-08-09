@@ -38,7 +38,7 @@ if (/WebKit/i.test(navigator.userAgent)) { // sniff
 }
 
 /* for other browsers */
-addLoadEvent(init);
+// addLoadEvent(init);
 
 
 function addLoadEvent(func) {
