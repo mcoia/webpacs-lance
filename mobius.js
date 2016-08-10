@@ -23,22 +23,23 @@ function init() {
 };
 
 /* for Mozilla/Opera9 */
-if (document.addEventListener) {
-    document.addEventListener("DOMContentLoaded", init, false);
-}
-
+/* if (document.addEventListener) {
+*    document.addEventListener("DOMContentLoaded", init, false);
+*}
+*/
 
 /* for Safari */
-if (/WebKit/i.test(navigator.userAgent)) { // sniff
-    var _timer = setInterval(function() {
-        if (/loaded|complete/.test(document.readyState)) {
-            init(); // call the onload handler
-        }
-    }, 10);
-}
+/*if (/WebKit/i.test(navigator.userAgent)) { // sniff
+*    var _timer = setInterval(function() {
+*        if (/loaded|complete/.test(document.readyState)) {
+*            init(); // call the onload handler
+*        }
+*    }, 10);
+*}
+*/
 
 /* for other browsers */
-window.onload = init;
+// addLoadEvent(init);
 
 
 function addLoadEvent(func) {
@@ -51,18 +52,6 @@ var oldonload = window.onload;
      func();
       }
    }
-}
-
-function addLoadEvent(func) {
-  var oldonload = window.onload;
-  if (typeof window.onload != 'function') {
-    window.onload = func;
-  } else {
-    window.onload = function() {
-      oldonload();
-      func();
-    }
-  }
 }
 
 
