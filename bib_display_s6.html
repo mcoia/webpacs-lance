@@ -1,5 +1,22 @@
 <!--{toplogo}-->
 	<!-- /toplogo -->
+<script>
+	// Rewrites target of Search MOBIUS button to bib display
+	addLoadEvent( function encoreLink() {
+		var cluster = '6lanc';
+		var recno_pattern = /b\d{7}/;
+		var cluster_recno = recno_pattern.exec($(".ICON_RECORDLINK").children("a").attr("href"));
+		$.get('http://classic.searchmobius.org/search/z?' + cluster + '+' + cluster_recno, function( data ) {
+			var encore_regex = /Permanent Link.*?(b\d{8})/;
+			var encore_recno = encore_regex.exec(data)[1];
+			if (encore_recno) {
+				var encore_link = "http://encore.searchmobius.org/iii/encore/record/C__R" + encore_recno;
+				$("#ICON_INNREACH").parent().attr("href",encore_link);
+			}
+		});
+	});
+
+</script>
 	
 	<!-- ifbibdisplay -->
 <!--{ifbibdisplay}-->
