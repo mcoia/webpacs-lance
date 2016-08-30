@@ -25,93 +25,98 @@ startTimeout(600000, "/");
  <script type="text/javascript" src="/screens/bibdisplay.js"></script>
 <link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
 </head>
+
 <body>
 <!--{toplogo}-->
 <div class="pageContentInner">
-<h1 class="pageHeader">Login</h1>
-<div class="form1Part" id="accessibleForm">
-<form method="post" target="_top" name="patform">
+	<h1 class="pageHeader">Login</h1>
+	<div class="form1Part" id="accessibleForm">
+		<form method="post" target="_top" name="patform">
 <!--{formbegin}-->
 <!--{iferrmsg}-->
-<span class="errormessage">
+			<span class="errormessage">
 <!--{iferrmsgisPIN}-->
 <!--{newpinmsg}-->
 <!--{else}-->
 <!--{errmsg}-->
 <!--{xif}-->
-</span>
+			</span>
 <!--{xif}-->
 
-<fieldset>
-<legend>
+			<fieldset>
+				<legend>
 <!--{enterinfo}-->
-</legend>
+				</legend>
 
 <!--{ifextpat}-->
-<h2>Students, Staff, and Faculty</h2>
-<div class="formEntryArea">
-<label for="extpatid"><span class="formLabel">
-Username:
-</span></label>
+				<h2>Students, Staff, and Faculty</h2>
+				
+				<div class="formEntryArea">
+					<label for="extpatid">
+						<span class="formLabel">
+						Username:
+						</span>
+					</label>
 <!--{extpatid}-->
-<label for="extpatpw"><span class="formLabel">
-Password:
-</span></label>
+					<label for="extpatpw">
+						<span class="formLabel">
+						Password:
+						</span>
+					</label>
 <!--{extpatpw}-->
-</div>
-<h2>Visitors</h2>
+				</div><!--formEntryArea-->
+				
+				<h2>Visitors</h2>
 <!--{xif}-->
 
 <!--{ifneedpatronname}-->
-<div class="formEntryArea">
+				<div class="formEntryArea">
 <!--{nameprompt}-->
 <!--{name}-->
-<span class="formLabelExample">
+					<span class="formLabelExample">
 <!--{nameexample}-->
-</span>
-</div>
+					</span>
+				</div><!--formEntryArea-->
 <!--{xif}-->
 
 <!--{ifneedpatronverify}-->
-<div class="formEntryArea">
+				<div class="formEntryArea">
 <!--{barcodeprompt}-->
 <!--{barcode}-->
-<span class="formLabelExample">
+					<span class="formLabelExample">
 <!--{barcodeexample}-->
-</span>
-</div>
+					</span>
+				</div><!--formEntryArea-->
 
 <!--{ifneedspin}-->
 
 <!--{iferrmsgisPIN}-->
-<p>
+				<p>
 <!--{newpinmsg}-->
-</p>
-<div class="formEntryArea">
-<!-- <label for="pin1"> -->
-<span class="formLabel">
+				</p>
+
+				<div class="formEntryArea">
+					<span class="formLabel">
 <!--{pin1prompt}-->
-</span>
+					</span>
 <!--{pin1}-->
-<!-- </label> -->
-</div>
-<div class="formEntryArea">
-<!-- <label for="pin2"> -->
-<span class="formLabel">
+				</div><!--formEntryArea-->
+					
+				<div class="formEntryArea">
+					<span class="formLabel">
 <!--{pin2prompt}-->
-</span>
+					</span>
 <!--{pin2}-->
-<!-- </label> -->
-</div>
+				</div><!--formEntryArea-->
 
 <!--{else}-->
-<div class="formEntryArea">
+				<div class="formEntryArea">
 <!--{pinprompt}-->
 <!--{pin}-->
-<span class="formLabelExample">
+					<span class="formLabelExample">
 <!--{pininstructions}-->
-</span>
-</div>
+					</span>
+				</div><!--formEntryArea-->
 
 <!--{xif}-->
 <!--{xif}-->
@@ -120,29 +125,28 @@ Password:
 <!--{courseprompt}-->
 <!--{coursepswd}-->
 <!--{xif}-->
-<br >
+
+<br>
+
 <!--{imageinfo}-->
 <!--{ifprinter}-->
 <!--{print}-->
 <!--{xif}-->
-<p>
-Pursuant to the federal Copyright Act (Title 17 of the United States Code), it is presumptively unlawful to reproduce, distribute, or publicly display any copyrighted work (or any substantial portion thereof) without the permission of the copyright owner. The statute, however, recognizes a fair use defense that has the effect of excusing an act of copyright infringement. It is the intention of the Library to act within the parameters of the fair use defense in allowing limited posting of copyrighted materials in Electronic Course Reserve areas such as this one. It is the intention of the Library, moreover, that such materials be made available solely for the purposes of private study, scholarship, and research, and that any further reproduction of such materials by students, by printing or downloading, be limited to such purposes. Any further reproduction of copyrighted materials made from this computer system may be in violation of copyright laws and is prohibited.</p>
+
+				<p>Pursuant to the federal Copyright Act (Title 17 of the United States Code), it is presumptively unlawful to reproduce, distribute, or publicly display any copyrighted work (or any substantial portion thereof) without the permission of the copyright owner. The statute, however, recognizes a fair use defense that has the effect of excusing an act of copyright infringement. It is the intention of the Library to act within the parameters of the fair use defense in allowing limited posting of copyrighted materials in Electronic Course Reserve areas such as this one. It is the intention of the Library, moreover, that such materials be made available solely for the purposes of private study, scholarship, and research, and that any further reproduction of such materials by students, by printing or downloading, be limited to such purposes. Any further reproduction of copyrighted materials made from this computer system may be in violation of copyright laws and is prohibited.</p>
     <!--{ifalternate_id}-->
     <!--{user_name}-->
     <!--{xif}-->
 
-<div class="formButtonArea">
+				<div class="formButtonArea">
 <!--{ifneedspin}-->
 <!--{pinresetrequest}-->
 <!--{xif}-->
 <!--{submit}-->
-</div>
-</fieldset>
-</form>
+				</div><!--formButtonArea-->
+			</fieldset>
+		</form>
 
-</div>
-
-</div>
 <!--{botlogo}-->
 <script type="text/javascript"><!--//--><![CDATA[//><!--
 try { document.forms[0].elements[1].focus(); }

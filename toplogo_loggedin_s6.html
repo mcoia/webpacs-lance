@@ -2,8 +2,13 @@
 <script>
   dataLayer = [];
 </script>
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NK5G9V" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<noscript>
+<iframe src="//www.googletagmanager.com/ns.html?id=GTM-NK5G9V" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-NK5G9V');</script>
+
 <!-- End Google Tag Manager -->
 
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
@@ -21,7 +26,7 @@
 		<!-- Custom CSS --> 
 		<link href="/screens/custom.css" rel="stylesheet"> 
 
-		<script type="text/javascript">
+<script type="text/javascript">
  
 $("#selectNavigation").on('change', function(e){
 	window.location = this.value;
@@ -45,73 +50,60 @@ $(document).ready(function () {
 
 <link href="/screens/styles_s6.css" rel="stylesheet">
 
-		
-		<!-- HEADER -->
-		<div id="HEADER">
-		<!--               -->
-		
-
-		<div>
-		
+	<div id="HEADER">
 		<div>
 			<div class="mobile_header">
-					<img class="mobile_logo img-responsive" src="/screens/truman_toplogo_banner.jpg" />
-			</div>
+				<img class="mobile_logo img-responsive" src="/screens/truman_toplogo_banner.jpg" />
+			</div><!--mobile-header-->
 		</div>
-		
-		<!--navbar-->
+	
 		<nav class="navbar navbar-default">
-  <div>
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span style="background-color:white" class="icon-bar"></span>
-        <span style="background-color:white" class="icon-bar"></span>
-        <span style="background-color:white" class="icon-bar"></span>
-      </button>
-    </div>
+			<div>
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span style="background-color:white" class="icon-bar"></span>
+						<span style="background-color:white" class="icon-bar"></span>
+						<span style="background-color:white" class="icon-bar"></span>
+					</button>
+				</div><!--navbar-header-->
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-				<li><a href="http://library.truman.edu/">Library Home</a> </li>
-				<li>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="http://library.truman.edu/">Library Home</a> </li>
+						<li>
 <!--{patronrecord}--> 
-				</li>
-				<li>
+						</li>
+						<li>
 <!--{logout}--> 
-				</li>
-				<li>
+						</li>
+						<li>
 <!--{startover}--> 
-				</li>
-				<li><a href="/search~S6/b">Course Reserves</a> </li>
-				<li><a href="http://library.truman.edu/about-us/AskUs.asp">Help</a> </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://lance.searchmobius.org/">LANCE</a></li>
-        <li><a href="http://searchmobius.org/">MOBIUS</a></li>
-       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div>
-</nav>
-	</div><!-- /HEADER-->
-		<!-- MAIN PAGE BODY -->
+						</li>
+						<li><a href="/search~S6/b">Course Reserves</a> </li>
+						<li><a href="http://library.truman.edu/about-us/AskUs.asp">Help</a> </li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="http://lance.searchmobius.org/">LANCE</a></li>
+						<li><a href="http://searchmobius.org/">MOBIUS</a></li>
+					</ul>
+				</div><!--collaspse navbar-collapse #bs-example-navbar-collapse-1 -->
+			</div>
+		</nav>
+	</div><!--HEADER-->
 		
-		<!-- our container for site content and grid system -->
-		<div class="container-fluid">
-		<div class="row" style="
-		padding-top:15px;
-		">
-					<div class="col-md-12">
+		<!-- MAIN PAGE BODY -->
+
+	<div class="container-fluid">
+		<div class="row" style="padding-top:15px;">
+			<div class="col-md-12">
 				<div id="patron_links">
-				<!-- patron -->
+					<!-- patron -->
 <!--{patron}-->
-				<!-- /patron -->
-				</div>
+					<!-- /patron -->
+				</div><!--#patron_links-->
 			
-			<!-- BODY AREA -->
 			<div id="BODY_AREA">
-			<!--           -->
+
 
 <!--end toplogo.html-->
