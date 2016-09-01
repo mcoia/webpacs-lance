@@ -35,6 +35,12 @@ margin-bottom: 10px;
 margin-top: 10px;
 }
 
+.bibInfoLabel {
+width:15%;
+font-weight:bold;
+text-transform: uppercase;
+}
+
 .bibItemsHeader{
 background: #5C3278;
 border-left: medium solid white;
