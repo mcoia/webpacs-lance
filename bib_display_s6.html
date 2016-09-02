@@ -10,30 +10,6 @@
 	<!-- catedit -->
 <!--{catedit}-->
 	<!-- /catedit -->
-	
-<script>
-	addLoadEvent( function encoreLink() {
-		var cluster = '6lanc';
-		var recno_pattern = /b\d{7}/;
-		
-		// Gets record number from permanent link
-		var cluster_recno = recno_pattern.exec($(".ICON_RECORDLINK").children("a").attr("href"));
-		
-	
-		// Get MOBIUS bib number via php
-		$.get('http://library.truman.edu/Steve/encore_bibno_fetcher.php?bibno=' + cluster_recno, function( data ) {
-			var encore_regex = /b\d{8}/;
-			var encore_recno = encore_regex.exec(data);
-			
-			if (encore_recno) {
-				var encore_link = "http://encore.searchmobius.org/iii/encore/record/C__R" + encore_recno;
-				$("#ICON_INNREACH").parent().attr("href",encore_link);
-			}
-		});
-	});
-</script>
-
-
 
 <div id="bibDisplayBody">
 	<div class="navigationRowRecord" style="text-align: center;">
