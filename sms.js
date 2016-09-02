@@ -116,7 +116,7 @@ return false;
    	 script.setAttribute('src',url);							// the script is actually the PERL script 
    	 head.appendChild(script);									// append the script
 	} else {		// invalid phone #, send message
-	  alert('please enter a valid phone #');
+	  alert('Please enter a valid phone #.');
       }
    }
 	
