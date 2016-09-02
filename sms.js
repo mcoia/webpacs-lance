@@ -1,7 +1,7 @@
 // JavaScript Document
 
 // set this to be the URL for the SMS script
-var smsurl = "https://mobiusconsortium.org/sms/sms-lance.php?";
+var smsurl = "http://library.truman.edu/Steve/sms-lance.php";
 
    function showsms() {
 
