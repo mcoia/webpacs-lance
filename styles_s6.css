@@ -345,3 +345,9 @@ text-align: center;
 }
 }
 
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+}
+

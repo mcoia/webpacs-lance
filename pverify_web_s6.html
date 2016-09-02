@@ -2,90 +2,97 @@
 <!-- begin pverify_web.html-->
 <div class="pageContentInner">
 <span style="font-weight:700;" class="pageHeader">Login</span>
-<div class="form1Part formLogin" id="accessibleForm">
+	<div class="form1Part formLogin" id="accessibleForm">
 <!--{formbegin}-->
 <!--{iferrmsg}-->
-<span class="errormessage">
+	<span class="errormessage">
 <!--{iferrmsgisPIN}-->
 <!--{newpinmsg}-->
 <!--{else}-->
 <!--{errmsg}-->
 <!--{xif}-->
-</span>
+	</span>
 <!--{xif}-->
 
-<fieldset>
-<legend>
+	<fieldset>
+	<legend>
 <!--{enterinfo}--> 
    <!--enterinfo is "please enter following information"-->
-</legend>
+	</legend>
 
 <!--{ifextpat}-->
-<span style="font-weight:700;">Students, Staff, and Faculty</span>
-<div class="formEntryArea">
-<label for="extpatid"><span class="formLabel">
-Username:
-</span></label>
+	<span style="font-weight:700;">Students, Staff, and Faculty</span>
+		<div class="formEntryArea">
+			<label for="extpatid">
+				<span class="formLabel">
+				Username:
+				</span>
+			</label>
 <!--{extpatid}-->
-<label for="extpatpw"><span class="formLabel">
-Password:
-</span></label>
+			<label for="extpatpw">
+				<span class="formLabel">
+				Password:
+				</span>
+			</label>
 <!--{extpatpw}-->
-</div>
-<h2>Visitors</h2>
+		</div><!--formEntryArea-->
+
+		<h2>Visitors</h2>
 <!--{xif}-->
 
 <!--{ifneedpatronname}-->
-<div class="formEntryArea">
+		
+		<div class="formEntryArea">
 <!--{nameprompt}-->
 <!--{name}-->
-<span class="formLabelExample">
+			<span class="formLabelExample">
 <!--{nameexample}-->
-</span>
-</div>
+			</span>
+		</div><!--formEntryArea-->
 <!--{xif}-->
 
 <!--{ifneedpatronverify}-->
-<div class="formEntryArea">
+		<div class="formEntryArea">
 <!--{barcodeprompt}-->
 <!--{barcode}-->
-<span class="formLabelExample">
+			<span class="formLabelExample">
 <!--{barcodeexample}-->
-</span>
-</div>
+			</span>
+		</div><!--formEntryArea-->
 
 <!--{ifneedspin}-->
 
 <!--{iferrmsgisPIN}-->
-<p>
+		<p>
 <!--{newpinmsg}-->
-</p>
-<div class="formEntryArea">
+		</p>
+		
+		<div class="formEntryArea">
 <!-- <label for="pin1"> -->
-<span class="formLabel">
+			<span class="formLabel">
 <!--{pin1prompt}-->
-</span>
+			</span>
 <!--{pin1}-->
 <!-- </label> -->
-</div>
-<div class="formEntryArea">
+		</div><!--formEntryArea-->
+		
+		<div class="formEntryArea">
 <!-- <label for="pin2"> -->
-<span class="formLabel">
+			<span class="formLabel">
 <!--{pin2prompt}-->
-</span>
+			</span>
 <!--{pin2}-->
 <!-- </label> -->
-</div>
+		</div><!--formEntryArea-->
 
 <!--{else}-->
-<div class="formEntryArea">
+		<div class="formEntryArea">
 <!--{pinprompt}-->
 <!--{pin}-->
-<span class="formLabelExample">
+			<span class="formLabelExample">
 <!--{pininstructions}-->
-</span>
-
-</div>
+			</span>
+		</div><!--formEntryArea-->
 
 <!--{xif}-->
 <!--{xif}-->
@@ -95,51 +102,47 @@ Password:
     <!--{user_name}-->
     <!--{xif}-->
 
-<div class="formButtonArea">
+		<div class="formButtonArea">
 <!--{submit}-->
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-default catnav" data-toggle="modal" data-target="#myModal">
-    PIN Help
-</button>
+			<button type="button" class="btn btn-default catnav" data-toggle="modal" data-target="#myModal">
+				PIN Help
+			</button>
 <!--{ifneedspin}-->
 <!--{pinresetrequest}-->
 <!--{xif}-->
-<input type="submit" class="submitHidden" style="display:none">
-</div>
-
-
+			<input type="submit" class="submitHidden" style="display:none">
+		</div><!--formButtonArea-->
 
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">PIN Help</h4>
-      </div>
-      <div class="modal-body">
-        <h5>A valid PIN consists of up to 30 alphanumeric characters.</h5> 
-        <p>The PIN must not contain common trivial patterns. For example:</p>
-
-        <ul>
-            <li>A character that is consecutively repeated three or more times(for example, aaaa, ababa, bbbb).</li>
-            <li>A set of up to four characters is that is consecutively repeated two or more times (for example, abab, abcabc, abcdabcd).</li>
-        </ul>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-</fieldset>
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">PIN Help</h4>
+			  </div><!--modal-header-->
+			  <div class="modal-body">
+				<h5>A valid PIN consists of up to 30 alphanumeric characters.</h5> 
+				<p>The PIN must not contain common trivial patterns. For example:</p>
+				<ul>
+					<li>A character that is consecutively repeated three or more times(for example, aaaa, ababa, bbbb).</li>
+					<li>A set of up to four characters is that is consecutively repeated two or more times (for example, abab, abcabc, abcdabcd).</li>
+				</ul>
+			  </div><!--modal-body-->
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			  </div><!--modal-footer-->
+			</div><!--modal content-->
+		  </div><!--modal dialog-->
+		</div><!--modal fade-->
+	</fieldset>
 <!--{formend}-->
-
-</div>
-
+	</div><!--form1Part formLogin-->
 </div><!-- pageContentInner -->
 <!--{botlogo}-->
 <script type="text/javascript"><!--//--><![CDATA[//><!--
 try { document.forms[0].elements[1].focus(); }
 catch(err) {}
-//--><!]]></script>
+//--><!]]>
+</script>
