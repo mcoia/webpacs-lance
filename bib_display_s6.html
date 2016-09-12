@@ -1,4 +1,17 @@
-<script>
+<!--{toplogo}-->
+	<!-- /toplogo -->
+	
+	<!-- ifbibdisplay -->
+<!--{ifbibdisplay}-->
+	<!-- /ifbibdisplay -->
+
+<!--{xif}-->
+
+	<!-- catedit -->
+<!--{catedit}-->
+	<!-- /catedit -->
+
+	<script>
 	addLoadEvent( function() {
 		$("#ICON_INNREACH").parent().attr("onmousedown","encore_bib_link();return false;");
 	});
@@ -12,7 +25,7 @@
 		
 	
 		// Get MOBIUS bib number via php
-		$.get('http://library.truman.edu/Steve/encore_bibno_fetcher.php?bibno=' + cluster_recno, function( data ) {
+		$.get('http://library.truman.edu/Mobius/encore_bibno_fetcher.php?bibno=' + cluster_recno, function( data ) {
 			var encore_regex = /b\d{8}/;
 			var encore_recno = encore_regex.exec(data);
 			
@@ -25,19 +38,6 @@
 		
 	}
 </script>
-
-<!--{toplogo}-->
-	<!-- /toplogo -->
-	
-	<!-- ifbibdisplay -->
-<!--{ifbibdisplay}-->
-	<!-- /ifbibdisplay -->
-
-<!--{xif}-->
-
-	<!-- catedit -->
-<!--{catedit}-->
-	<!-- /catedit -->
 
 <div id="bibDisplayBody">
 	<div class="navigationRowRecord" style="text-align: center;">
