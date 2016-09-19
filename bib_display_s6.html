@@ -21,10 +21,10 @@
 
 		// Gets record number from permanent link
 		var cluster_recno = recno_pattern.exec($(".ICON_RECORDLINK").children("a").attr("href"));
-		var bibno_fetcher_url = 'http://library.truman.edu/Steve/encore_bibno_fetcher.php?bibno=' + cluster_recno;
+		var bibno_fetcher_url = 'http://library.truman.edu/Mobius/encore_bibno_fetcher.php?bibno=' + cluster_recno;
 		
 		// Get MOBIUS bib number via php
-		$.get('http://library.truman.edu/Steve/encore_bibno_fetcher.php?bibno=' + cluster_recno, function( data ) {
+		$.get('http://library.truman.edu/Mobius/encore_bibno_fetcher.php?bibno=' + cluster_recno, function( data ) {
 			var encore_regex = /b\d{8}/;
 			encore_recno = encore_regex.exec(data);
 					
