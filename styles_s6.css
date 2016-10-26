@@ -1,4 +1,4 @@
-/*@import url("styles.css");*/
+﻿/*@import url("styles.css");*/
 
 .minHeight {
     width: 1067px;
@@ -398,9 +398,9 @@ text-align: center;
 }
 }
 
+/* Don't print link hrefs */
 @media print {
   a[href]:after {
-    content: none !important;
+    content: none
   }
 }
-

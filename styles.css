@@ -1,4 +1,4 @@
-/*<!-- Rel 2009B Example Set -->*/
+﻿/*<!-- Rel 2009B Example Set -->*/
 /*<!-- This File Last Changed: April 29 2010-->*/
 /* *******************************************************************
 Organization:
@@ -1273,3 +1273,9 @@ z-index:1000; background:#fff; padding:10px; margin:10px; background:#efefcf; }
 }
 body > div#bibDisplayBody a#smsbutton { display:none; }
 
+/* Don't print link hrefs */
+@media print {
+  a[href]:after {
+    content: none
+  }
+}
