@@ -1,12 +1,14 @@
 <!-- begin toplogo.html file -->
-<!-- Rel 2009B Example Set -->
-<!-- Updated: 06 Oct 2010 -->
-<!-- Google Tag Manager -->
 <script>
   dataLayer = [];
 </script>
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NK5G9V" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<noscript>
+<iframe src="//www.googletagmanager.com/ns.html?id=GTM-NK5G9V" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-NK5G9V');</script>
+
 <!-- End Google Tag Manager -->
 
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
@@ -24,7 +26,7 @@
 		<!-- Custom CSS --> 
 		<link href="/screens/custom.css" rel="stylesheet"> 
 
-		<script type="text/javascript">
+<script type="text/javascript">
  
 $("#selectNavigation").on('change', function(e){
 	window.location = this.value;
@@ -37,8 +39,6 @@ $(".mobile-navigation").on('change', function(e){
 });</script>
 
 <script type="text/javascript" src='/screens/sms.js'> </script>
-
-<script type="text/javascript" src="/screens/856links.js"></script>
 <script type="text/javascript" src="/screens/mobius.js"></script>
 <script type="text/javascript">
 $(document).ready(function () {
@@ -48,194 +48,60 @@ $(document).ready(function () {
 
 <link href="/screens/styles_s6.css" rel="stylesheet">
 
-		
-		<!-- HEADER -->
-		<div id="HEADER">
-		<!--               -->
-		
-		<!-- <div class="visible-sm visible-xs"> -->
-		<div>
-		
+	<div id="HEADER">
 		<div>
 			<div class="mobile_header">
-					<img class="mobile_logo img-responsive" src="/screens/truman_toplogo_banner.jpg" />
-			</div>
+				<img class="mobile_logo img-responsive" src="/screens/truman_toplogo_banner.jpg" />
+			</div><!--mobile-header-->
 		</div>
-		
-		<!--navbar-->
+	
 		<nav class="navbar navbar-default">
-  <div>
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span style="background-color:white" class="icon-bar"></span>
-        <span style="background-color:white" class="icon-bar"></span>
-        <span style="background-color:white" class="icon-bar"></span>
-      </button>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-				<li><a href="http://library.truman.edu/">Library Home</a> </li>
-				<li>
-<!--{patronrecord}--> 
-				</li>
-				<li>
-<!--{logout}--> 
-				</li>
-				<li>
-<!--{startover}--> 
-				</li>
-				<li><a href="/search~S6/b">Course Reserves</a> </li>
-				<li><a href="http://library.truman.edu/about-us/AskUs.asp">Help</a> </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://lance.searchmobius.org/">LANCE</a></li>
-        <li><a href="http://searchmobius.org/">MOBIUS</a></li>
-       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div>
-</nav>
-
-		
-		<!-- mobile navbar 
-		<div class="visible-sm visible-xs">
-		<nav class="navbar" role="navigation" style="
-			border: 0px;
-			margin-bottom:0px;
-		">
-			<div class="container-fluid"> -->
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<!--<div class="navbar-header" style="
-					background-color: #fff;
-				"> -->
-					<!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile_navbar">
+			<div>
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button> -->
+						<span style="background-color:white" class="icon-bar"></span>
+						<span style="background-color:white" class="icon-bar"></span>
+						<span style="background-color:white" class="icon-bar"></span>
+					</button>
+				</div><!--navbar-header-->
 
-					<!--<a class="header_link navbar-brand-mob" href="/patroninfo" style="
-						font-family:'Trebuchet MS',Verdana,Arial,Helvetica,sans-serif;
-						font-weight: bold;
-						background-color: purple;
-				        color: #ffffff;
-						font-size: 16px;
-						position: relative;
-						width: 100%;">My Library Account</a>
-					
-				</div>-->
-
-				<!--These are links on the side that could be used if school was interested Collect the nav links, forms, and other content for toggling -->
-				<!-- <div class="collapse navbar-collapse" id="mobile_navbar" style="
-					background-color: white;
-				">
-					<ul class="nav navbar-nav" style="
-							font-weight: 600;
-					">
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="http://library.truman.edu/">Library Home</a> </li>
 						<li>
-							<a href="https://flyers.udayton.edu/patroninfo">My Library Account</a></li>
-						
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Libraries <span class="caret"></span></a>
-							<ul class="dropdown-menu" role="menu" style="
-								font-weight: 600;
-							">
-								<li><a href="http://www.udayton.edu/libraries/">
-									Roesch Library</a></li>
-									
-								<li><a href="https://www.udayton.edu/imri/">
-									Marian Library</a></li>
-									
-								<li><a href="http://www.udayton.edu/education/cmc/">
-									CMC Library</a></li>
-									
-								<li><a href="http://www.udayton.edu/law/library/">Zimmerman Law Library</a></li>
-							</ul>
+<!--{patronrecord}--> 
 						</li>
-						
-						<li><a href="https://www.udayton.edu/libraries/help.php">
-							Get Help</a></li>
-						
-						<li><a href="https://udayton.illiad.oclc.org/illiad/logon.html">
-							InterLibrary Loan</a></li>
-						
-						<li><a href="http://library2.udayton.edu/newbooks/">
-							New Books List</a></li>
-						
-						<li><a href="http://www.librarything.com/profile.php?view=RoeschLeisure">
-							Leisure Reading</a></li>
-						
-						<li><a href="http://www.ohiolink.edu/">
-							OhioLINK</a></li>
- 							
-						<li><a href="http://libproxy.udayton.edu/login?url=http://newfirstsearch.oclc.org/dbname=WorldCat;done=referer;FSIP">
-							WorldCat</a></li>
-							
-						<li><a href="https://www.udayton.edu/libraries/services/catalog-error-form.php">
-							Report a Catalog Error</a></li>
-							
-						<li><a href="https://www.udayton.edu/libraries/hours.php">
-							Hours</a></li>
+						<li>
+<!--{logout}--> 
+						</li>
+						<li>
+<!--{startover}--> 
+						</li>
+						<li><a href="/search~S6/b">Course Reserves</a> </li>
+						<li><a href="http://library.truman.edu/about-us/AskUs.asp">Help</a> </li>
 					</ul>
-					 
-				</div>--><!-- /.navbar-collapse
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="http://lance.searchmobius.org/">LANCE</a></li>
+						<li><a href="http://searchmobius.org/">MOBIUS</a></li>
+					</ul>
+				</div><!--collaspse navbar-collapse #bs-example-navbar-collapse-1 -->
 			</div>
 		</nav>
-		</div> -->
-		<!-- /mobile navbar -->
+	</div><!--HEADER-->
 		
-		
-		<!-- desktop header -->
-		
-		<!--
-		<div class="visible-lg visible-md header_bottom desktop_header_bottom" style="
-				font-family:'Trebuchet MS',Verdana,Arial,Helvetica,sans-serif;
-				padding-top: 5px;
-				padding-left: 15px;
-				font-weight: bold;
-				background-color: purple;
-				color: #ffffff;
-				position: relative;
-				font-size: 19px;
-				height: 40px;
-				padding-bottom: 5px;
-			">
-				<a class="header_link" href="http://library.truman.edu/" style="color: inherit;">Library Home</a>
-				<a class="header_link" href="/patroninfo" style="color: inherit;">My Library Account</a>
-				<a class="header_link" href="/search~S6/b" style="color: inherit;">Course Reserves</a>
-				<a class="header_link" href="http://library.truman.edu/about-us/AskUs.asp" style="color: inherit;">Help</a>
-			</div> -->
-		
-		<!-- /desktop header
-		
-		</div> -->
-		
-		<!--               -->
-		</div><!-- /HEADER-->
 		<!-- MAIN PAGE BODY -->
-		
-		<!-- our container for site content and grid system -->
-		<div class="container-fluid">
-		<div class="row" style="
-		padding-top:15px;
-		">
-					<div class="col-md-12">
+
+	<div class="container-fluid">
+		<div class="row" style="padding-top:15px;">
+			<div class="col-md-12">
 				<div id="patron_links">
-				<!-- patron -->
+					<!-- patron -->
 <!--{patron}-->
-				<!-- /patron -->
-				</div>
+					<!-- /patron -->
+				</div><!--#patron_links-->
 			
-			<!-- BODY AREA -->
 			<div id="BODY_AREA">
-			<!--           -->
-		
-		<!--Testing<span class="visible-xs">visible-xs</span>
-		<span class="visible-sm">visible-sm</span>
-		<span class="visible-md">visible-md</span>
-		<span class="visible-lg">visible-lg</span>-->
+
+
 <!--end toplogo.html-->

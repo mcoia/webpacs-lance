@@ -4,8 +4,6 @@
 
 var smsurl = "https://dropbox.mobiusconsortium.org/sms/sms-email-gateway.php?scope=lance";
 
-
-
    function showsms() {
 
 	/*   This function shows the SMS layer and creates the form   */
@@ -97,7 +95,7 @@ return false;
 	if (phone.length == 10) {				// if 10 chars, we're good
 	var url = smsurl;						// start creating the URL
 		url += "&number="+encodeURIComponent(frm.phone.value);	// html escape #
-		url += "&provider="+encodeURIComponent(frm.provider.options[frm.provider.selectedIndex].value);	// html escpae provider
+		url += "&provider="+encodeURIComponent(frm.provider.options[frm.provider.selectedIndex].value);	// html escape provider
 		for (i=0;i<frm.loc.length;i++) {		// for each item, get the checked one 
 //		alert(i+" "+frm.loc[i].checked);
 			if (frm.loc[i].checked == true) {	// if checked, add it to the URL
@@ -119,7 +117,7 @@ return false;
    	 script.setAttribute('src',url);							// the script is actually the PERL script 
    	 head.appendChild(script);									// append the script
 	} else {		// invalid phone #, send message
-	  alert('please enter a valid phone #');
+	  alert('Please enter a valid phone #.');
       }
    }
 	
