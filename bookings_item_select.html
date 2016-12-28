@@ -1,24 +1,24 @@
 <!--{toplogo}-->
 <div class="pageContentInner">
 
-<div style="margin-bottom: 20px;" id="formLinks">
+	<div style="margin-bottom: 20px;" id="formLinks">
 <!--{prevpage}-->
-</div>
+	</div>
 
-<h1 class="pageHeader">
+	<h1 class="pageHeader">
 <!--{record_info}-->
-</h1>
+	</h1>
 
 <!--{iferr}-->
-<div class="errormessage">
+	<div class="errormessage">
 <!--{error_msg}-->
-</div>
+	</div><!--errormessage-->
 <!--{xif}-->
 
-<div id="accessibleForm" class="form2Part bookingForm">
+	<div id="accessibleForm" class="form2Part bookingForm">
 <!--{formbegin}-->
 
-<div class="formLeft">
+		<div class="formLeft">
 
  <!-- these next 4 only apply if BOOKINGS_REPEAT = true -->
  <!--{ifrepeat}-->
@@ -27,80 +27,79 @@
  <!--{xif}-->
  
 <!--{ifitemlist}-->
-<fieldset>
-<div class="formEntryArea">
+			<fieldset>
+				<div class="formEntryArea">
 <!--{itemlist}-->
-</div>
-</fieldset>
+				</div><!--formEntryArea-->
+			</fieldset>
 <!--{xif}-->
 
-<div class="formEntryArea">
+			<div class="formEntryArea">
 Begin: 
 <!--{book_from}-->
-</div>
+			</div><!--formEntryArea-->
 
-<div class="formEntryArea">
+			<div class="formEntryArea">
 
 <!--{iflocation}-->
 <h2>Select a location:</h2>
 <!--{location}-->
 <!--{xif}-->
-
-</div>
-
-</fieldset>
+			</div><!--formEntryArea-->
+		</fieldset>
 
 <!--{ifrepeat}-->
-<fieldset>
-<div class="formEntryArea">
+		<fieldset>
+			<div class="formEntryArea">
 Repeat:
 <!--{repeat}-->
-</div>
-<div class="formEntryArea">
+			</div><!--formEntryArea-->
+
+			<div class="formEntryArea">
 <!--{duration}-->
-</div>
-</fieldset>
+			</div><!--formEntryArea-->
+		</fieldset>
 <!--{xif}-->
 
 <!--{ifendtime}-->
-<fieldset>
-<div class="formEntryArea">
+		<fieldset>
+			<div class="formEntryArea">
 <!--{endtimedayhour}-->
-</div>
-</fieldset>
+			</div><!--formEntryArea-->
+		</fieldset>
 <!--{xif}-->
 
 <!--{ifneednote}-->
-<fieldset>
-<div class="formEntryArea">
-<h2>Note:</h2>
+		<fieldset>
+			<div class="formEntryArea">
+				<h2>Note:</h2>
 <!--{note}-->
-</div>
-</fieldset>
+			</div><!--formEntryArea-->	
+		</fieldset>
 <!--{xif}-->
 
-<div class="formButtonArea">
+			<div class="formButtonArea">
 <!--{submit}-->
 <!--{cancel}-->
-</div>
-</div><!-- formLeft -->
+		</div><!--formEntryArea-->
+		</div><!-- formLeft -->
 
-<div class="formRight">
-<div class="formEntryArea">
-<p>
+		<div class="formRight">
+		<div class="formEntryArea">
+			<p>
 <!--{calendar_legend}-->
-</p>
-<div class="bookingsCalendar">
+			</p>
+
+			<div class="bookingsCalendar">
 <!--{calendar}-->
-</div>
+			</div><!--bookingsCalendar-->
 <!--{calendar_type}-->
-</div>
-</div><!-- formRight -->
+		</div><!--formEntryArea-->
+	</div><!-- formRight -->
 
 <!--{formend}-->
-<div class="clear"></div>
-
-</div><!-- accessibleForm -->
+		<div class="clear"></div>
+	</div><!-- accessibleForm -->
 </div><!-- pageContentInner -->
 <!--{botlogo}-->
 </body>

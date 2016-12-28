@@ -10,37 +10,36 @@
 	<!-- catedit -->
 <!--{catedit}-->
 	<!-- /catedit -->
-	
+
 <script>
-	addLoadEvent( function encoreLink() {
+
+	addLoadEvent( function() {
+		
 		var cluster = '6lanc';
 		var recno_pattern = /b\d{7}/;
-		
+		var encore_recno = "";
+
 		// Gets record number from permanent link
 		var cluster_recno = recno_pattern.exec($(".ICON_RECORDLINK").children("a").attr("href"));
+		var bibno_fetcher_url = 'http://library.truman.edu/Mobius/encore_bibno_fetcher.php?bibno=' + cluster_recno;
 		
-	
 		// Get MOBIUS bib number via php
-		$.get('http://library.truman.edu/Steve/encore_bibno_fetcher.php?bibno=' + cluster_recno, function( data ) {
+		$.get('http://library.truman.edu/Mobius/encore_bibno_fetcher.php?bibno=' + cluster_recno, function( data ) {
 			var encore_regex = /b\d{8}/;
-			var encore_recno = encore_regex.exec(data);
-			
+			encore_recno = encore_regex.exec(data);
+					
 			if (encore_recno) {
 				var encore_link = "http://encore.searchmobius.org/iii/encore/record/C__R" + encore_recno;
 				$("#ICON_INNREACH").parent().attr("href",encore_link);
 			}
 		});
-	});
+	});			
+
 </script>
 
 
-
 <div id="bibDisplayBody">
-
-
-<div class="navigationRowRecord" style="
-	text-align: center;
-">
+	<div class="navigationRowRecord" style="text-align: center;">
 	<!-- navrow -->
 <!--{navrow}-->
 	<!-- /navrow -->
@@ -48,80 +47,72 @@
 	<!--{innreach}-->
 <!--{innreach}-->
 	<!--{innreach}-->	
-	
-</div>
+	</div><!--navigationRowRecord-->
 
-<div class="spacer">&nbsp;</div>
+	<div class="spacer">&nbsp;</div>
 
-<div id="bibDisplayContent">
+	<div id="bibDisplayContent">
 
 <!-- bibSearch -->
-<div align="center" class="bibSearch">
+		<div align="center" class="bibSearch">
+			
 	<!-- searchtool -->
 <!--{searchtool}-->
 	<!-- /searchtool -->
-<div class="bibSearchHistory">
+			
+			<div class="bibSearchHistory">
+	
 	<!-- searchhistory -->
 <!--{searchhistory}-->
 	<!-- /searchhistory -->
-</div>
-</div>
-<!-- /bibSearch -->
+	
+			</div><!--bibSearchHistory-->
+		</div><!--bibSearch-->
 
-<div class="bibPager" style="text-align: center; margin: 15px 15px;">
+
+		<div class="bibPager" style="text-align: center; margin: 15px 15px;">
 	<!-- pager -->
 <!--{pager}-->
 	<!-- /pager -->
-</div>
+		</div><!--bibPager-->
 
-
-<div class="row">
-
-	<div class="col-md-1">
-
-		<div class="briefcit_bookjacket">
-			<!-- bibimage -->
+		<div class="row">
+			<div class="col-md-1">
+				<div class="briefcit_bookjacket">
+	<!-- bibimage -->
 <!--{bibimage}-->
-			<!-- /bibimage -->
-		</div>
+	<!-- /bibimage -->
+				</div><!--briefcit_bookjacket-->
 			
-		<div id="token_media" class="bibMedia">
-			<!-- media -->
+				<div id="token_media" class="bibMedia">
+	<!-- media -->
 <!--{media}-->
-			<!-- /media --> 
-		</div>
+	<!-- /media --> 
+				</div><!--bibMedia, #token_media-->
+			</div><!--col-md-1-->
 	
-	</div>
-	<!-- /class="col-md-1" -->
-	
-	
-	<div class="col-md-9">
+			<div class="col-md-9">
 
-		<!-- recordinfo:atpe -->
+	<!-- recordinfo:atpe -->
 <!--{recordinfo:atpe}-->
-		<!-- /recordinfo:atpe -->
+	<!-- /recordinfo:atpe -->
 
-<div class="row">
-<div class="hidebutton">
-		<a href="#here" name="smsbutton" id="smsbutton" onClick="showsms();return false;">
-    <div id="smsfeatures" class="btn btn-default catnav">
-        <i class="fa fa-mobile" style="font-size:150%"></i> Text call number
-    </div>
-</a>
-</div> 
+				<div class="row">
+					<div class="hidebutton">
+						<a href="#here" name="smsbutton" id="smsbutton" onClick="showsms();return false;">
+							
+							<div id="smsfeatures" class="btn btn-default catnav" style="display: inline-block; width: 100%;"><i class="fa fa-mobile"></i> Text call number 
+							</div><!--#smsfeatures, btn btn-default catnav-->
+						</a>
+					</div> <!--hidebutton-->
 
-
-<div id='sms' style="visibility:hidden;display:none">
-</div>
-
-</div> 
-</div>
+					<div id='sms' style="visibility:hidden;display:none"></div>
+				</div> <!--row-->
+			</div><!--col-md-9-->
 
 
-<div id="buttondisplaylarge">	
-	<div class="col-md-2" id="icon_but_output_full">
-	</div>
-
+			<div id="buttondisplaylarge">	
+				<div class="col-md-2" id="icon_but_output_full"></div>
 
 <script>
 	//these are the IDs we are targeting. Adjust the order of these as desired.
@@ -165,30 +156,24 @@
 	
 	
 </script>
-</div> <!--buttondisplaylarge-->
-	
-</div>
-<!-- /class="row" -->
-
-	<!-- booking -->
-	<!--TURNED OFF-->
-	<!-- /booking -->
+			</div> <!--#buttondisplaylarge-->
+		</div><!--row-->
 
 	<!-- holdingslink -->
 <!--{holdingslink}-->
 	<!-- /holdingslink -->
 
-<div class="testlinkeddocs">
+		<div class="testlinkeddocs">
 	<!-- linkeddocs -->
 <!--{linkeddocs}-->
 	<!-- /linkeddocs -->
-</div>
+		</div><!--testlinkeddocs-->
 
-<div class="bibDisplayUrls">
+		<div class="bibDisplayUrls">
 	<!-- URLS -->
 <!--{URLS}-->
 	<!-- /URLS -->
-</div>
+		</div><!--bibDisplayUrls-->
 
 	<!-- bloblinks -->
 <!--{bloblinks}-->
@@ -213,22 +198,16 @@
 	<!-- holdings -->
 <!--{holdings}-->
 	<!-- /holdings -->
+		
+		<br>
+		<br>
 
-	<br>
-	<br>
-	
-<!--<div class="bibDisplayItems">
-<div class="bibDisplayItemsHeader"><strong>Copies</strong></div>
-<div class="bibDisplayItemsMain">
 	<!-- items -->
 <!--{items}-->
 	<!-- /items -->
-<!--</div>
-</div>-->
 
-<div id="showsmallsplit1">
-<div class="row" id="icon_but_output_top_mobile">
-</div>
+		<div id="showsmallsplit1">
+			<div class="row" id="icon_but_output_top_mobile"></div>
 <script>
 	//these are the IDs we are targeting. Adjust the order of these as desired.
 	var button_id_array = [
@@ -266,46 +245,41 @@
 	
 	
 </script>
-</div> <!--show small split1-->
+		</div> <!--#showsmallsplit1-->
 
 	<!-- orders -->
 <!--{orders}-->
 	<!-- /orders -->
 
-<div class="bibDisplayContentMore">
-	<!--this is flyers{recordinfo:ecsndoijbuqwxyz}-->
+		<div class="bibDisplayContentMore">
 <!--{recordinfo:#}-->
-	
-</div>
-
-
-<div class="tablebib" class="bibDisplayContentMore bibDisplayReviews">
-<div id="bib_link" class="bibDisplayPermLink actionButtonArea">
+		</div><!--bibDisplayContentMore-->
+		
+		<div class="tablebib" class="bibDisplayContentMore bibDisplayReviews">
+			<div id="bib_link" class="bibDisplayPermLink actionButtonArea">
 
 	<!-- recordlink -->
 <!--{recordlink}-->
 	<!-- /recordlink -->
-
-</div>
+			</div><!--#bib_link bibDisplayPermLink actionButtonArea-->
 
 	<!-- patronreviewsfull -->
 <!--{patronreviewsfull}-->
 	<!-- /patronreviewsfull-->
 
-</div>
+		</div><!--#tablebib bibDisplayContentMore bibDisplayReviews-->
 
 
 <!--{ifTOC}-->
-<div class="table-responsive">
+		<div class="table-responsive">
 	<!-- TOC -->
 <!--{TOC}-->
 	<!-- /TOC -->
-</div>
+		</div><!--table-responsive-->
 <!--{xif}-->
 
-<div id="showsmallsplit2">
-<div class="row" id="icon_but_output_bot_mobile">
-</div>
+		<div id="showsmallsplit2">
+			<div class="row" id="icon_but_output_bot_mobile"></div>
 <script>
 	//these are the IDs we are targeting. Adjust the order of these as desired.
 	var button_id_array = [
@@ -343,10 +317,8 @@
 	
 	
 </script>
-</div> <!--show small split2-->
-
-
-</div><!-- close bibDisplayContent -->
+		</div> <!--showsmallsplit2-->
+	</div><!--bibDisplayContent -->
 <div class="clear"></div>
 </div><!-- close bibDisplayBody -->
 
@@ -357,7 +329,9 @@
 	<!--{botlogo}-->
 
 
-    <!-- a quick script to hide the SMS menu if there are no items. same as the javascript in the SMS form, but it's really just to see if the items exist.  If they don't, we hide the buttons -->
+    <!-- a quick script to hide the SMS menu if there are no items. 
+	same as the javascript in the SMS form, but it's really just to see if the items exist.  
+	If they don't, we hide the buttons -->
        <script>
        var f = document.getElementById('bib_detail');
        try { 

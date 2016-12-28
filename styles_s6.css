@@ -1,4 +1,4 @@
-/*@import url("styles.css");*/
+﻿/*@import url("styles.css");*/
 
 .minHeight {
     width: 1067px;
@@ -35,6 +35,12 @@ margin-bottom: 10px;
 margin-top: 10px;
 }
 
+.bibInfoLabel {
+width:15%;
+font-weight:bold;
+text-transform: uppercase;
+}
+
 .bibItemsHeader{
 background: #5C3278;
 border-left: medium solid white;
@@ -69,6 +75,9 @@ padding-right:10%;
 padding-left: 10%;
 }
 
+.bibTOC{
+width:85%;
+}
 
 .briefcitTitle{
 font-size: 1em;
@@ -296,6 +305,41 @@ margin: 3px;
 color: black;
 }
 
+.patFunc td{
+border: none;
+max-width: 1650px;
+}
+
+.patFuncBarcode{
+display: none;
+}
+
+.patFuncCallNo{
+display: none;
+}
+
+.patFuncHeaders {
+background: #5C3278;
+color: white;
+display: none;
+}
+
+.patFuncMark{
+min-width:30px;
+}
+
+.patFuncRating{
+display: none;
+}
+
+.patFuncStatus{
+border-right: 2px solid black;
+}
+
+.patroninfodisplay{
+text-align: right;
+}
+
 #showsmallsplit1 {
 display: none;
 }
@@ -306,6 +350,11 @@ margin: auto;
 
 #showsmallsplit2 {
 display: none;
+}
+table.bibTOC tbody tr th{
+background: #5C3278;
+color: white;
+text-align: center;
 }
 
 .tablebib td {
@@ -333,6 +382,10 @@ margin-bottom: 10px;
 margin-top: 10px;
 }
 
+tr.patFuncEntry{
+border:solid black 1px;
+}
+
 @media (max-width: 992px) {
 #buttondisplaylarge {display: none;}
 #showsmallsplit1 {
@@ -345,9 +398,9 @@ text-align: center;
 }
 }
 
+/* Don't print link hrefs */
 @media print {
   a[href]:after {
-    content: none !important;
+    content: none
   }
 }
-
