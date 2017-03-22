@@ -579,7 +579,7 @@ ICON_BUT_PREVSCRN6=<div class="ICON_BUT_PREVSCRN btn btn-default catnav"><i clas
 ICON_BUT_RET2FEAT6=<div class="ICON_BUT_RET2FEAT btn btn-default catnav"><i class="fa fa-long-arrow-left fa-sm"></i> Back </div>
 ICON_BUT_PREVSCRN=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Back</span></span>
 ICON_BUT_RET2FEAT=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Back</span></span>
-FEATURED_LIST=80,81,82|Featured Lists|Name|
+FEATURED_LIST=80,81,82,84|FEATURED LISTS|CATEGORY|# of Titles
 
 # Content Linking and Other Resources
 # If your system uses SSL, use the https example, to avoid secure/nonsecure warning on Internet Explorer.

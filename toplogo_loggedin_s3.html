@@ -25,6 +25,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script type="text/javascript">
 $(document).ready(function () {
 	$("span:contains(WebPAC PRO)").hide(); //Hide the iii footer
+	
+	//hides out of scope featured lists
+  var pathnameFtList = window.location.href.slice(window.location.href.indexOf('/') + 1).split('/')[3];
+  if(pathnameFtList.indexOf('ftlist') > -1){
+    $('.browseEntry:not(:contains("ATSU"))').addClass('hideMe');
+    $(".hideMe").hide();
+    text = $('.ftlistHeader').text();
+	listName = text.replace(/[^a-z0-9]/gmi, " ").replace(/[\d]{1,2}/m, " ").replace("entries", " ");
+	namewoNum = $('.ftlistHeader').replaceWith("<th colSpan='3'>" + listName + "</th>");
+  }
 });
 
 
@@ -72,6 +82,7 @@ if (document.body){document.body.className = "bodybg";}
 </li>
 <li><a href="/search/b">Course Reserves</a></li>
 <li><a href="/help">Help</a></li>
+<li><a href="/search~S3/ftlist">Featured Items</a></li>
 </ul>
 </div> <!-- navLeft -->
 
