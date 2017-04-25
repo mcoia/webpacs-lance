@@ -223,9 +223,9 @@ form#patform label {
 display: inline-block;
 }
 
-label.formLabelAddition[for="needby_Month"]:before{
+/*label.formLabelAddition[for="needby_Month"]:before{
 	content: "Date: "
-}
+}*/
 
 legend{
 	display: none
