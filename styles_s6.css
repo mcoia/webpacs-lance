@@ -215,10 +215,21 @@ img {
 display: inline-block;
 }
 
+form#patform label {
+    font-weight: 100;
+}
+
 #gif {
 display: inline-block;
 }
 
+/*label.formLabelAddition[for="needby_Month"]:before{
+	content: "Date: "
+}*/
+
+legend{
+	display: none
+}
 .mobile_header{
 background-color: #ffffff;
 }
@@ -340,6 +351,16 @@ border-right: 2px solid black;
 text-align: right;
 }
 
+select#needby_Day {
+    margin-left: 7px;
+}
+
+select#needby_Month {
+    margin-left: 7px;
+}
+select#needby_Year {
+    margin-left: 7px;
+}
 #showsmallsplit1 {
 display: none;
 }
